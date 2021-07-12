@@ -47,7 +47,7 @@ class SideNav extends Component {
 
     this.state = {
       open: true,
-      organization: null,
+      organization:{id:"1"},//organization: null,
       cacheCounter: 0,
     };
 
@@ -243,7 +243,8 @@ class SideNav extends Component {
             </ListItemIcon>
             <ListItemText primary="Device-profiles" />
           </ListItem>
-          {this.state.organization.canHaveGateways && <ListItem button component={Link} to={`/organizations/${this.state.organization.id}/gateways`}>
+          {<ListItem button component={Link} to={`/organizations/${this.state.organization.id}/gateways`}>
+          {/* {this.state.organization.canHaveGateways && <ListItem button component={Link} to={`/organizations/${this.state.organization.id}/gateways`}> */}
             <ListItemIcon>
               <RadioTower />
             </ListItemIcon>
