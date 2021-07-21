@@ -53,14 +53,14 @@ class MulticastGroupForm extends FormComponent {
 
   getPingSlotPeriodOptions(search, callbackFunc) {
     const pingSlotPeriodOptions = [
-      {value: 32 * 1, label: "every second"},
-      {value: 32 * 2, label: "every 2 seconds"},
-      {value: 32 * 4, label: "every 4 seconds"},
-      {value: 32 * 8, label: "every 8 seconds"},
-      {value: 32 * 16, label: "every 16 seconds"},
-      {value: 32 * 32, label: "every 32 seconds"},
-      {value: 32 * 64, label: "every 64 seconds"},
-      {value: 32 * 128, label: "every 128 seconds"},
+      {value: 32 * 1, label: "每秒"},
+      {value: 32 * 2, label: "每2秒"},
+      {value: 32 * 4, label: "每4秒"},
+      {value: 32 * 8, label: "每8秒"},
+      {value: 32 * 16, label: "每16秒"},
+      {value: 32 * 32, label: "每32秒"},
+      {value: 32 * 64, label: "每64秒"},
+      {value: 32 * 128, label: "每128秒"},
     ];
 
     callbackFunc(pingSlotPeriodOptions);
@@ -78,17 +78,17 @@ class MulticastGroupForm extends FormComponent {
       >
         <TextField
           id="name"
-          label="Multicast-group name"
+          label="多播组名"
           margin="normal"
           value={this.state.object.name || ""}
           onChange={this.onChange}
-          helperText="The name of the multicast-group."
+          helperText="多播组的名称。"
           fullWidth
           required
         />
         <DevAddrField
           id="mcAddr"
-          label="Multicast address"
+          label="多播地址"
           margin="normal"
           value={this.state.object.mcAddr || ""}
           onChange={this.onChange}
@@ -100,7 +100,7 @@ class MulticastGroupForm extends FormComponent {
         />
         <AESKeyField
           id="mcNwkSKey"
-          label="Multicast network session key"
+          label="多播网络会话密钥 session key"
           margin="normal"
           value={this.state.object.mcNwkSKey || ""}
           onChange={this.onChange}
@@ -111,7 +111,7 @@ class MulticastGroupForm extends FormComponent {
         />
         <AESKeyField
           id="mcAppSKey"
-          label="Multicast application session key"
+          label="多播应用会话密钥 session key"
           margin="normal"
           value={this.state.object.mcAppSKey || ""}
           onChange={this.onChange}
@@ -122,7 +122,7 @@ class MulticastGroupForm extends FormComponent {
         />
         <TextField
           id="fCnt"
-          label="Frame-counter"
+          label="帧计数器"
           margin="normal"
           type="number"
           value={this.state.object.fCnt || 0}
@@ -132,8 +132,8 @@ class MulticastGroupForm extends FormComponent {
         />
         <TextField
           id="dr"
-          label="Data-rate"
-          helperText="The data-rate to use when transmitting the multicast frames. Please refer to the LoRaWAN Regional Parameters specification for valid values."
+          label="数据率"
+          helperText="用于发送多播数据的数据率。请参考LoraWAN 规范里区域参数的认可值。"
           margin="normal"
           type="number"
           value={this.state.object.dr || 0}
@@ -143,8 +143,8 @@ class MulticastGroupForm extends FormComponent {
         />
         <TextField
           id="frequency"
-          label="Frequency (Hz)"
-          helperText="The frequency to use when transmitting the multicast frames. Please refer to the LoRaWAN Regional Parameters specification for valid values."
+          label="频率 (Hz)"
+          helperText="用于发送多播帧的频率，请参考LoraWAN 规范里区域参数的认可值。"
           margin="normal"
           type="number"
           value={this.state.object.frequency || 0}
@@ -156,27 +156,27 @@ class MulticastGroupForm extends FormComponent {
           <FormLabel className={this.props.classes.formLabel} required>Multicast-group type</FormLabel>
           <AutocompleteSelect
             id="groupType"
-            label="Select multicast-group type"
+            label="选择组播帧类型"
             value={this.state.object.groupType || ""}
             onChange={this.onChange}
             getOptions={this.getGroupTypeOptions}
             required
           />
           <FormHelperText>
-            The multicast-group type defines the way how multicast frames are scheduled by the network-server.
+            组播帧类型定义了网路服务器如何计划发送组播帧。
           </FormHelperText>
         </FormControl>
         {this.state.object.groupType === "CLASS_B" && <FormControl fullWidth margin="normal">
           <FormLabel className={this.props.classes.formLabel} required>Class-B ping-slot periodicity</FormLabel>
           <AutocompleteSelect
             id="pingSlotPeriod"
-            label="Select Class-B ping-slot periodicity"
+            label="选择 Class-B ping-slot 周期"
             value={this.state.object.pingSlotPeriod || ""}
             onChange={this.onChange}
             getOptions={this.getPingSlotPeriodOptions}
             required
           />
-          <FormHelperText>Class-B ping-slot periodicity.</FormHelperText>
+          <FormHelperText>Class-B ping-slot 周期。</FormHelperText>
         </FormControl>}
       </Form>
     );

@@ -170,7 +170,7 @@ class GatewayFrames extends Component {
             <DialogTitle id="help-dialog-title">Help</DialogTitle>
             <DialogContent>
               <DialogContentText id="help-dialog-description">
-                The frames below are the raw (and encrypted) LoRaWAN PHYPayload frames as seen by the gateway(s). This data is intended for debugging only.
+                此帧以下的是原始数据（加密），也就是LoRaWAN PHYPayload数据，这些数据对网关来说是可见的，仅用来调试。
               </DialogContentText>
             </DialogContent>
             <DialogActions>
@@ -203,7 +203,7 @@ class GatewayFrames extends Component {
           {!this.state.connected && <div className={this.props.classes.center}>
             <Chip
               color="secondary"
-              label="Not connected to Websocket API"
+              label="没有连接到 Websocket API"
               avatar={<Avatar><AlertCircleOutline /></Avatar>}
             />
           </div>}

@@ -69,14 +69,13 @@ class CreateApplication extends Component {
           open={this.state.spDialog}
           onClose={this.closeDialog}
         >
-          <DialogTitle>Add a service-profile?</DialogTitle>
+          <DialogTitle>添加服务简介（service-profile）？</DialogTitle>
           <DialogContent>
             <DialogContentText paragraph>
-              The selected organization does not have a service-profile yet.
-              A service-profile connects an organization to a network-server and defines the features that an organization can use on this network-server.
+              选中的组织还没有任何服务简介。服务简介将组织和网络服务器连接起来，并定义了组织可使用的网络服务器的功能。
             </DialogContentText>
             <DialogContentText>
-              Would you like to create a service-profile?
+              确实要添加服务简介（service-profile)?
             </DialogContentText>
           </DialogContent>
           <DialogActions>
@@ -86,16 +85,16 @@ class CreateApplication extends Component {
         </Dialog>
 
         <TitleBar>
-          <TitleBarTitle title="Applications" to={`/organizations/${this.props.match.params.organizationID}/applications`} />
+          <TitleBarTitle title="应用" to={`/organizations/${this.props.match.params.organizationID}/applications`} />
           <TitleBarTitle title="/" />
-          <TitleBarTitle title="Create" />
+          <TitleBarTitle title="创建" />
         </TitleBar>
 
         <Grid item xs={12}>
           <Card className={this.props.classes.card}>
             <CardContent>
               <ApplicationForm
-                submitLabel="Create application"
+                submitLabel="创建应用"
                 onSubmit={this.onSubmit}
                 match={this.props.match}
               />

@@ -8,7 +8,7 @@ class SessionStore extends EventEmitter {
   constructor() {
     super();
     this.client = null;
-    this.user = "admin";  //null
+    this.user = null;   //Admin;
     this.organizations = [];
     this.settings = {};
     this.branding = {};
@@ -82,7 +82,7 @@ class SessionStore extends EventEmitter {
     if (this.user === undefined || this.user === null) {
       return false;
     }
-    return true//this.user.isAdmin;
+    return this.user.isAdmin;
   }
 
   isOrganizationAdmin(organizationID) {

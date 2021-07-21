@@ -29,9 +29,9 @@ class ApplicationResult extends Component {
   render() {
     return(
       <TableRow hover>
-        <TableCell className={this.props.classes.type}>application</TableCell>
+        <TableCell className={this.props.classes.type}>应用</TableCell>
         <TableCell><Link className={this.props.classes.link} to={`/organizations/${this.props.result.organizationID}/applications/${this.props.result.applicationID}`}>{this.props.result.applicationName}</Link></TableCell>
-        <TableCell>organization: <Link className={this.props.classes.link} to={`/organizations/${this.props.result.organizationID}`}>{this.props.result.organizationName}</Link></TableCell>
+        <TableCell>组织: <Link className={this.props.classes.link} to={`/organizations/${this.props.result.organizationID}`}>{this.props.result.organizationName}</Link></TableCell>
         <TableCell>{this.props.result.applicationID}</TableCell>
       </TableRow>
     );
@@ -45,7 +45,7 @@ class OrganizationResult extends Component {
   render() {
     return(
       <TableRow hover>
-        <TableCell className={this.props.classes.type}>organization</TableCell>
+        <TableCell className={this.props.classes.type}>组织</TableCell>
         <TableCell><Link className={this.props.classes.link} to={`/organizations/${this.props.result.organizationID}`}>{this.props.result.organizationName}</Link></TableCell>
         <TableCell></TableCell>
         <TableCell>{this.props.result.organizationID}</TableCell>
@@ -60,9 +60,9 @@ class DeviceResult extends Component {
   render() {
     return(
       <TableRow hover>
-        <TableCell className={this.props.classes.type}>device</TableCell>
+        <TableCell className={this.props.classes.type}>前端设备</TableCell>
         <TableCell><Link className={this.props.classes.link} to={`/organizations/${this.props.result.organizationID}/applications/${this.props.result.applicationID}/devices/${this.props.result.deviceDevEUI}`}>{this.props.result.deviceName}</Link></TableCell>
-        <TableCell>organization: <Link className={this.props.classes.link} to={`/organizations/${this.props.result.organizationID}`}>{this.props.result.organizationName}</Link>, application: <Link className={this.props.classes.link} to={`/organizations/${this.props.result.organizationID}/applications/${this.props.result.applicationID}`}>{this.props.result.applicationName}</Link></TableCell>
+        <TableCell>组织: <Link className={this.props.classes.link} to={`/organizations/${this.props.result.organizationID}`}>{this.props.result.organizationName}</Link>, application: <Link className={this.props.classes.link} to={`/organizations/${this.props.result.organizationID}/applications/${this.props.result.applicationID}`}>{this.props.result.applicationName}</Link></TableCell>
         <TableCell>{this.props.result.deviceDevEUI}</TableCell>
       </TableRow>
     );
@@ -75,9 +75,9 @@ class GatewayResult extends Component {
   render() {
     return(
       <TableRow hover>
-        <TableCell className={this.props.classes.type}>gateway</TableCell>
+        <TableCell className={this.props.classes.type}>网关</TableCell>
         <TableCell><Link className={this.props.classes.link} to={`/organizations/${this.props.result.organizationID}/gateways/${this.props.result.gatewayMAC}`}>{this.props.result.gatewayName}</Link></TableCell>
-        <TableCell>organization: <Link className={this.props.classes.link} to={`/organizations/${this.props.result.organizationID}`}>{this.props.result.organizationName}</Link></TableCell>
+        <TableCell>组织: <Link className={this.props.classes.link} to={`/organizations/${this.props.result.organizationID}`}>{this.props.result.organizationName}</Link></TableCell>
         <TableCell>{this.props.result.gatewayMAC}</TableCell>
       </TableRow>
     );
@@ -129,14 +129,14 @@ class Search extends Component {
     return(
       <Grid container spacing={4}>
         <TitleBar>
-          <TitleBarTitle title="Search" />
+          <TitleBarTitle title="搜索" />
         </TitleBar>
         <Grid item xs={12}>
           <DataTable
             header={
               <TableRow>
-                <TableCell>Kind</TableCell>
-                <TableCell>Name</TableCell>
+                <TableCell>类型</TableCell>
+                <TableCell>名称</TableCell>
                 <TableCell></TableCell>
                 <TableCell>ID</TableCell>
               </TableRow>

@@ -47,23 +47,23 @@ class ListApplications extends Component {
           buttons={
             <Admin organizationID={this.props.match.params.organizationID}>
               <TitleBarButton
-                label="Create"
+                label="创建"
                 icon={<Plus />}
                 to={`/organizations/${this.props.match.params.organizationID}/applications/create`}
               />
             </Admin>
           }
         >
-          <TitleBarTitle title="Applications" />
+          <TitleBarTitle title="应用" />
         </TitleBar>
         <Grid item xs={12}>
           <DataTable
             header={
               <TableRow>
-                <TableCell>ID</TableCell>
-                <TableCell>Name</TableCell>
-                <TableCell>Service-profile</TableCell>
-                <TableCell>Description</TableCell>
+                <TableCell>ID号</TableCell>
+                <TableCell>名称</TableCell>
+                <TableCell>服务简介ervice-profile</TableCell>
+                <TableCell>描述</TableCell>
               </TableRow>
             }
             getPage={this.getPage}

@@ -54,25 +54,25 @@ class ListUsers extends Component {
     return(
       <Grid container spacing={4}>
         <TitleBar
-          title="Users"
+          title="用户"
           buttons={[
             <TitleBarButton
               key={1}
-              label="Create"
+              label="创建"
               icon={<Plus />}
               to={`/users/create`}
             />,
           ]}
         >
-          <TitleBarTitle title="Users" />
+          <TitleBarTitle title="用户" />
         </TitleBar>
         <Grid item xs={12}>
           <DataTable
             header={
               <TableRow>
-                <TableCell>Email</TableCell>
-                <TableCell>Active</TableCell>
-                <TableCell>Admin</TableCell>
+                <TableCell>电邮Email</TableCell>
+                <TableCell>活动Active</TableCell>
+                <TableCell>管理员Admin</TableCell>
               </TableRow>
             }
             getPage={this.getPage}

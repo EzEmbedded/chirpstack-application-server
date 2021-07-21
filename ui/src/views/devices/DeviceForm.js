@@ -111,16 +111,16 @@ class DeviceForm extends FormComponent {
         disabled={this.props.disabled}
       >
         <Tabs value={this.state.tab} onChange={this.onTabChange} indicatorColor="primary">
-          <Tab label="General" />
-          <Tab label="Variables" />
-          <Tab label="Tags" />
+          <Tab label="常规" />
+          <Tab label="变量" />
+          <Tab label="标签" />
         </Tabs>
 
         {this.state.tab === 0 && <div>
           <TextField
             id="name"
-            label="Device name"
-            helperText="The name may only contain words, numbers and dashes."
+            label="前端设备名称"
+            helperText="前端设备名由字母数字和破折号组成。"
             margin="normal"
             value={this.state.object.name || ""}
             onChange={this.onChange}
@@ -132,7 +132,7 @@ class DeviceForm extends FormComponent {
           />
           <TextField
             id="description"
-            label="Device description"
+            label="前端设备描述"
             margin="normal"
             value={this.state.object.description || ""}
             onChange={this.onChange}
@@ -142,7 +142,7 @@ class DeviceForm extends FormComponent {
           {!this.props.update && <EUI64Field
             margin="normal"
             id="devEUI"
-            label="Device EUI"
+            label="前端设备 EUI"
             onChange={this.onChange}
             value={this.state.object.devEUI || ""}
             fullWidth
@@ -153,7 +153,7 @@ class DeviceForm extends FormComponent {
             <FormLabel className={this.props.classes.formLabel} required>Device-profile</FormLabel>
             <AutocompleteSelect
               id="deviceProfileID"
-              label="Device-profile"
+              label="前端设备简介（Device-profile）"
               value={this.state.object.deviceProfileID}
               onChange={this.onChange}
               getOption={this.getDeviceProfileOption}
@@ -163,7 +163,7 @@ class DeviceForm extends FormComponent {
           <FormControl fullWidth margin="normal">
             <FormGroup>
               <FormControlLabel
-                label="Disable frame-counter validation"
+                label="禁止帧计数器核实"
                 control={
                   <Checkbox
                     id="skipFCntCheck"
@@ -175,13 +175,14 @@ class DeviceForm extends FormComponent {
               />
             </FormGroup>
             <FormHelperText>
+              注意：禁止帧计数器核实会带来安全风险，因为禁止帧计数器核实后将阻止不了重放攻击（replay-attacks）。
               Note that disabling the frame-counter validation will compromise security as it enables people to perform replay-attacks.
             </FormHelperText>
           </FormControl>
           <FormControl fullWidth margin="normal">
             <FormGroup>
               <FormControlLabel
-                label="Device is disabled"
+                label="前端设备禁止"
                 control={
                   <Checkbox
                     id="isDisabled"
@@ -193,7 +194,7 @@ class DeviceForm extends FormComponent {
               />
             </FormGroup>
             <FormHelperText>
-              ChirpStack Network Server will ignore received uplink frames and join-requests from disabled devices.
+              网络服务器将忽略禁止后的前端设备的上传数据和入网请求。
             </FormHelperText>
           </FormControl>
         </div>}
@@ -201,21 +202,21 @@ class DeviceForm extends FormComponent {
         {this.state.tab === 1 && <div>
           <FormControl fullWidth margin="normal">
             <Typography variant="body1">
-              Variables can be used to substitute placeholders in for example integrations, e.g. in case an integration requires the configuration of a device specific token.
+              变量可被用作如集成用替换占位符，例如，在需要配置前端设备的特殊令牌的集成场景。
             </Typography>
             {variables}
           </FormControl>
-          <Button variant="outlined" onClick={this.addKV("variables")}>Add variable</Button>
+          <Button variant="outlined" onClick={this.addKV("variables")}>添加变量</Button>
         </div>}
 
         {this.state.tab === 2 && <div>
           <FormControl fullWidth margin="normal">
             <Typography variant="body1">
-              Tags can be used as device filters and are exposed on events as additional meta-data for aggregation.
+              标签可用来过滤前端设备，为集成应用来显示更多的元数据（meta-data）。
             </Typography>
             {tags}
           </FormControl>
-          <Button variant="outlined" onClick={this.addKV("tags")}>Add tag</Button>
+          <Button variant="outlined" onClick={this.addKV("tags")}>添加标签</Button>
         </div>}
       </Form>
     );

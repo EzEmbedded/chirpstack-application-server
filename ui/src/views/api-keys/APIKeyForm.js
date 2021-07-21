@@ -42,7 +42,7 @@ class APIKeyForm extends FormComponent {
         <div>
           <TextField
             id="id"
-            label="API key ID"
+            label="API key ID号"
             value={this.state.id}
             margin="normal"
             disabled
@@ -50,7 +50,7 @@ class APIKeyForm extends FormComponent {
           />
           <TextField
             id="name"
-            label="API key name"
+            label="API key 名"
             value={this.state.object.name}
             margin="normal"
             disabled
@@ -58,11 +58,11 @@ class APIKeyForm extends FormComponent {
           />
           <TextField
             id="jwtToken"
-            label="Token"
+            label="令牌(JWT)"
             value={this.state.token}
             rows={5}
             margin="normal"
-            helperText="Use this token when making API request with this API key. This token is provided once."
+            helperText="此令牌用于这个API key产生API请求，并且这个令牌只生成一次，如有必要请妥善保存。"
             fullWidth
             multiline
           />
@@ -77,8 +77,8 @@ class APIKeyForm extends FormComponent {
       >
         <TextField
           id="name"
-          label="API key name"
-          helperText="A descriptive name for the API key"
+          label="API key 名"
+          helperText="此API key的描述名"
           margin="normal"
           value={this.state.object.name || ""}
           onChange={this.onChange}

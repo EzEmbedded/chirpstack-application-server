@@ -14,16 +14,16 @@ class CreateAdminAPIKey extends Component {
     return(
       <Grid container spacing={4}>
         <TitleBar>
-          <TitleBarTitle title="Global API keys" to="/api-keys" />
+          <TitleBarTitle title="全局 API keys（Global API keys）" to="/api-keys" />
           <TitleBarTitle title="/" />
-          <TitleBarTitle title="Create" />
+          <TitleBarTitle title="创建" />
         </TitleBar>
 
         <Grid item xs={12}>
           <Card>
             <CardContent>
               <APIKeyForm
-                submitLabel="Create API key"
+                submitLabel="创建 API key"
                 onSubmit={this.onSubmit}
                 isAdmin={true}
               />

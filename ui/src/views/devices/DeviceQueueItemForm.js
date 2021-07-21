@@ -70,18 +70,18 @@ class DeviceQueueItemForm extends FormComponent {
       >
         <TextField
           id="fPort"
-          label="Port"
+          label="功能端口fPort"
           margin="normal"
           value={this.state.object.fPort || ""}
           onChange={this.onChange}
-          helperText="Please note that the fPort value must be > 0."
+          helperText="请注意，功能端口值必须大于0。"
           required
           fullWidth
           type="number"
         />
         <FormControl fullWidth margin="normal">
           <FormControlLabel
-            label="Confirmed downlink"
+            label="下行确认Confirmed"
             control={
               <Checkbox
                 id="confirmed"
@@ -93,12 +93,12 @@ class DeviceQueueItemForm extends FormComponent {
           />
         </FormControl>
         <Tabs value={this.state.tab} onChange={this.onTabChange} indicatorColor="primary">
-          <Tab label="Base64 encoded" />
-          <Tab label="JSON object" />
+          <Tab label="Base64 编码器" />
+          <Tab label="JSON 对象" />
         </Tabs>
         {this.state.tab === 0 && <TextField
           id="data"
-          label="Base64 encoded string"
+          label="Base64 编码字符串"
           margin="normal"
           value={this.state.object.data || ""}
           onChange={this.onChange}
@@ -113,7 +113,7 @@ class DeviceQueueItemForm extends FormComponent {
             onBeforeChange={this.onCodeChange.bind(this, 'jsonObject')}
           />
           <FormHelperText>
-            The device must be configured with a Device Profile supporting a Codec which is able to encode the given (JSON) payload.
+            前端设备必须配置一个前端设备简介（Device Profile），在这个前端设备简介里，要指定一个给定JSON负载的编解码器，用来编码这个负载。
           </FormHelperText>
         </FormControl>}
       </Form>

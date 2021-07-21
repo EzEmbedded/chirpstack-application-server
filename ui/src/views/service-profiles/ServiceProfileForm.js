@@ -47,11 +47,11 @@ class ServiceProfileForm extends FormComponent {
       >
         <TextField
           id="name"
-          label="Service-profile name"
+          label="服务简介名称"
           margin="normal"
           value={this.state.object.name || ""}
           onChange={this.onChange}
-          helperText="A name to identify the service-profile."
+          helperText="标识服务简介（service-profile）的名称。"
           disabled={this.props.disabled}
           required
           fullWidth
@@ -60,19 +60,19 @@ class ServiceProfileForm extends FormComponent {
           <FormLabel required>Network-server</FormLabel>
           <AutocompleteSelect
             id="networkServerID"
-            label="Network-server"
+            label="网络服务器"
             value={this.state.object.networkServerID || null}
             onChange={this.onChange}
             getOption={this.getNetworkServerOption}
             getOptions={this.getNetworkServerOptions}
           />
           <FormHelperText>
-            The network-server on which this service-profile will be provisioned. After creating the service-profile, this value can't be changed.
+            与将提供的服务简介（service-profile）相关联的网络服务器在创建后就不能更改。
           </FormHelperText>
         </FormControl>}
         <FormControl fullWidth margin="normal">
           <FormControlLabel
-            label="Add gateway meta-data"
+            label="添加网关元数据"
             control={
               <Checkbox
                 id="addGWMetaData"
@@ -84,12 +84,12 @@ class ServiceProfileForm extends FormComponent {
             }
           />
           <FormHelperText>
-            GW metadata (RSSI, SNR, GW geoloc., etc.) are added to the packet sent to the application-server.
+            网关元数据 (RSSI, SNR, GW geoloc., 等) 被加入到数据包内，发送到应用服务器。
           </FormHelperText>
         </FormControl>
         <FormControl fullWidth margin="normal">
           <FormControlLabel
-            label="Enable network geolocation"
+            label="使能地理位置"
             control={
               <Checkbox
                 id="nwkGeoLoc"
@@ -101,26 +101,24 @@ class ServiceProfileForm extends FormComponent {
             }
           />
           <FormHelperText>
-            When enabled, the network-server will try to resolve the location of the devices under this service-profile.
-            Please note that you need to have gateways supporting the fine-timestamp feature and that the network-server
-            needs to be configured in order to provide geolocation support.
+            使能此选项，网络服务器将解析在此服务简介下的设备位置，请注意，这需要网关支持优良的时间戳功能，并且网络服务器需要配置成支持地理位置功能。
           </FormHelperText>
         </FormControl>
         <TextField
           id="devStatusReqFreq"
-          label="Device-status request frequency"
+          label="设备状态请求频率"
           margin="normal"
           type="number"
           value={this.state.object.devStatusReqFreq || 0}
           onChange={this.onChange}
-          helperText="Frequency to initiate an End-Device status request (request/day). Set to 0 to disable."
+          helperText="终端设备状态请求的初始频率（请求/天），当设置为0时，禁制此功能。"
           disabled={this.props.disabled}
           fullWidth
         />
         {this.state.object.devStatusReqFreq > 0 && <FormControl fullWidth margin="normal">
           <FormGroup>
             <FormControlLabel
-              label="Report device battery level to application-server"
+              label="向应用服务器告知前端设备的电源电压"
               control={
                 <Checkbox
                   id="reportDevStatusBattery"
@@ -132,7 +130,7 @@ class ServiceProfileForm extends FormComponent {
               }
             />
             <FormControlLabel
-              label="Report device link margin to application-server"
+              label="向应用服务器告知前端设备的链路预算（link margin）"
               control={
                 <Checkbox
                   id="reportDevStatusMargin"
@@ -147,31 +145,31 @@ class ServiceProfileForm extends FormComponent {
         </FormControl>}
         <TextField
           id="drMin"
-          label="Minimum allowed data-rate"
+          label="允许的最小数据率（data-rate）"
           margin="normal"
           type="number"
           value={this.state.object.drMin || 0}
           onChange={this.onChange}
-          helperText="Minimum allowed data rate. Used for ADR."
+          helperText="用于ADR（自动数据率）的最小允许的数据率."
           disabled={this.props.disabled}
           fullWidth
           required
         />
         <TextField
           id="drMax"
-          label="Maximum allowed data-rate"
+          label="允许的最大数据率M（data-rate）"
           margin="normal"
           type="number"
           value={this.state.object.drMax || 0}
           onChange={this.onChange}
-          helperText="Maximum allowed data rate. Used for ADR."
+          helperText="用于ADR（自动数据率）的最大允许的数据率."
           disabled={this.props.disabled}
           fullWidth
           required
         />
         <FormControl fullWidth margin="normal">
           <FormControlLabel
-            label="Private gateways"
+            label="私有网关"
             control={
               <Checkbox
                 id="gwsPrivate"
@@ -183,7 +181,7 @@ class ServiceProfileForm extends FormComponent {
             }
           />
           <FormHelperText>
-            Gateways under this service-profile are private. This means that these gateways can only be used by devices under the same service-profile.
+            在此服务简介下的网关是私有的，意味着这些私有网关下的前端设备只能用于这个相同的服务简介（service-profile）下。
           </FormHelperText>
         </FormControl>
       </Form>

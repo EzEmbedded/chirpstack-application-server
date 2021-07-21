@@ -129,14 +129,14 @@ class ListGateways extends Component {
             <GatewayAdmin organizationID={this.props.match.params.organizationID}>
               <TitleBarButton
                 key={1}
-                label="Create"
+                label="创建"
                 icon={<Plus />}
                 to={`/organizations/${this.props.match.params.organizationID}/gateways/create`}
               />
             </GatewayAdmin>
           }
         >
-        <TitleBarTitle title="Gateways" />
+        <TitleBarTitle title="网关" />
         </TitleBar>
 
         <Grid item xs={12}>

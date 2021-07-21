@@ -44,7 +44,7 @@ class ListMulticastGroups extends Component {
           buttons={
             <DeviceAdmin organizationID={this.props.match.params.organizationID}>
               <TitleBarButton
-                label="Create"
+                label="创建"
                 icon={<Plus />}
                 to={`/organizations/${this.props.match.params.organizationID}/applications/${this.props.match.params.applicationID}/multicast-groups/create`}
               />
@@ -56,7 +56,7 @@ class ListMulticastGroups extends Component {
           <DataTable
             header={
               <TableRow>
-                <TableCell>Name</TableCell>
+                <TableCell>名称</TableCell>
                 <TableCell>ID</TableCell>
               </TableRow>
             }

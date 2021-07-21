@@ -46,20 +46,20 @@ class LW10DeviceActivationForm extends FormComponent {
       >
         <DevAddrField
           id="devAddr"
-          label="Device address"
+          label="前端设备地址"
           margin="normal"
           value={this.state.object.devAddr || ""}
           onChange={this.onChange}
           disabled={this.props.disabled}
           randomFunc={this.getRandomDevAddr}
-          helperText="While any device address can be entered, please note that a LoRaWAN compliant device address consists of an AddrPrefix (derived from the NetID) + NwkAddr."
+          helperText="输入前端设备地址时请注意：根据lorawan协议的兼容性要求，前端设备地址可由地址前缀+NwkAddr组成。"
           fullWidth
           required
           random
         />
         <AESKeyField
           id="nwkSEncKey"
-          label="Network session key (LoRaWAN 1.0)"
+          label="网络会话密钥 (LoRaWAN 1.0)"
           margin="normal"
           value={this.state.object.nwkSEncKey || ""}
           onChange={this.onChange}
@@ -70,7 +70,7 @@ class LW10DeviceActivationForm extends FormComponent {
         />
         <AESKeyField
           id="appSKey"
-          label="Application session key (LoRaWAN 1.0)"
+          label="应用会话密钥 (LoRaWAN 1.0)"
           margin="normal"
           value={this.state.object.appSKey || ""}
           onChange={this.onChange}
@@ -81,7 +81,7 @@ class LW10DeviceActivationForm extends FormComponent {
         />
         <TextField
           id="fCntUp"
-          label="Uplink frame-counter"
+          label="上行帧计数器"
           margin="normal"
           type="number"
           value={this.state.object.fCntUp || 0}
@@ -92,7 +92,7 @@ class LW10DeviceActivationForm extends FormComponent {
         />
         <TextField
           id="nFCntDown"
-          label="Downlink frame-counter (network)"
+          label="下行帧计数器 (网络)"
           margin="normal"
           type="number"
           value={this.state.object.nFCntDown || 0}
@@ -131,7 +131,7 @@ class LW11DeviceActivationForm extends FormComponent {
       >
         <DevAddrField
           id="devAddr"
-          label="Device address"
+          label="前端设备地址"
           margin="normal"
           value={this.state.object.devAddr || ""}
           onChange={this.onChange}
@@ -143,7 +143,7 @@ class LW11DeviceActivationForm extends FormComponent {
         />
         <AESKeyField
           id="nwkSEncKey"
-          label="Network session encryption key"
+          label="网络会话加密密钥"
           margin="normal"
           value={this.state.object.nwkSEncKey || ""}
           onChange={this.onChange}
@@ -154,7 +154,7 @@ class LW11DeviceActivationForm extends FormComponent {
         />
         <AESKeyField
           id="sNwkSIntKey"
-          label="Serving network session integrity key"
+          label="网络服务会话完整性密钥"
           margin="normal"
           value={this.state.object.sNwkSIntKey || ""}
           onChange={this.onChange}
@@ -165,7 +165,7 @@ class LW11DeviceActivationForm extends FormComponent {
         />
         <AESKeyField
           id="fNwkSIntKey"
-          label="Forwarding network session integrity key"
+          label="网络转发会话密钥"
           margin="normal"
           value={this.state.object.fNwkSIntKey || ""}
           onChange={this.onChange}
@@ -176,7 +176,7 @@ class LW11DeviceActivationForm extends FormComponent {
         />
         <AESKeyField
           id="appSKey"
-          label="Application session key"
+          label="应用会话密钥"
           margin="normal"
           value={this.state.object.appSKey || ""}
           onChange={this.onChange}
@@ -187,7 +187,7 @@ class LW11DeviceActivationForm extends FormComponent {
         />
         <TextField
           id="fCntUp"
-          label="Uplink frame-counter"
+          label="上行帧计数器"
           margin="normal"
           type="number"
           value={this.state.object.fCntUp || 0}
@@ -198,7 +198,7 @@ class LW11DeviceActivationForm extends FormComponent {
         />
         <TextField
           id="nFCntDown"
-          label="Downlink frame-counter (network)"
+          label="下行帧计数器 (网络)"
           margin="normal"
           type="number"
           value={this.state.object.nFCntDown || 0}
@@ -209,7 +209,7 @@ class LW11DeviceActivationForm extends FormComponent {
         />
         <TextField
           id="aFCntDown"
-          label="Downlink frame-counter (application)"
+          label="下行帧计数器 (应用)"
           margin="normal"
           type="number"
           value={this.state.object.aFCntDown || 0}
@@ -272,7 +272,7 @@ class DeviceActivation extends Component {
 
     let submitLabel = null;
     if (!this.props.deviceProfile.supportsJoin) {
-      submitLabel = "(Re)activate device";
+      submitLabel = "激活（重激活）前端设备";
     }
 
     let showForm = false;
@@ -300,7 +300,7 @@ class DeviceActivation extends Component {
             deviceProfile={this.props.deviceProfile}
           />}
           {!showForm && <Typograhy variant="body1">
-            This device has not (yet) been activated.
+            前端设备未激活。
           </Typograhy>}
         </CardContent>
       </Card>

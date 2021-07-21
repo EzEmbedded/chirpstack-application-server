@@ -47,7 +47,7 @@ class SideNav extends Component {
 
     this.state = {
       open: true,
-      organization:{id:"1"},//organization: null,
+      organization: null, //organization:{id:"1"},
       cacheCounter: 0,
     };
 
@@ -161,31 +161,31 @@ class SideNav extends Component {
               <ListItemIcon>
                 <Home />
               </ListItemIcon>
-              <ListItemText primary="Dashboard" />
+              <ListItemText primary="仪表板" />
             </ListItem>
             <ListItem button component={Link} to="/network-servers">
               <ListItemIcon>
                 <Server />
               </ListItemIcon>
-              <ListItemText primary="Network-servers" />
+              <ListItemText primary="网络服务器" />
             </ListItem>
             <ListItem button component={Link} to="/gateway-profiles">
               <ListItemIcon>
                 <RadioTower />
               </ListItemIcon>
-              <ListItemText primary="Gateway-profiles" />
+              <ListItemText primary="网关资料" />
             </ListItem>
             <ListItem button component={Link} to="/organizations">
             <ListItemIcon>
                 <Domain />
               </ListItemIcon>
-              <ListItemText primary="Organizations" />
+              <ListItemText primary="组织" />
             </ListItem>
             <ListItem button component={Link} to="/users">
               <ListItemIcon>
                 <Account />
               </ListItemIcon>
-              <ListItemText primary="All users" />
+              <ListItemText primary="全部用户" />
             </ListItem>
             <ListItem button component={Link} to="/api-keys">
               <ListItemIcon>
@@ -215,46 +215,46 @@ class SideNav extends Component {
             <ListItemIcon>
               <Home />
             </ListItemIcon>
-            <ListItemText primary="Org. dashboard" />
+            <ListItemText primary="组织-仪表板" />
           </ListItem>
           <Admin organizationID={this.state.organization.id}>
             <ListItem button component={Link} to={`/organizations/${this.state.organization.id}/users`}>
               <ListItemIcon>
                 <Account />
               </ListItemIcon>
-              <ListItemText primary="Org. users" />
+              <ListItemText primary="组织-用户" />
             </ListItem>
             <ListItem button component={Link} to={`/organizations/${this.state.organization.id}/api-keys`}>
               <ListItemIcon>
                 <KeyVariant />
               </ListItemIcon>
-              <ListItemText primary="Org. API keys" />
+              <ListItemText primary="组织-API keys" />
             </ListItem>
           </Admin>
           <ListItem button component={Link} to={`/organizations/${this.state.organization.id}/service-profiles`}>
             <ListItemIcon>
               <AccountDetails />
             </ListItemIcon>
-            <ListItemText primary="Service-profiles" />
+            <ListItemText primary="服务器资料" />
           </ListItem>
           <ListItem button component={Link} to={`/organizations/${this.state.organization.id}/device-profiles`}>
             <ListItemIcon>
               <Tune />
             </ListItemIcon>
-            <ListItemText primary="Device-profiles" />
+            <ListItemText primary="前端设备资料" />
           </ListItem>
-          {<ListItem button component={Link} to={`/organizations/${this.state.organization.id}/gateways`}>
-          {/* {this.state.organization.canHaveGateways && <ListItem button component={Link} to={`/organizations/${this.state.organization.id}/gateways`}> */}
+          {/* {<ListItem button component={Link} to={`/organizations/${this.state.organization.id}/gateways`}> */}
+          {this.state.organization.canHaveGateways && <ListItem button component={Link} to={`/organizations/${this.state.organization.id}/gateways`}>
             <ListItemIcon>
               <RadioTower />
             </ListItemIcon>
-            <ListItemText primary="Gateways" />
+            <ListItemText primary="网关" />
           </ListItem>}
           <ListItem button component={Link} to={`/organizations/${this.state.organization.id}/applications`}>
             <ListItemIcon>
               <Apps />
             </ListItemIcon>
-            <ListItemText primary="Applications" />
+            <ListItemText primary="应用" />
           </ListItem>
         </List>}
       </Drawer>

@@ -65,33 +65,32 @@ class CreateGatewayProfile extends Component {
           open={this.state.nsDialog}
           onClose={this.closeDialog}
         >
-          <DialogTitle>Add a network-server?</DialogTitle>
+          <DialogTitle>添加网络服务器？</DialogTitle>
           <DialogContent>
             <DialogContentText paragraph>
-              ChirpStack Application Server isn't connected to a ChirpStack Network Server network-server.
-              Did you know that ChirpStack Application Server can connect to multiple ChirpStack Network Server instances, e.g. to support multiple regions?
+              应用服务器没有连接到网络服务器，要知道，一个应用服务器可连接多个网络服务器，例如，支持多区域时，一个应用服务器就可以连接多个网络服务器。
             </DialogContentText>
             <DialogContentText>
-              Would you like to connect to a network-server now?
+              连接到网络服务器？
             </DialogContentText>
           </DialogContent>
           <DialogActions>
-            <Button color="primary" component={Link} to="/network-servers/create" onClick={this.closeDialog}>Add network-server</Button>
-            <Button color="primary" onClick={this.closeDialog}>Dismiss</Button>
+            <Button color="primary" component={Link} to="/network-servers/create" onClick={this.closeDialog}>添加网络服务器</Button>
+            <Button color="primary" onClick={this.closeDialog}>不添加</Button>
           </DialogActions>
         </Dialog>
 
         <TitleBar>
-          <TitleBarTitle title="Gateway-profiles" to="/gateway-profiles" />
+          <TitleBarTitle title="网关简介（Gateway-profiles）" to="/gateway-profiles" />
           <TitleBarTitle title="/" />
-          <TitleBarTitle title="Create" />
+          <TitleBarTitle title="创建" />
         </TitleBar>
 
         <Grid item xs={12}>
           <Card className={this.props.classes.card}>
             <CardContent>
               <GatewayProfileForm
-                submitLabel="Create gateway-profile"
+                submitLabel="创建网关简介（gateway-profile）"
                 onSubmit={this.onSubmit}
               />
             </CardContent>

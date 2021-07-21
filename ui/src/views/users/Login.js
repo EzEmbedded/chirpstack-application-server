@@ -45,7 +45,7 @@ class LoginForm extends FormComponent {
       >
         <TextField
           id="email"
-          label="Username / email"
+          label="用户名 / 电邮"
           margin="normal"
           value={this.state.object.email || ""}
           onChange={this.onChange}
@@ -54,7 +54,7 @@ class LoginForm extends FormComponent {
         />
         <TextField
           id="password"
-          label="Password"
+          label="密码"
           type="password"
           margin="normal"
           value={this.state.object.password || ""}
@@ -132,11 +132,11 @@ class Login extends Component {
         <Grid item xs={6} lg={4}>
           <Card>
             <CardHeader
-              title="ChirpStack Login"
+              title="ChirpStack 登录"
             />
             <CardContent>
               {!this.state.oidcEnabled && <LoginForm
-                submitLabel="Login"
+                submitLabel="登录"
                 onSubmit={this.onSubmit}
               />}
 

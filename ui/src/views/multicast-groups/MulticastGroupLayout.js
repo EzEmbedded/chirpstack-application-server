@@ -98,7 +98,7 @@ class MulticastGroupLayout extends Component {
   }
 
   deleteMulticastGroup() {
-    if (window.confirm("Are you sure you want to delete this multicast-group?")) {
+    if (window.confirm("确定删除此多播组？")) {
       MulticastGroupStore.delete(this.props.match.params.multicastGroupID, resp => {
         this.props.history.push(`/organizations/${this.props.match.params.organizationID}/multicast-groups`);
       });
@@ -116,7 +116,7 @@ class MulticastGroupLayout extends Component {
           buttons={
             <DeviceAdmin organizationID={this.props.match.params.organizationID}>
               <TitleBarButton
-                label="Delete"
+                label="删除"
                 icon={<Delete />}
                 color="secondary"
                 onClick={this.deleteMulticastGroup}
@@ -124,11 +124,11 @@ class MulticastGroupLayout extends Component {
             </DeviceAdmin>
           }
         >
-          <TitleBarTitle title="Applications" to={`/organizations/${this.props.match.params.organizationID}/applications`} />
+          <TitleBarTitle title="应用" to={`/organizations/${this.props.match.params.organizationID}/applications`} />
           <TitleBarTitle title="/" />
           <TitleBarTitle title={this.state.application.application.name} to={`/organizations/${this.props.match.params.organizationID}/applications/${this.props.match.params.applicationID}`} />
           <TitleBarTitle title="/" />
-          <TitleBarTitle title="Multicast groups" to={`/organizations/${this.props.match.params.organizationID}/applications/${this.props.match.params.applicationID}/multicast-groups`} />
+          <TitleBarTitle title="多播组" to={`/organizations/${this.props.match.params.organizationID}/applications/${this.props.match.params.applicationID}/multicast-groups`} />
           <TitleBarTitle title="/" />
           <TitleBarTitle title={this.state.multicastGroup.multicastGroup.name} />
         </TitleBar>
@@ -140,7 +140,7 @@ class MulticastGroupLayout extends Component {
             indicatorColor="primary"
             className={this.props.classes.tabs}
           >
-            <Tab label="Devices" component={Link} to={`/organizations/${this.props.match.params.organizationID}/applications/${this.props.match.params.applicationID}/multicast-groups/${this.props.match.params.multicastGroupID}`} />
+            <Tab label="前端设备" component={Link} to={`/organizations/${this.props.match.params.organizationID}/applications/${this.props.match.params.applicationID}/multicast-groups/${this.props.match.params.multicastGroupID}`} />
             {this.state.admin && <Tab label="Configuration" component={Link} to={`/organizations/${this.props.match.params.organizationID}/applications/${this.props.match.params.applicationID}/multicast-groups/${this.props.match.params.multicastGroupID}/edit`} />}
           </Tabs>
         </Grid>

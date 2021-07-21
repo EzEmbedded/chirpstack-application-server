@@ -46,7 +46,7 @@ class OrganizationUserLayout extends Component {
   }
 
   deleteOrganizationUser() {
-    if (window.confirm("Are you sure you want to remove this organization user (this does not remove the user itself)?")) {
+    if (window.confirm("确定删除本组织的这个用户（不包含此用户本身）？")) {
       OrganizationStore.deleteUser(this.props.match.params.organizationID, this.props.match.params.userID, resp => {
         this.props.history.push(`/organizations/${this.props.match.params.organizationID}/users`);
       });
@@ -64,12 +64,12 @@ class OrganizationUserLayout extends Component {
           buttons={
             <div>
               {this.state.admin && <TitleBarButton
-                label="Goto user" 
+                label="去用户" 
                 icon={<Account />}
                 to={`/users/${this.state.organizationUser.organizationUser.userID}`}
               />}
               <TitleBarButton
-                label="Delete"
+                label="删除"
                 icon={<Delete />}
                 color="secondary"
                 onClick={this.deleteOrganizationUser}
@@ -77,7 +77,7 @@ class OrganizationUserLayout extends Component {
             </div>
           }
         >
-          <TitleBarTitle to={`/organizations/${this.props.match.params.organizationID}/users`} title="Organization users" />
+          <TitleBarTitle to={`/organizations/${this.props.match.params.organizationID}/users`} title="组织用户" />
           <TitleBarTitle title="/" />
           <TitleBarTitle title={this.state.organizationUser.organizationUser.email} />
         </TitleBar>

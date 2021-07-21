@@ -50,13 +50,13 @@ class NetworkServerLayout extends Component {
             <TitleBarButton
               key={1}
               icon={<Delete />}
-              label="Delete"
+              label="删除"
               color="secondary"
               onClick={this.deleteNetworkServer}
             />,
           ]}
         >
-          <TitleBarTitle to="/network-servers" title="Network-servers" />
+          <TitleBarTitle to="/network-servers" title="网络服务器" />
           <TitleBarTitle title="/" />
           <TitleBarTitle title={`${this.state.networkServer.networkServer.name} (${this.state.networkServer.region} @ ${this.state.networkServer.version})`} />
         </TitleBar>

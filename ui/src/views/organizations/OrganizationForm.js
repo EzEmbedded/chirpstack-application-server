@@ -27,8 +27,8 @@ class OrganizationForm extends FormComponent {
       >
         <TextField
           id="name"
-          label="Organization name"
-          helperText="The name may only contain words, numbers and dashes."
+          label="组织名称"
+          helperText="名称由字母、数字和破折号（-）组成"
           margin="normal"
           value={this.state.object.name || ""}
           onChange={this.onChange}
@@ -41,7 +41,7 @@ class OrganizationForm extends FormComponent {
         />
         <TextField
           id="displayName"
-          label="Display name"
+          label="显示名"
           margin="normal"
           value={this.state.object.displayName || ""}
           onChange={this.onChange}
@@ -51,11 +51,11 @@ class OrganizationForm extends FormComponent {
         />
         <Admin>
           <FormControl
-            label="Gateways"
+            label="网关"
           >
             <FormGroup>
               <FormControlLabel
-                label="Organization can have gateways"
+                label="组织可以拥有网关"
                 control={
                   <Checkbox
                     id="canHaveGateways"
@@ -68,11 +68,11 @@ class OrganizationForm extends FormComponent {
                 }
               />
             </FormGroup>
-            <FormHelperText>When checked, it means that organization administrators are able to add their own gateways to the network. Note that the usage of the gateways is not limited to this organization.</FormHelperText>
+            <FormHelperText>选中，表明组织管理员可以添加自己的网关到网络中，并且网关的使用对此组织没有限制。</FormHelperText>
             {!!this.state.object.canHaveGateways && <TextField
               id="maxGatewayCount"
-              label="Max. number of gateways"
-              helperText="The maximum number of gateways that can be added to this organization (0 = unlimited)."
+              label="网关数量的最大值"
+              helperText="此组织可添加网关的最大数量（0=无限制）。"
               margin="normal"
               value={this.state.object.maxGatewayCount || 0}
               onChange={this.onChange}
@@ -87,8 +87,8 @@ class OrganizationForm extends FormComponent {
           >
             <TextField
               id="maxDeviceCount"
-              label="Max. number of devices"
-              helperText="The maximum number of devices that can be added to this organization (0 = unlimited)."
+              label="前端设备的最大数量"
+              helperText="此组织可添加前端设备的最大数量（0=无限制）。"
               margin="normal"
               value={this.state.object.maxDeviceCount || 0}
               onChange={this.onChange}

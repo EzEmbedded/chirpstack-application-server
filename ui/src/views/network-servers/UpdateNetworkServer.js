@@ -29,7 +29,7 @@ class UpdateNetworkServer extends Component {
           <Card>
             <CardContent>
               <NetworkServerForm
-                submitLabel="Update network-server"
+                submitLabel="更新网络服务器"
                 object={this.props.networkServer}
                 onSubmit={this.onSubmit}
               />

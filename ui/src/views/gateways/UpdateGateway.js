@@ -28,7 +28,7 @@ class UpdateGateway extends Component {
           <Card>
             <CardContent>
               <GatewayForm
-                submitLabel="Update gateway"
+                submitLabel="更新网关"
                 object={this.props.gateway}
                 onSubmit={this.onSubmit}
                 update={true}

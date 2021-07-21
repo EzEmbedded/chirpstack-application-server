@@ -25,8 +25,8 @@ class LW11DeviceKeysForm extends FormComponent {
       >
         <AESKeyField
           id="nwkKey"
-          label="Network key (LoRaWAN 1.1)"
-          helperText="For LoRaWAN 1.1 devices. In case your device does not support LoRaWAN 1.1, update the device-profile first."
+          label="网络密钥(LoRaWAN 1.1)"
+          helperText="只针对LoRaWAN 1.1 版本的前端设备. 如果你的前端设备不支持LoRaWAN 1.1版，先更新前端设备简介（device-profile）"
           onChange={this.onChange}
           value={object.nwkKey || ""}
           margin="normal"
@@ -36,8 +36,8 @@ class LW11DeviceKeysForm extends FormComponent {
         />
         <AESKeyField
           id="appKey"
-          label="Application key (LoRaWAN 1.1)"
-          helperText="For LoRaWAN 1.1 devices. In case your device does not support LoRaWAN 1.1, update the device-profile first."
+          label="应用密钥 (LoRaWAN 1.1)"
+          helperText="只针对LoRaWAN 1.1 版本的前端设备. 如果你的前端设备不支持LoRaWAN 1.1版，先更新前端设备简介（device-profile）"
           onChange={this.onChange}
           value={object.appKey || ""}
           margin="normal"
@@ -64,8 +64,8 @@ class LW10DeviceKeysForm extends FormComponent {
       >
         <AESKeyField
           id="nwkKey"
-          label="Application key"
-          helperText="For LoRaWAN 1.0 devices. In case your device supports LoRaWAN 1.1, update the device-profile first."
+          label="应用密钥 key"
+          helperText="只针对LoRaWAN 1.0 版本的前端设备. 如果你的前端设备是LoRaWAN 1.1版，先更新前端设备简介（device-profile）"
           onChange={this.onChange}
           value={object.nwkKey || ""}
           margin="normal"
@@ -130,12 +130,12 @@ class DeviceKeys extends Component {
           <Card>
             <CardContent>
               {this.props.deviceProfile.macVersion.startsWith("1.0") && <LW10DeviceKeysForm
-                submitLabel="Set device-keys"
+                submitLabel="设置device-keys"
                 onSubmit={this.onSubmit}
                 object={this.state.deviceKeys.deviceKeys}
               />}
               {this.props.deviceProfile.macVersion.startsWith("1.1") && <LW11DeviceKeysForm
-                submitLabel="Set device-keys"
+                submitLabel="设置device-keys"
                 onSubmit={this.onSubmit}
                 object={this.state.deviceKeys.deviceKeys}
               />}

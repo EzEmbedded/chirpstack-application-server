@@ -47,22 +47,22 @@ class ListServiceProfiles extends Component {
           buttons={
             <Admin>
               <TitleBarButton
-                label="Create"
+                label="创建"
                 icon={<Plus />}
                 to={`/organizations/${this.props.match.params.organizationID}/service-profiles/create`}
               />
             </Admin>
           }
         >
-          <TitleBarTitle title="Service-profiles" />
+          <TitleBarTitle title="服务简介（Service-profiles）" />
         </TitleBar>
         <Grid item xs={12}>
           <DataTable
             header={
               <TableRow>
-                <TableCell>Name</TableCell>
+                <TableCell>名称</TableCell>
                 <TableCell>ID</TableCell>
-                <TableCell>Network Server</TableCell>
+                <TableCell>网络服务器</TableCell>
               </TableRow>
             }
             getPage={this.getPage}

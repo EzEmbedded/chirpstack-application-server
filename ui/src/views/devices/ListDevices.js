@@ -194,26 +194,26 @@ class ListDevices extends Component {
     return(
       <Grid container spacing={4}>
         <Dialog open={this.state.multicastDialogOpen} onClose={this.onMulticastDialogClose}>
-          <DialogTitle>Add devices to multicast-group</DialogTitle>
+          <DialogTitle>在多播组中添加前端设备</DialogTitle>
           <DialogContent>
-            <DialogContentText>Select the multicast-group to which the devices must be added:</DialogContentText>
+            <DialogContentText>选择前端设备需要加入的多播组：</DialogContentText>
             <Select fullWidth value={this.state.selectedMulticastGroup} onChange={this.onMulticastGroupSelectChange}>
               {multicastGroupOptions}
             </Select>
           </DialogContent>
           <DialogActions>
-            <Button color="primary" onClick={this.closeMulticastDialog}>Cancel</Button>
-            <Button color="primary" onClick={this.addSelectedDevicesToMulticastGroup}>Add</Button>
+            <Button color="primary" onClick={this.closeMulticastDialog}>取消</Button>
+            <Button color="primary" onClick={this.addSelectedDevicesToMulticastGroup}>添加</Button>
           </DialogActions>
         </Dialog>
         <DeviceAdmin organizationID={this.props.match.params.organizationID}>
           <Grid item xs={12} className={this.props.classes.buttons}>
             <Button variant="outlined" className={this.props.classes.button} component={Link} to={`/organizations/${this.props.match.params.organizationID}/applications/${this.props.match.params.applicationID}/devices/create`}>
               <Plus className={this.props.classes.icon} />
-              Create
+              创建
             </Button>
             <Button variant="outlined" disabled={Object.keys(this.state.selected).length=== 0} className={this.props.classes.button} onClick={this.onSelectedMenuOpen}>
-              Selected devices
+              选中的前端设备
             </Button>
             <Menu
               id="selected-menu"
@@ -222,7 +222,7 @@ class ListDevices extends Component {
               open={!!this.state.selectedMenuAnchor}
               onClose={this.onSelectedMenuClose}
             >
-              <MenuItem onClick={this.openMulticastDialog}>Add to multicast group</MenuItem>
+              <MenuItem onClick={this.openMulticastDialog}>添加到多播组</MenuItem>
             </Menu>
           </Grid>
         </DeviceAdmin>
@@ -231,12 +231,12 @@ class ListDevices extends Component {
             header={
               <TableRow>
                 <TableCell></TableCell>
-                <TableCell>Last seen</TableCell>
-                <TableCell>Device name</TableCell>
-                <TableCell>Device EUI</TableCell>
-                <TableCell>Device profile</TableCell>
-                <TableCell>Link margin</TableCell>
-                <TableCell>Battery</TableCell>
+                <TableCell>最后一次看到时间</TableCell>
+                <TableCell>前端设备名称</TableCell>
+                <TableCell>前端设备 EUI</TableCell>
+                <TableCell>前端设备简介（Device profile）</TableCell>
+                <TableCell>链路裕量（Link margin）</TableCell>
+                <TableCell>电池电压</TableCell>
               </TableRow>
             }
 

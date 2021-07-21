@@ -29,24 +29,24 @@ class DetailsCard extends Component {
   render() {
     return(
       <Card>
-        <CardHeader title="Gateway details" />
+        <CardHeader title="网关详细资料" />
         <CardContent>
           <Table>
             <TableBody>
               <TableRow>
-                <TableCell>Gateway ID</TableCell>
+                <TableCell>网关 ID</TableCell>
                 <TableCell>{this.props.gateway.id}</TableCell>
               </TableRow>
               <TableRow>
-                <TableCell>Altitude</TableCell>
+                <TableCell>海拔</TableCell>
                 <TableCell>{this.props.gateway.location.altitude} meters</TableCell>
               </TableRow>
               <TableRow>
-                <TableCell>GPS coordinates</TableCell>
+                <TableCell>GPS 坐标</TableCell>
                 <TableCell>{this.props.gateway.location.latitude}, {this.props.gateway.location.longitude}</TableCell>
               </TableRow>
               <TableRow>
-                <TableCell>Last seen at</TableCell>
+                <TableCell>最后一次收到数据在</TableCell>
                 <TableCell>{this.props.lastSeenAt}</TableCell>
               </TableRow>
             </TableBody>
@@ -77,7 +77,7 @@ class GatewayDetails extends Component {
         labels: [],
         datasets: [
           {
-            label: "rx received",
+            label: "接收到的数据包",
             borderColor: "rgba(33, 150, 243, 1)",
             backgroundColor: "rgba(0, 0, 0, 0)",
             lineTension: 0,
@@ -91,7 +91,7 @@ class GatewayDetails extends Component {
         labels: [],
         datasets: [
           {
-            label: "tx emitted",
+            label: "发送出的数据包",
             borderColor: "rgba(33, 150, 243, 1)",
             backgroundColor: "rgba(0, 0, 0, 0)",
             lineTension: 0,
@@ -165,7 +165,7 @@ class GatewayDetails extends Component {
         </Grid>
         <Grid item xs={12}>
           <Card>
-            <CardHeader title="Frames received" />
+            <CardHeader title="接收到的数据帧" />
             <CardContent className={this.props.classes.chart}>
               <Line height={75} options={statsOptions} data={this.state.statsDown} redraw />
             </CardContent>
@@ -173,7 +173,7 @@ class GatewayDetails extends Component {
         </Grid>
         <Grid item xs={12}>
           <Card>
-            <CardHeader title="Frames transmitted" />
+            <CardHeader title="发送完的数据帧" />
             <CardContent className={this.props.classes.chart}>
               <Line height={75} options={statsOptions} data={this.state.statsUp} redraw />
             </CardContent>

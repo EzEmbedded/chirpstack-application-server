@@ -124,7 +124,7 @@ class GatewayLayout extends Component {
             <GatewayAdmin organizationID={this.props.match.params.organizationID}>
               <TitleBarButton
                 key={1}
-                label="Delete"
+                label="删除"
                 icon={<Delete />}
                 color="secondary"
                 onClick={this.deleteGateway}
@@ -132,7 +132,7 @@ class GatewayLayout extends Component {
             </GatewayAdmin>
           }
         >
-          <TitleBarTitle to={`/organizations/${this.props.match.params.organizationID}/gateways`} title="Gateways" />
+          <TitleBarTitle to={`/organizations/${this.props.match.params.organizationID}/gateways`} title="网关" />
           <TitleBarTitle title="/" />
           <TitleBarTitle title={this.state.gateway.gateway.name} />
         </TitleBar>
@@ -144,12 +144,12 @@ class GatewayLayout extends Component {
             indicatorColor="primary"
             className={this.props.classes.tabs}
           >
-            <Tab label="Gateway details" component={Link} to={`/organizations/${this.props.match.params.organizationID}/gateways/${this.props.match.params.gatewayID}`} />
-            {this.state.admin && <Tab label="Gateway configuration" component={Link} to={`/organizations/${this.props.match.params.organizationID}/gateways/${this.props.match.params.gatewayID}/edit`} />}
-            {this.state.admin && <Tab label="Certificate" component={Link} to={`/organizations/${this.props.match.params.organizationID}/gateways/${this.props.match.params.gatewayID}/certificate`} />}
-            <Tab label="Gateway discovery" disabled={!this.state.gateway.gateway.discoveryEnabled} component={Link} to={`/organizations/${this.props.match.params.organizationID}/gateways/${this.props.match.params.gatewayID}/discovery`} />
+            <Tab label="网关详细资料" component={Link} to={`/organizations/${this.props.match.params.organizationID}/gateways/${this.props.match.params.gatewayID}`} />
+            {this.state.admin && <Tab label="网关配置" component={Link} to={`/organizations/${this.props.match.params.organizationID}/gateways/${this.props.match.params.gatewayID}/edit`} />}
+            {this.state.admin && <Tab label="证书" component={Link} to={`/organizations/${this.props.match.params.organizationID}/gateways/${this.props.match.params.gatewayID}/certificate`} />}
+            <Tab label="网关探查" disabled={!this.state.gateway.gateway.discoveryEnabled} component={Link} to={`/organizations/${this.props.match.params.organizationID}/gateways/${this.props.match.params.gatewayID}/discovery`} />
             <Tab
-              label="Live LoRaWAN frames"
+              label="实时 LoRaWAN 帧"
               component={Link}
               to={`/organizations/${this.props.match.params.organizationID}/gateways/${this.props.match.params.gatewayID}/frames`}
             />

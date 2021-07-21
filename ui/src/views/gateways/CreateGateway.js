@@ -70,32 +70,32 @@ class CreateGateway extends Component {
           open={this.state.spDialog}
           onClose={this.closeDialog}
         >
-          <DialogTitle>Add a service-profile?</DialogTitle>
+          <DialogTitle>添加服务简介（service-profile）？</DialogTitle>
           <DialogContent>
             <DialogContentText paragraph>
-              The selected organization does not have a service-profile yet.
-              A service-profile connects an organization to a network-server and defines the features that an organization can use on this network-server.
+              选中的组织还没有任何一个服务简介（service-profile）。
+              一个服务简介（service-profile）：是用来连接组织和网络服务器，并定义组织可以使用的网络服务器功能。
             </DialogContentText>
             <DialogContentText>
-              Would you like to create a service-profile?
+              确定要创建一个网络简介（service-profile）？
             </DialogContentText>
           </DialogContent>
           <DialogActions>
             <Button color="primary" component={Link} to={`/organizations/${this.props.match.params.organizationID}/service-profiles/create`} onClick={this.closeDialog}>Create service-profile</Button>
-            <Button color="primary" onClick={this.closeDialog}>Dismiss</Button>
+            <Button color="primary" onClick={this.closeDialog}>关闭</Button>
           </DialogActions>
         </Dialog>
         <TitleBar>
-          <TitleBarTitle title="Gateways" to={`/organizations/${this.props.match.params.organizationID}/gateways`} />
+          <TitleBarTitle title="网关" to={`/organizations/${this.props.match.params.organizationID}/gateways`} />
           <TitleBarTitle title="/" />
-          <TitleBarTitle title="Create" />
+          <TitleBarTitle title="创建" />
         </TitleBar>
         <Grid item xs={12}>
           <Card className={this.props.classes.card}>
             <CardContent>
               <GatewayForm
                 match={this.props.match}
-                submitLabel="Create gateway"
+                submitLabel="创建网关"
                 onSubmit={this.onSubmit}
                 object={{location: {}}}
               />

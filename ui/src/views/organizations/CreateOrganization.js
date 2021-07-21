@@ -28,15 +28,15 @@ class CreateOrganization extends Component {
     return(
       <Grid container spacing={4}>
         <TitleBar>
-          <TitleBarTitle title="Organizations" to="/organizations" />
+          <TitleBarTitle title="组织" to="/organizations" />
           <TitleBarTitle title="/" />
-          <TitleBarTitle title="Create" />
+          <TitleBarTitle title="创建" />
         </TitleBar>
         <Grid item xs={12}>
           <Card>
             <CardContent>
               <OrganizationForm
-                submitLabel="Create organization"
+                submitLabel="创建组织"
                 onSubmit={this.onSubmit}
               />
             </CardContent>

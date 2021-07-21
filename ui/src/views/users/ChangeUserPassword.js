@@ -26,7 +26,7 @@ class PasswordForm  extends FormComponent {
       >
         <TextField
           id="password"
-          label="Password"
+          label="密码"
           type="password"
           margin="normal"
           value={this.state.object.password || ""}
@@ -70,18 +70,18 @@ class ChangeUserPassword extends Component {
     return(
       <Grid container spacing={4}>
         <TitleBar>
-          <TitleBarTitle title="Users" />
+          <TitleBarTitle title="用户" />
           <TitleBarTitle title="/" />
           <TitleBarTitle title={this.state.user.user.email} />
           <TitleBarTitle title="/" />
-          <TitleBarTitle title="Change password" />
+          <TitleBarTitle title="修改密码" />
         </TitleBar>
 
         <Grid item xs={12}>
           <Card>
             <CardContent>
               <PasswordForm
-                submitLabel="Update password"
+                submitLabel="更新密码"
                 onSubmit={this.onSubmit}
               />
             </CardContent>

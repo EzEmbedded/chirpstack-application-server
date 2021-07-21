@@ -50,21 +50,21 @@ class ListOrganizations extends Component {
           buttons={[
             <TitleBarButton
               key={1}
-              label="Create"
+              label="创建"
               icon={<Plus />}
               to={`/organizations/create`}
             />,
           ]}
         >
-          <TitleBarTitle title="Organizations" />
+          <TitleBarTitle title="组织" />
         </TitleBar>
         <Grid item xs={12}>
           <DataTable
             header={
               <TableRow>
-                <TableCell>Name</TableCell>
-                <TableCell>Display name</TableCell>
-                <TableCell>Can have gateways</TableCell>
+                <TableCell>组织名</TableCell>
+                <TableCell>显示名</TableCell>
+                <TableCell>有网关？</TableCell>
               </TableRow>
             }
             getPage={this.getPage}

@@ -139,7 +139,7 @@ class ApplicationLayout extends Component {
           buttons={
             <Admin organizationID={this.props.match.params.organizationID}>
               <TitleBarButton
-                label="Delete"
+                label="删除"
                 icon={<Delete />}
                 color="secondary"
                 onClick={this.deleteApplication}
@@ -159,10 +159,10 @@ class ApplicationLayout extends Component {
             indicatorColor="primary"
             className={this.props.classes.tabs}
           >
-            <Tab label="Devices" component={Link} to={`/organizations/${this.props.match.params.organizationID}/applications/${this.props.match.params.applicationID}`} />
-            <Tab label="Multicast groups" component={Link} to={`/organizations/${this.props.match.params.organizationID}/applications/${this.props.match.params.applicationID}/multicast-groups`} />
-            {this.state.admin && <Tab label="Application configuration" component={Link} to={`/organizations/${this.props.match.params.organizationID}/applications/${this.props.match.params.applicationID}/edit`} />}
-            {this.state.admin && <Tab label="Integrations" component={Link} to={`/organizations/${this.props.match.params.organizationID}/applications/${this.props.match.params.applicationID}/integrations`} />}
+            <Tab label="前端设备" component={Link} to={`/organizations/${this.props.match.params.organizationID}/applications/${this.props.match.params.applicationID}`} />
+            <Tab label="多播组" component={Link} to={`/organizations/${this.props.match.params.organizationID}/applications/${this.props.match.params.applicationID}/multicast-groups`} />
+            {this.state.admin && <Tab label="应用配置" component={Link} to={`/organizations/${this.props.match.params.organizationID}/applications/${this.props.match.params.applicationID}/edit`} />}
+            {this.state.admin && <Tab label="集成" component={Link} to={`/organizations/${this.props.match.params.organizationID}/applications/${this.props.match.params.applicationID}/integrations`} />}
           </Tabs>
         </Grid>
 

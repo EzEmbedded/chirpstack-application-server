@@ -28,16 +28,16 @@ class CreateOrganizationUser extends Component {
     return(
       <Grid container spacing={4}>
         <TitleBar>
-          <TitleBarTitle title="Organization users" to={`/organizations/${this.props.match.params.organizationID}/users`} />
+          <TitleBarTitle title="组织用户" to={`/organizations/${this.props.match.params.organizationID}/users`} />
           <TitleBarTitle title="/" />
-          <TitleBarTitle title="Add" />
+          <TitleBarTitle title="添加" />
         </TitleBar>
 
         <Grid item xs={12}>
           <Card>
             <CardContent>
               <OrganizationUserForm
-                submitLabel="Add user"
+                submitLabel="添加用户"
                 onSubmit={this.onAssignUser}
                 update={false}
               />

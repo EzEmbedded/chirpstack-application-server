@@ -28,15 +28,15 @@ class CreateNetworkServer extends Component {
     return(
       <Grid container spacing={4}>
         <TitleBar>
-          <TitleBarTitle title="Network-servers" to="/network-servers" />
+          <TitleBarTitle title="网络服务器" to="/network-servers" />
           <TitleBarTitle title="/" />
-          <TitleBarTitle title="Add" />
+          <TitleBarTitle title="添加" />
         </TitleBar>
         <Grid item xs={12}>
           <Card>
             <CardContent>
               <NetworkServerForm
-                submitLabel="Add network-server"
+                submitLabel="添加网络服务器"
                 onSubmit={this.onSubmit}
               />
             </CardContent>

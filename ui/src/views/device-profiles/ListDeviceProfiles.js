@@ -46,21 +46,21 @@ class ListDeviceProfiles extends Component {
           buttons={
             <DeviceAdmin organizationID={this.props.match.params.organizationID}>
               <TitleBarButton
-                label="Create"
+                label="创建"
                 icon={<Plus />}
                 to={`/organizations/${this.props.match.params.organizationID}/device-profiles/create`}
               />
             </DeviceAdmin>
           }
         >
-          <TitleBarTitle title="Device-profiles" />
+          <TitleBarTitle title="前端设备简介（Device-profiles）" />
         </TitleBar>
         <Grid item xs={12}>
           <DataTable
             header={
               <TableRow>
-                <TableCell>Name</TableCell>
-                <TableCell>Network Server</TableCell>
+                <TableCell>名称</TableCell>
+                <TableCell>网络服务器</TableCell>
               </TableRow>
             }
             getPage={this.getPage}

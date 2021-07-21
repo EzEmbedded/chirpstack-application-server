@@ -28,15 +28,15 @@ class CreateUser extends Component {
     return(
       <Grid container spacing={4}>
         <TitleBar>
-          <TitleBarTitle title="Users" to="/Users" />
+          <TitleBarTitle title="用户" to="/Users" />
           <TitleBarTitle title="/" />
-          <TitleBarTitle title="Create" />
+          <TitleBarTitle title="创建" />
         </TitleBar>
         <Grid item xs={12}>
           <Card>
             <CardContent>
               <UserForm
-                submitLabel="Create user"
+                submitLabel="创建用户"
                 onSubmit={this.onSubmit}
               />
             </CardContent>

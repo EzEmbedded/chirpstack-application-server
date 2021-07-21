@@ -40,19 +40,19 @@ class ListNetworkServers extends Component {
             <TitleBarButton
               key={1}
               icon={<Plus />}
-              label="Add"
+              label="添加"
               to={`/network-servers/create`}
             />,
           ]}
         >
-          <TitleBarTitle title="Network-servers" />
+          <TitleBarTitle title="网络服务器" />
         </TitleBar>
         <Grid item xs={12}>
           <DataTable
             header={
               <TableRow>
-                <TableCell>Name</TableCell>
-                <TableCell>Server</TableCell>
+                <TableCell>名称</TableCell>
+                <TableCell>服务器</TableCell>
               </TableRow>
             }
             getPage={this.getPage}

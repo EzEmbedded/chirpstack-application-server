@@ -50,9 +50,9 @@ class ApplicationForm extends FormComponent {
 
   getPayloadCodecOptions(search, callbackFunc) {
     const payloadCodecOptions = [
-      {value: "", label: "None"},
-      {value: "CAYENNE_LPP", label: "Cayenne LPP"},
-      {value: "CUSTOM_JS", label: "Custom JavaScript codec functions"},
+      {value: "", label: "无"},
+      {value: "CAYENNE_LPP", label: "Cayenne LPP卡宴低功耗负载协议编解码"},
+      {value: "CUSTOM_JS", label: "自定义JS编解码功能"},
     ];
 
     callbackFunc(payloadCodecOptions);
@@ -107,17 +107,17 @@ function Decode(fPort, bytes) {
       >
         <TextField
           id="name"
-          label="Application name"
+          label="应用名"
           margin="normal"
           value={this.state.object.name || ""}
           onChange={this.onChange}
-          helperText="The name may only contain words, numbers and dashes."
+          helperText="应用名由单词、数字和破折号组成。"
           fullWidth
           required
         />
         <TextField
           id="description"
-          label="Application description"
+          label="应用描述"
           margin="normal"
           value={this.state.object.description || ""}
           onChange={this.onChange}
@@ -125,17 +125,17 @@ function Decode(fPort, bytes) {
           required
         />
         {!this.props.update && <FormControl fullWidth margin="normal">
-          <FormLabel className={this.props.classes.formLabel} required>Service-profile</FormLabel>
+          <FormLabel className={this.props.classes.formLabel} required>服务简介</FormLabel>
           <AutocompleteSelect
             id="serviceProfileID"
-            label="Select service-profile"
+            label="选择服务简介（server-profile）"
             value={this.state.object.serviceProfileID || ""}
             onChange={this.onChange}
             getOption={this.getServiceProfileOption}
             getOptions={this.getServiceProfileOptions}
           />
           <FormHelperText>
-            The service-profile to which this application will be attached. Note that you can't change this value after the application has been created.
+            与应用关联的服务简介在应用创建后就不能改变！
           </FormHelperText>
         </FormControl>}
         {this.state.object.payloadCodec !== "" && this.state.object.payloadCodec !== undefined && <div>
@@ -143,7 +143,7 @@ function Decode(fPort, bytes) {
             <FormLabel className={this.props.classes.formLabel}>Payload codec</FormLabel>
             <AutocompleteSelect
               id="payloadCodec"
-              label="Select payload codec"
+              label="选择负载编解码器"
               value={this.state.object.payloadCodec || ""}
               onChange={this.onChange}
               getOptions={this.getPayloadCodecOptions}
@@ -181,7 +181,7 @@ function Decode(fPort, bytes) {
         </div>}
         {this.state.object.payloadCodec === "" && <FormControl fullWidth margin="normal">
           <Typography variant="body1">
-            Note: The payload codec fields have moved to the device-profile.
+            注意：负载的编解码器已经移到前端设备简介（device-profile）里。Note: The payload codec fields have moved to the device-profile.
           </Typography>
         </FormControl>}
       </Form>

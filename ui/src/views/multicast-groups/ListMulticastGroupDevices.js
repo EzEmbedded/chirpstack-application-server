@@ -66,7 +66,7 @@ class ListMulticastGroupDevices extends Component {
   }
 
   removeDevices = () => {
-    if (window.confirm("Are you sure you want to remove the selected devices from the multicast-group?")) {
+    if (window.confirm("确定此多播组的选中设备删除？")) {
       let count = 0;
       let self = this;
 
@@ -116,7 +116,7 @@ class ListMulticastGroupDevices extends Component {
           <Grid item xs={12} className={this.props.classes.buttons}>
             <Button variant="outlined" disabled={Object.keys(this.state.selected).length === 0} color="secondary" className={this.props.classes.button} onClick={this.removeDevices}>
               <Delete className={this.props.classes.icon} />
-              Remove from group
+              从多播组中移除
             </Button>
           </Grid>
         </DeviceAdmin>
@@ -125,8 +125,8 @@ class ListMulticastGroupDevices extends Component {
             header={
               <TableRow>
                 <TableCell></TableCell>
-                <TableCell>Device name</TableCell>
-                <TableCell>Device EUI</TableCell>
+                <TableCell>前端设备名</TableCell>
+                <TableCell>前端设备 EUI</TableCell>
               </TableRow>
             }
             getPage={this.getPage}

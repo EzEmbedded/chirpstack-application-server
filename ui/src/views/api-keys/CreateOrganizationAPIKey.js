@@ -14,7 +14,7 @@ class CreateOrganizationAPIKey extends Component {
     return(
       <Grid container spacing={4}>
         <TitleBar>
-          <TitleBarTitle title="Organization API keys" to={`/organizations/${this.props.match.params.organizationID}/api-keys`} />
+          <TitleBarTitle title="组织 API keys" to={`/organizations/${this.props.match.params.organizationID}/api-keys`} />
           <TitleBarTitle title="/" />
           <TitleBarTitle title="Create" />
         </TitleBar>
@@ -23,7 +23,7 @@ class CreateOrganizationAPIKey extends Component {
           <Card>
             <CardContent>
               <APIKeyForm
-                submitLabel="Create API key"
+                submitLabel="创建 API key"
                 onSubmit={this.onSubmit}
                 organizationID={this.props.match.params.organizationID}
               />

@@ -167,14 +167,14 @@ class DeviceFrames extends Component {
           aria-labelledby="help-dialog-title"
           aria-describedby="help-dialog-description"
         >
-          <DialogTitle id="help-dialog-title">Help</DialogTitle>
+          <DialogTitle id="help-dialog-title">帮助</DialogTitle>
           <DialogContent>
             <DialogContentText id="help-dialog-description">
-              The frames below are the raw (and encrypted) LoRaWAN PHYPayload frames as seen by the gateway(s). This data is intedend for debugging only.
+              以下这些帧是原始加密帧，是网关可见的LoRaWAN协议PHYPayload帧，仅用于调试。
             </DialogContentText>
           </DialogContent>
           <DialogActions>
-            <Button onClick={this.toggleHelpDialog} color="primary">Close</Button>
+            <Button onClick={this.toggleHelpDialog} color="primary">关闭</Button>
           </DialogActions>
         </Dialog>
 
@@ -204,7 +204,7 @@ class DeviceFrames extends Component {
           {!this.state.connected && <div className={this.props.classes.center}>
             <Chip
               color="secondary"
-              label="Not connected to Websocket API"
+              label="没有连接到 Websocket API"
               avatar={<Avatar><AlertCircleOutline /></Avatar>}
             />
           </div>}

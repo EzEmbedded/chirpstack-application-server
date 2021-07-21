@@ -79,7 +79,7 @@ class ExtraChannel extends Component {
       <FormControl
         label={
           <span>
-            Extra channel {this.props.i + 1} (<a href="#delete" onClick={this.onDelete} className={this.props.classes.a}>delete</a>)
+            附加通道 {this.props.i + 1} (<a href="#delete" onClick={this.onDelete} className={this.props.classes.a}>删除</a>)
           </span>
         }
       >
@@ -91,7 +91,7 @@ class ExtraChannel extends Component {
                 value={this.props.channel.modulation || ""}
                 onChange={this.onChange}
                 inputProps={{
-                  name: "modulation",
+                  name: "调制模式",
                 }}
               >
                 <MenuItem value="LORA">LoRa</MenuItem>
@@ -106,7 +106,7 @@ class ExtraChannel extends Component {
                 value={this.props.channel.bandwidth || ""}
                 onChange={this.onChange}
                 inputProps={{
-                  name: "bandwidth",
+                  name: "带宽",
                 }}
               >
                 <MenuItem value={125}>125 kHz</MenuItem>
@@ -118,7 +118,7 @@ class ExtraChannel extends Component {
           <Grid item xs={6}>
             <TextField
               id="frequency"
-              label="Frequency (Hz)"
+              label="频率 (Hz)"
               type="number"
               margin="normal"
               value={this.props.channel.frequency || ""}
@@ -130,12 +130,12 @@ class ExtraChannel extends Component {
           {this.props.channel.modulation === "LORA" && <Grid item xs={6}>
             <TextField
               id="spreadingFactorsStr"
-              label="Spreading-factors"
+              label="扩频因子"
               margin="normal"
               value={spreadingFactorsStr}
               onChange={this.onChange}
               placeholder="7, 8, 9, 10, 11, 12"
-              helperText="When defining multiple spreading-factors, the channel will be configured as a multi-SF channel on the gateway."
+              helperText="如果需要配置为多扩频因子，相关网关就需要配置成multi-SF。"
               inputProps={{
                 pattern: "[0-9]+(,[\\s]*[0-9]+)*",
               }}
@@ -146,7 +146,7 @@ class ExtraChannel extends Component {
           {this.props.channel.modulation === "FSK" && <Grid item xs={6}>
             <TextField
               id="bitrate"
-              label="Bitrate"
+              label="波特率"
               type="number"
               margin="normal"
               value={this.props.channel.bitrate || ""}
@@ -273,32 +273,33 @@ class GatewayProfileForm extends FormComponent {
       <Form
         submitLabel={this.props.submitLabel}
         onSubmit={this.onSubmit}
-        extraButtons={<Button onClick={this.addExtraChannel}>Add extra channel</Button>}
+        extraButtons={<Button onClick={this.addExtraChannel}>添加附加通道</Button>}
       >
         <TextField
           id="name"
-          label="Name"
+          label="名称"
           margin="normal"
           value={this.state.object.name || ""}
           onChange={this.onChange}
-          helperText="A short name identifying the gateway-profile."
+          helperText="网关简介（gateway-profile）的简短名"
           required
           fullWidth
         />
         <DurationField
           id="statsInterval"
-          label="Stats interval (seconds)"
-          helperText="The stats interval in which the gateway reports its statistics. The recommended value is 30 seconds."
+          label="状态周期 (秒)"
+          helperText="
+          状态周期是网关报告统计数据的周期，建议值为30秒。"
           value={this.state.object.statsInterval}
           onChange={this.onChange}
         />
         <TextField
           id="channelsStr"
-          label="Enabled channels"
+          label="使能通道"
           margin="normal"
           value={this.state.object.channelsStr || ""}
           onChange={this.onChange}
-          helperText="The channels active in this gateway-profile as specified in the LoRaWAN Regional Parameters specification. Separate channels by comma, e.g. 0, 1, 2. Extra channels must not be included in this list."
+          helperText="在网关简介（gateway-profile）里激活的指定通道，这些通道在LoRaWAN 协议里的区域参数里有定义，多个通道可采用逗号隔开写法，例如： 0, 1, 2。附加通道也要写入这个列表里。"
           placeholder="0, 1, 2"
           inputProps={{
             pattern: "[0-9]+(,[\\s]*[0-9]+)*",
@@ -307,10 +308,10 @@ class GatewayProfileForm extends FormComponent {
           fullWidth
         />
         {!this.props.update && <FormControlOrig margin="normal" fullWidth>
-          <FormLabel className={this.props.classes.formLabel} required>Network-server</FormLabel>
+          <FormLabel className={this.props.classes.formLabel} required>网络服务器</FormLabel>
           <AutocompleteSelect
             id="networkServerID"
-            label="Select network-server"
+            label="选择网络服务器r"
             value={this.state.object.networkServerID || ""}
             onChange={this.onChange}
             getOption={this.getNetworkServerOption}

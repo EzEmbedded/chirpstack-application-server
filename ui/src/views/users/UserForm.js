@@ -23,7 +23,7 @@ class UserForm extends FormComponent {
       >
         <TextField
           id="email"
-          label="E-mail address"
+          label="电邮地址"
           margin="normal"
           type="email"
           value={this.state.object.email || ""}
@@ -33,8 +33,8 @@ class UserForm extends FormComponent {
         />
         <TextField
           id="note"
-          label="Optional note"
-          helperText="Optional note, e.g. a phone number, address, comment..."
+          label="可选注释"
+          helperText="可选注释, 例如：电话号码、地址、评论等"
           margin="normal"
           value={this.state.object.note || ""}
           onChange={this.onChange}
@@ -44,7 +44,7 @@ class UserForm extends FormComponent {
         />
         {this.state.object.id === undefined && <TextField
           id="password"
-          label="Password"
+          label="密码"
           type="password"
           margin="normal"
           value={this.state.object.password || ""}
@@ -52,10 +52,10 @@ class UserForm extends FormComponent {
           required
           fullWidth
         />}
-        <FormControl label="Permissions">
+        <FormControl label="许可">
           <FormGroup>
             <FormControlLabel
-              label="Is active"
+              label="活动状态？"
               control={
                 <Checkbox
                   id="isActive"
@@ -66,7 +66,7 @@ class UserForm extends FormComponent {
               }
             />
             <FormControlLabel
-              label="Is global admin"
+              label="全局管理员？"
               control={
                 <Checkbox
                   id="isAdmin"

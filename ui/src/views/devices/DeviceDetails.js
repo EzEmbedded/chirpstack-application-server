@@ -43,24 +43,24 @@ class DetailsCard extends Component {
 
     return(
       <Card>
-        <CardHeader title="Details" />
+        <CardHeader title="详细资料" />
         <CardContent>
           <Table>
             <TableBody>
               <TableRow>
-                <TableCell>Name</TableCell>
+                <TableCell>名称</TableCell>
                 <TableCell>{this.props.device.device.name}</TableCell>
               </TableRow>
               <TableRow>
-                <TableCell>Description</TableCell>
+                <TableCell>描述</TableCell>
                 <TableCell>{this.props.device.device.description}</TableCell>
               </TableRow>
               <TableRow>
-                <TableCell>Device-profile</TableCell>
+                <TableCell>前端设备简介（Device-profile）</TableCell>
                 <TableCellLink to={`/organizations/${this.props.match.params.organizationID}/device-profiles/${this.props.deviceProfile.deviceProfile.id}`}>{this.props.deviceProfile.deviceProfile.name}</TableCellLink>
               </TableRow>
               <TableRow>
-                <TableCell>Multicast groups</TableCell>
+                <TableCell>多播组</TableCell>
                 <TableCell>{multicastGroups}</TableCell>
               </TableRow>
             </TableBody>
@@ -89,16 +89,16 @@ class StatusCard extends Component {
 
     return(
       <Card>
-        <CardHeader title="Status" />
+        <CardHeader title="状态" />
         <CardContent>
           <Table>
             <TableBody>
               <TableRow>
-                <TableCell>Last seen at</TableCell>
+                <TableCell>最后一次看到时间</TableCell>
                 <TableCell>{lastSeenAt}</TableCell>
               </TableRow>
               <TableRow>
-                <TableCell>State</TableCell>
+                <TableCell>状态</TableCell>
                 <TableCell>{state}</TableCell>
               </TableRow>
             </TableBody>
@@ -132,10 +132,10 @@ class EnqueueCard extends Component {
   render() {
     return(
       <Card>
-        <CardHeader title="Enqueue downlink payload" />
+        <CardHeader title="负载队列payload" />
         <CardContent>
           <DeviceQueueItemForm
-            submitLabel="Enqueue payload"
+            submitLabel="负载队列Enqueue payload"
             onSubmit={this.onSubmit}
             object={this.state.object}
           />
@@ -150,9 +150,9 @@ EnqueueCard = withRouter(EnqueueCard);
 
 class QueueCardRow extends Component {
   render() {
-    let confirmed = "no";
+    let confirmed = "否";
     if (this.props.item.confirmed) {
-      confirmed = "yes";
+      confirmed = "是";
     }
 
     return(
@@ -195,7 +195,7 @@ class QueueCard extends Component {
   }
 
   flushQueue = () => {
-    if (window.confirm("Are you sure you want to flush the device queue?")) {
+    if (window.confirm("确实要冲洗前端设备数据缓存队列？")) {
       DeviceQueueStore.flush(this.props.match.params.devEUI, resp => {
         this.getQueue();
       });
@@ -207,7 +207,7 @@ class QueueCard extends Component {
 
     return(
       <Card>
-        <CardHeader title="Downlink queue" action={
+        <CardHeader title="下行队列" action={
           <div>
             <Button onClick={this.getQueue}><Refresh /></Button>
             <Button onClick={this.flushQueue} color="secondary"><Delete /></Button>
@@ -217,10 +217,10 @@ class QueueCard extends Component {
           <Table>
             <TableHead>
               <TableRow>
-                <TableCell>FCnt</TableCell>
-                <TableCell>FPort</TableCell>
-                <TableCell>Confirmed</TableCell>
-                <TableCell>Base64 encoded payload</TableCell>
+                <TableCell>帧计数器FCnt</TableCell>
+                <TableCell>帧端口FPort</TableCell>
+                <TableCell>验证Confirmed</TableCell>
+                <TableCell>Base64 编码负载</TableCell>
               </TableRow>
             </TableHead>
             <TableBody>

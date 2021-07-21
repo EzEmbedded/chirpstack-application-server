@@ -79,22 +79,22 @@ class GatewayDiscovery extends Component {
         <Card>
           <CardContent>
             <Typography variant="body1">
-              No gateway discovery data is available (yet). This could mean:
+              到目前为止，还没有网关探查数据可见，这有如下可能：
             </Typography>
             <List>
               <ListItem dense>
                 <Typography variant="body1">
-                  no discovery 'ping' was emitted yet
+                  网关探查'ping'包还没有发出
                 </Typography>
               </ListItem>
               <ListItem dense>
                 <Typography variant="body1">
-                  the gateway ping feature has been disabled in ChirpStack Application Server
+                  在应用服务器内禁用了网关探查'ping'功能
                 </Typography>
               </ListItem>
               <ListItem dense>
                 <Typography variant="body1">
-                  the discovery 'ping' was not received by any other gateways
+                  任何网关都没有接收到网关探查'ping'包
                 </Typography>
               </ListItem>
             </List>
@@ -141,7 +141,7 @@ class GatewayDiscovery extends Component {
               {rx.gatewayID}<br/>
               RSSI: {rx.rssi} dBm<br />
               SNR: {rx.LoRaSNR} dB<br />
-              Altitude: {rx.altitude} meter(s)
+              Altitude: {rx.altitude} 米(s)
             </span>
           </Popup>
         </Marker>

@@ -62,26 +62,22 @@ class ListGatewayProfiles extends Component {
           aria-labelledby="help-dialog-title"
           aria-describedby="help-dialog-description"
         >
-          <DialogTitle id="help-dialog-title">Gateway Profile help</DialogTitle>
+          <DialogTitle id="help-dialog-title">网关简介（Gateway Profile） 帮助</DialogTitle>
           <DialogContent>
-            <DialogContentText id="help-dialog-description">
-              The only purpose of a Gateway Profile is to (re)configure one or multiple gateways with the
-              configuration properties that are set by the Gateway Profile.<br /><br />
+            <DialogContentText id="帮助对话框描述">
+              网关简介（Gateway Profile）的唯一目的是采用网关简介（Gateway Profile）来配置（重配置）一个或多个网关。<br /><br />
 
-              When the ChirpStack Network Server detects that the configuration of a gateway is out-of-sync
-              with its Gateway Profile, it will push a configuration command to the gateway in order to
-              update its configuration.<br /><br />
+              当网络服务器通过网关简介（Gateway Profile）检测到网关配置失去一致性，它将发送更新命令来配置网关。
+             <br /><br />
 
-              Please note that this feature is optional and only works in combination with the
-              ChirpStack Concentratord component.<br /><br />
+              注意1，这个功能是可选项，并且只能用在有lorawan集线器模块的系统中。
+              <br /><br />
 
-              Also note that the Gateway Profile does not change the way how devices are behaving.
-              To configure the channel-plan that must be used by devices, update the
-              ChirpStack Network Server configuration.
+              注意2，网关简介(Gateway Profile)并不改变前端设备的行为方式，配置前端设备的通道的使用计划是通过更新网络服务器的配置实现的。
             </DialogContentText>
           </DialogContent>
           <DialogActions>
-            <Button onClick={this.toggleHelpDialog} color="primary">Close</Button>
+            <Button onClick={this.toggleHelpDialog} color="primary">关闭</Button>
           </DialogActions>
         </Dialog>
 
@@ -89,26 +85,26 @@ class ListGatewayProfiles extends Component {
           buttons={[
             <TitleBarButton
               key={1}
-              label="Create"
+              label="创建"
               icon={<Plus />}
               to={`/gateway-profiles/create`}
             />,
             <TitleBarButton
               key={2}
-              label="Help"
+              label="帮助"
               icon={<HelpCircleOutline />}
               onClick={this.toggleHelpDialog}
             />
           ]}
         >
-          <TitleBarTitle title="Gateway-profiles" />
+          <TitleBarTitle title="网关简介（Gateway Profile）" />
         </TitleBar>
         <Grid item xs={12}>
           <DataTable
             header={
               <TableRow>
-                <TableCell>Name</TableCell>
-                <TableCell>Network-server</TableCell>
+                <TableCell>名称</TableCell>
+                <TableCell>网络服务器</TableCell>
               </TableRow>
             }
             getPage={this.getPage}

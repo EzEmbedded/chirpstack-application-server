@@ -45,7 +45,7 @@ class DeviceProfileLayout extends Component {
   }
 
   deleteDeviceProfile() {
-    if (window.confirm("Are you sure you want to delete this device-profile?")) {
+    if (window.confirm("确定要删除此前端设备简介（device-profile）？")) {
       DeviceProfileStore.delete(this.props.match.params.deviceProfileID, resp => {
         this.props.history.push(`/organizations/${this.props.match.params.organizationID}/device-profiles`);
       });
@@ -61,7 +61,7 @@ class DeviceProfileLayout extends Component {
     if (this.state.admin) {
       buttons = [
           <TitleBarButton
-            label="Delete"
+            label="删除"
             icon={<Delete />}
             color="secondary"
             onClick={this.deleteDeviceProfile}

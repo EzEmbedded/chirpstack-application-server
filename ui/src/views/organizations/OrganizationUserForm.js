@@ -33,13 +33,11 @@ class OrganizationUserForm extends FormComponent {
             disabled={this.props.update}
           />
           <Typography variant="body1">
-            An user without additional permissions will be able to see all
-            resources under this organization and will be able to send and
-            receive device payloads.
+            在组织中，没有授权的用户可以看到组织内的资源和收发组织内前端设备数据。
           </Typography>
           <FormControl fullWidth margin="normal">
             <FormControlLabel
-              label="User is organization admin"
+              label="组织管理员用户"
               control={
                 <Checkbox
                   id="isAdmin"
@@ -49,11 +47,11 @@ class OrganizationUserForm extends FormComponent {
                 />
               }
             />
-            <FormHelperText>An organization admin user is able to add and modify resources part of the organization.</FormHelperText>
+            <FormHelperText>组织管理员可以添加和修改组织下属的资源.</FormHelperText>
           </FormControl>
           {!!!this.state.object.isAdmin && <FormControl fullWidth margin="normal">
             <FormControlLabel
-              label="User is device admin"
+              label="前端设备管理员用户"
               control={
                 <Checkbox
                   id="isDeviceAdmin"
@@ -63,11 +61,11 @@ class OrganizationUserForm extends FormComponent {
                 />
               }
             />
-            <FormHelperText>A device admin user is able to add and modify resources part of the organization that are related to devices.</FormHelperText>
+            <FormHelperText>设备管理员可以添加和修改此组织下的前端设备资源。</FormHelperText>
           </FormControl>}
           {!!!this.state.object.isAdmin && <FormControl fullWidth margin="normal">
             <FormControlLabel
-              label="User is gateway admin"
+              label="网关管理员用户"
               control={
                 <Checkbox
                   id="isGatewayAdmin"
@@ -77,7 +75,7 @@ class OrganizationUserForm extends FormComponent {
                 />
               }
             />
-            <FormHelperText>A gateway admin user is able to add and modify gateways part of the organization.</FormHelperText>
+            <FormHelperText>网关管理员可以添加或修改组织下的网关。</FormHelperText>
           </FormControl>}
       </Form>
     );

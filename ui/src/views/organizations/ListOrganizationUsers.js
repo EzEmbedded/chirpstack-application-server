@@ -71,22 +71,22 @@ class ListOrganizationUsers extends Component {
           buttons={[
             <TitleBarButton
               key={1}
-              label="Add"
+              label="添加"
               icon={<Plus />}
               to={`/organizations/${this.props.match.params.organizationID}/users/create`}
             />,
           ]}
         >
-          <TitleBarTitle title="Organization users" />
+          <TitleBarTitle title="组织用户" />
         </TitleBar>
         <Grid item xs={12}>
           <DataTable
             header={
               <TableRow>
                 <TableCell>Email</TableCell>
-                <TableCell>Organization admin</TableCell>
-                <TableCell>Gateway admin</TableCell>
-                <TableCell>Device admin</TableCell>
+                <TableCell>组织管理员</TableCell>
+                <TableCell>网关管理员</TableCell>
+                <TableCell>设备管理员</TableCell>
               </TableRow>
             }
             getPage={this.getPage}
