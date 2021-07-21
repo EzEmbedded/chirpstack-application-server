@@ -6,11 +6,11 @@ import (
 	"strings"
 	"time"
 
-	"hub.fastgit.org/jmoiron/sqlx"
-	"hub.fastgit.org/pkg/errors"
-	log "hub.fastgit.org/sirupsen/logrus"
+	"github.com/jmoiron/sqlx"
+	"github.com/pkg/errors"
+	log "github.com/sirupsen/logrus"
 
-	"hub.fastgit.org/brocaar/chirpstack-application-server/internal/logging"
+	"github.com/brocaar/chirpstack-application-server/internal/logging"
 )
 
 var organizationNameRegexp = regexp.MustCompile(`^[\w-]+$`)

@@ -8,11 +8,11 @@ import (
 
 	"golang.org/x/net/context"
 
-	jwt "hub.fastgit.org/dgrijalva/jwt-go"
-	"hub.fastgit.org/gofrs/uuid"
-	"hub.fastgit.org/jmoiron/sqlx"
-	"hub.fastgit.org/pkg/errors"
-	"hub.fastgit.org/stretchr/testify/require"
+	jwt "github.com/dgrijalva/jwt-go"
+	"github.com/gofrs/uuid"
+	"github.com/jmoiron/sqlx"
+	"github.com/pkg/errors"
+	"github.com/stretchr/testify/require"
 )
 
 func testValidator(pass bool, err error) ValidatorFunc {

@@ -6,18 +6,18 @@ import (
 	"net/http/httptest"
 	"testing"
 
-	"hub.fastgit.org/gofrs/uuid"
-	"hub.fastgit.org/pkg/errors"
-	"hub.fastgit.org/stretchr/testify/require"
+	"github.com/gofrs/uuid"
+	"github.com/pkg/errors"
+	"github.com/stretchr/testify/require"
 	"golang.org/x/net/context"
 	"google.golang.org/grpc"
 	"google.golang.org/grpc/codes"
 
-	pb "hub.fastgit.org/brocaar/chirpstack-api/go/v3/as/external/api"
-	"hub.fastgit.org/brocaar/chirpstack-application-server/internal/api/external/oidc"
-	"hub.fastgit.org/brocaar/chirpstack-application-server/internal/backend/networkserver"
-	"hub.fastgit.org/brocaar/chirpstack-application-server/internal/backend/networkserver/mock"
-	"hub.fastgit.org/brocaar/chirpstack-application-server/internal/storage"
+	pb "github.com/brocaar/chirpstack-api/go/v3/as/external/api"
+	"github.com/brocaar/chirpstack-application-server/internal/api/external/oidc"
+	"github.com/brocaar/chirpstack-application-server/internal/backend/networkserver"
+	"github.com/brocaar/chirpstack-application-server/internal/backend/networkserver/mock"
+	"github.com/brocaar/chirpstack-application-server/internal/storage"
 )
 
 func (ts *APITestSuite) TestInternal() {

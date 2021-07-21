@@ -4,23 +4,23 @@ import (
 	"database/sql"
 	"time"
 
-	"hub.fastgit.org/gofrs/uuid"
-	"hub.fastgit.org/golang/protobuf/ptypes"
-	"hub.fastgit.org/golang/protobuf/ptypes/empty"
-	"hub.fastgit.org/lib/pq/hstore"
+	"github.com/gofrs/uuid"
+	"github.com/golang/protobuf/ptypes"
+	"github.com/golang/protobuf/ptypes/empty"
+	"github.com/lib/pq/hstore"
 
-	"hub.fastgit.org/brocaar/chirpstack-api/go/v3/ns"
+	"github.com/brocaar/chirpstack-api/go/v3/ns"
 
-	"hub.fastgit.org/jmoiron/sqlx"
+	"github.com/jmoiron/sqlx"
 	"golang.org/x/net/context"
 	"google.golang.org/grpc"
 	"google.golang.org/grpc/codes"
 
-	pb "hub.fastgit.org/brocaar/chirpstack-api/go/v3/as/external/api"
-	"hub.fastgit.org/brocaar/chirpstack-application-server/internal/api/external/auth"
-	"hub.fastgit.org/brocaar/chirpstack-application-server/internal/api/helpers"
-	"hub.fastgit.org/brocaar/chirpstack-application-server/internal/codec"
-	"hub.fastgit.org/brocaar/chirpstack-application-server/internal/storage"
+	pb "github.com/brocaar/chirpstack-api/go/v3/as/external/api"
+	"github.com/brocaar/chirpstack-application-server/internal/api/external/auth"
+	"github.com/brocaar/chirpstack-application-server/internal/api/helpers"
+	"github.com/brocaar/chirpstack-application-server/internal/codec"
+	"github.com/brocaar/chirpstack-application-server/internal/storage"
 )
 
 // DeviceProfileServiceAPI exports the ServiceProfile related functions.

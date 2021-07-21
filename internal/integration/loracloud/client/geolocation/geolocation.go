@@ -10,10 +10,10 @@ import (
 	"strings"
 	"time"
 
-	"hub.fastgit.org/pkg/errors"
+	"github.com/pkg/errors"
 
-	"hub.fastgit.org/brocaar/chirpstack-api/go/v3/common"
-	"hub.fastgit.org/brocaar/chirpstack-api/go/v3/gw"
+	"github.com/brocaar/chirpstack-api/go/v3/common"
+	"github.com/brocaar/chirpstack-api/go/v3/gw"
 )
 
 const (

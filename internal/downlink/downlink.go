@@ -3,19 +3,19 @@ package downlink
 import (
 	"fmt"
 
-	"hub.fastgit.org/gofrs/uuid"
-	"hub.fastgit.org/golang/protobuf/ptypes"
-	"hub.fastgit.org/jmoiron/sqlx"
-	"hub.fastgit.org/pkg/errors"
-	log "hub.fastgit.org/sirupsen/logrus"
+	"github.com/gofrs/uuid"
+	"github.com/golang/protobuf/ptypes"
+	"github.com/jmoiron/sqlx"
+	"github.com/pkg/errors"
+	log "github.com/sirupsen/logrus"
 	"golang.org/x/net/context"
 
-	pb "hub.fastgit.org/brocaar/chirpstack-api/go/v3/as/integration"
-	"hub.fastgit.org/brocaar/chirpstack-application-server/internal/codec"
-	"hub.fastgit.org/brocaar/chirpstack-application-server/internal/integration"
-	"hub.fastgit.org/brocaar/chirpstack-application-server/internal/integration/models"
-	"hub.fastgit.org/brocaar/chirpstack-application-server/internal/logging"
-	"hub.fastgit.org/brocaar/chirpstack-application-server/internal/storage"
+	pb "github.com/brocaar/chirpstack-api/go/v3/as/integration"
+	"github.com/brocaar/chirpstack-application-server/internal/codec"
+	"github.com/brocaar/chirpstack-application-server/internal/integration"
+	"github.com/brocaar/chirpstack-application-server/internal/integration/models"
+	"github.com/brocaar/chirpstack-application-server/internal/logging"
+	"github.com/brocaar/chirpstack-application-server/internal/storage"
 )
 
 // HandleDataDownPayloads handles received downlink payloads to be emitted to the

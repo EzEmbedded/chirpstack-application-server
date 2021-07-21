@@ -4,13 +4,13 @@ import (
 	"context"
 	"time"
 
-	"hub.fastgit.org/golang/protobuf/proto"
-	"hub.fastgit.org/golang/protobuf/ptypes"
-	"hub.fastgit.org/pkg/errors"
+	"github.com/golang/protobuf/proto"
+	"github.com/golang/protobuf/ptypes"
+	"github.com/pkg/errors"
 
-	"hub.fastgit.org/brocaar/chirpstack-api/go/v3/gw"
-	"hub.fastgit.org/brocaar/chirpstack-application-server/internal/storage"
-	"hub.fastgit.org/brocaar/lorawan"
+	"github.com/brocaar/chirpstack-api/go/v3/gw"
+	"github.com/brocaar/chirpstack-application-server/internal/storage"
+	"github.com/brocaar/lorawan"
 )
 
 const (

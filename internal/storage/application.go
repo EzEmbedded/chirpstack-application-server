@@ -6,13 +6,13 @@ import (
 	"regexp"
 	"strings"
 
-	uuid "hub.fastgit.org/gofrs/uuid"
-	"hub.fastgit.org/jmoiron/sqlx"
-	"hub.fastgit.org/pkg/errors"
-	log "hub.fastgit.org/sirupsen/logrus"
+	uuid "github.com/gofrs/uuid"
+	"github.com/jmoiron/sqlx"
+	"github.com/pkg/errors"
+	log "github.com/sirupsen/logrus"
 
-	"hub.fastgit.org/brocaar/chirpstack-application-server/internal/codec"
-	"hub.fastgit.org/brocaar/chirpstack-application-server/internal/logging"
+	"github.com/brocaar/chirpstack-application-server/internal/codec"
+	"github.com/brocaar/chirpstack-application-server/internal/logging"
 )
 
 var applicationNameRegexp = regexp.MustCompile(`^[\w-]+$`)

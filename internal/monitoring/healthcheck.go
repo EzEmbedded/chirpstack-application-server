@@ -3,8 +3,8 @@ package monitoring
 import (
 	"net/http"
 
-	"hub.fastgit.org/brocaar/chirpstack-application-server/internal/storage"
-	"hub.fastgit.org/pkg/errors"
+	"github.com/brocaar/chirpstack-application-server/internal/storage"
+	"github.com/pkg/errors"
 )
 
 func healthCheckHandlerFunc(w http.ResponseWriter, r *http.Request) {

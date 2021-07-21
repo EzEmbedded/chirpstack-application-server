@@ -4,7 +4,7 @@ import (
 	"encoding/json"
 	"testing"
 
-	"hub.fastgit.org/stretchr/testify/require"
+	"github.com/stretchr/testify/require"
 )
 
 func TestCayenneLPP(t *testing.T) {

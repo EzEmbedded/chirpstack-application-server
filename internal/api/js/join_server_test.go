@@ -11,19 +11,19 @@ import (
 	"net/http/httptest"
 	"testing"
 
-	"hub.fastgit.org/gofrs/uuid"
-	"hub.fastgit.org/lib/pq/hstore"
-	"hub.fastgit.org/stretchr/testify/require"
+	"github.com/gofrs/uuid"
+	"github.com/lib/pq/hstore"
+	"github.com/stretchr/testify/require"
 
-	"hub.fastgit.org/brocaar/chirpstack-application-server/internal/backend/networkserver"
-	nsmock "hub.fastgit.org/brocaar/chirpstack-application-server/internal/backend/networkserver/mock"
-	"hub.fastgit.org/brocaar/chirpstack-application-server/internal/config"
-	"hub.fastgit.org/brocaar/chirpstack-application-server/internal/integration"
-	"hub.fastgit.org/brocaar/chirpstack-application-server/internal/integration/mock"
-	"hub.fastgit.org/brocaar/chirpstack-application-server/internal/storage"
-	"hub.fastgit.org/brocaar/chirpstack-application-server/internal/test"
-	"hub.fastgit.org/brocaar/lorawan"
-	"hub.fastgit.org/brocaar/lorawan/backend"
+	"github.com/brocaar/chirpstack-application-server/internal/backend/networkserver"
+	nsmock "github.com/brocaar/chirpstack-application-server/internal/backend/networkserver/mock"
+	"github.com/brocaar/chirpstack-application-server/internal/config"
+	"github.com/brocaar/chirpstack-application-server/internal/integration"
+	"github.com/brocaar/chirpstack-application-server/internal/integration/mock"
+	"github.com/brocaar/chirpstack-application-server/internal/storage"
+	"github.com/brocaar/chirpstack-application-server/internal/test"
+	"github.com/brocaar/lorawan"
+	"github.com/brocaar/lorawan/backend"
 )
 
 func TestJoinServerAPI(t *testing.T) {

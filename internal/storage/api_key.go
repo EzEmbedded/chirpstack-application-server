@@ -5,13 +5,13 @@ import (
 	"strings"
 	"time"
 
-	jwt "hub.fastgit.org/dgrijalva/jwt-go"
-	uuid "hub.fastgit.org/gofrs/uuid"
-	"hub.fastgit.org/jmoiron/sqlx"
-	"hub.fastgit.org/pkg/errors"
-	log "hub.fastgit.org/sirupsen/logrus"
+	jwt "github.com/dgrijalva/jwt-go"
+	uuid "github.com/gofrs/uuid"
+	"github.com/jmoiron/sqlx"
+	"github.com/pkg/errors"
+	log "github.com/sirupsen/logrus"
 
-	"hub.fastgit.org/brocaar/chirpstack-application-server/internal/logging"
+	"github.com/brocaar/chirpstack-application-server/internal/logging"
 )
 
 // APIKey represents an API key.

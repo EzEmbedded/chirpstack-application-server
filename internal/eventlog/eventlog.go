@@ -5,16 +5,16 @@ import (
 	"encoding/json"
 	"time"
 
-	"hub.fastgit.org/go-redis/redis/v8"
-	"hub.fastgit.org/golang/protobuf/proto"
-	"hub.fastgit.org/golang/protobuf/ptypes/timestamp"
-	"hub.fastgit.org/pkg/errors"
+	"github.com/go-redis/redis/v8"
+	"github.com/golang/protobuf/proto"
+	"github.com/golang/protobuf/ptypes/timestamp"
+	"github.com/pkg/errors"
 
-	"hub.fastgit.org/brocaar/chirpstack-api/go/v3/as/integration"
-	"hub.fastgit.org/brocaar/chirpstack-application-server/internal/config"
-	"hub.fastgit.org/brocaar/chirpstack-application-server/internal/integration/marshaler"
-	"hub.fastgit.org/brocaar/chirpstack-application-server/internal/storage"
-	"hub.fastgit.org/brocaar/lorawan"
+	"github.com/brocaar/chirpstack-api/go/v3/as/integration"
+	"github.com/brocaar/chirpstack-application-server/internal/config"
+	"github.com/brocaar/chirpstack-application-server/internal/integration/marshaler"
+	"github.com/brocaar/chirpstack-application-server/internal/storage"
+	"github.com/brocaar/lorawan"
 )
 
 const (

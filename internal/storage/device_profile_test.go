@@ -6,15 +6,15 @@ import (
 	"testing"
 	"time"
 
-	"hub.fastgit.org/gofrs/uuid"
-	"hub.fastgit.org/golang/protobuf/proto"
-	"hub.fastgit.org/lib/pq/hstore"
-	"hub.fastgit.org/stretchr/testify/require"
+	"github.com/gofrs/uuid"
+	"github.com/golang/protobuf/proto"
+	"github.com/lib/pq/hstore"
+	"github.com/stretchr/testify/require"
 
-	"hub.fastgit.org/brocaar/chirpstack-api/go/v3/ns"
-	"hub.fastgit.org/brocaar/chirpstack-application-server/internal/backend/networkserver"
-	"hub.fastgit.org/brocaar/chirpstack-application-server/internal/backend/networkserver/mock"
-	"hub.fastgit.org/brocaar/lorawan/band"
+	"github.com/brocaar/chirpstack-api/go/v3/ns"
+	"github.com/brocaar/chirpstack-application-server/internal/backend/networkserver"
+	"github.com/brocaar/chirpstack-application-server/internal/backend/networkserver/mock"
+	"github.com/brocaar/lorawan/band"
 )
 
 func TestDeviceProfileValidate(t *testing.T) {

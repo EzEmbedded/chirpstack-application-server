@@ -4,15 +4,15 @@ import (
 	"context"
 	"testing"
 
-	"hub.fastgit.org/golang/protobuf/proto"
-	"hub.fastgit.org/streadway/amqp"
-	"hub.fastgit.org/stretchr/testify/require"
-	"hub.fastgit.org/stretchr/testify/suite"
+	"github.com/golang/protobuf/proto"
+	"github.com/streadway/amqp"
+	"github.com/stretchr/testify/require"
+	"github.com/stretchr/testify/suite"
 
-	pb "hub.fastgit.org/brocaar/chirpstack-api/go/v3/as/integration"
-	"hub.fastgit.org/brocaar/chirpstack-application-server/internal/integration/marshaler"
-	"hub.fastgit.org/brocaar/chirpstack-application-server/internal/test"
-	"hub.fastgit.org/brocaar/lorawan"
+	pb "github.com/brocaar/chirpstack-api/go/v3/as/integration"
+	"github.com/brocaar/chirpstack-application-server/internal/integration/marshaler"
+	"github.com/brocaar/chirpstack-application-server/internal/test"
+	"github.com/brocaar/lorawan"
 )
 
 type IntegrationTestSuite struct {

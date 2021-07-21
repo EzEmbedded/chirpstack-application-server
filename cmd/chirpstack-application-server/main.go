@@ -3,10 +3,10 @@ package main
 import (
 	"time"
 
-	log "hub.fastgit.org/sirupsen/logrus"
+	log "github.com/sirupsen/logrus"
 	"google.golang.org/grpc/grpclog"
 
-	"hub.fastgit.org/brocaar/chirpstack-application-server/cmd/chirpstack-application-server/cmd"
+	"github.com/brocaar/chirpstack-application-server/cmd/chirpstack-application-server/cmd"
 )
 
 // grpcLogger implements a wrapper around the logrus Logger to make it

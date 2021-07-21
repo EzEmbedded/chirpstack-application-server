@@ -4,10 +4,10 @@ import (
 	"strconv"
 	"strings"
 
-	"hub.fastgit.org/jmoiron/sqlx"
-	"hub.fastgit.org/lib/pq"
-	"hub.fastgit.org/pkg/errors"
-	log "hub.fastgit.org/sirupsen/logrus"
+	"github.com/jmoiron/sqlx"
+	"github.com/lib/pq"
+	"github.com/pkg/errors"
+	log "github.com/sirupsen/logrus"
 )
 
 // MigrateToGolangMigrate migrates the gorp_migrations into schema_migrations.

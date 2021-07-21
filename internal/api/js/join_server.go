@@ -8,13 +8,13 @@ import (
 	"io/ioutil"
 	"net/http"
 
-	"hub.fastgit.org/pkg/errors"
-	log "hub.fastgit.org/sirupsen/logrus"
+	"github.com/pkg/errors"
+	log "github.com/sirupsen/logrus"
 
-	"hub.fastgit.org/brocaar/chirpstack-application-server/internal/config"
-	"hub.fastgit.org/brocaar/chirpstack-application-server/internal/storage"
-	"hub.fastgit.org/brocaar/lorawan"
-	"hub.fastgit.org/brocaar/lorawan/backend/joinserver"
+	"github.com/brocaar/chirpstack-application-server/internal/config"
+	"github.com/brocaar/chirpstack-application-server/internal/storage"
+	"github.com/brocaar/lorawan"
+	"github.com/brocaar/lorawan/backend/joinserver"
 )
 
 var (

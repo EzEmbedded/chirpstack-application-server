@@ -1,14 +1,14 @@
 package helpers
 
 import (
-	"hub.fastgit.org/pkg/errors"
+	"github.com/pkg/errors"
 	"google.golang.org/grpc"
 	"google.golang.org/grpc/codes"
 	"google.golang.org/grpc/status"
 
-	"hub.fastgit.org/brocaar/chirpstack-application-server/internal/integration/http"
-	"hub.fastgit.org/brocaar/chirpstack-application-server/internal/integration/influxdb"
-	"hub.fastgit.org/brocaar/chirpstack-application-server/internal/storage"
+	"github.com/brocaar/chirpstack-application-server/internal/integration/http"
+	"github.com/brocaar/chirpstack-application-server/internal/integration/influxdb"
+	"github.com/brocaar/chirpstack-application-server/internal/storage"
 )
 
 var errToCode = map[error]codes.Code{

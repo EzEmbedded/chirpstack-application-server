@@ -8,14 +8,14 @@ import (
 	"net/http/httptest"
 	"testing"
 
-	"hub.fastgit.org/golang/protobuf/proto"
-	"hub.fastgit.org/stretchr/testify/require"
-	"hub.fastgit.org/stretchr/testify/suite"
+	"github.com/golang/protobuf/proto"
+	"github.com/stretchr/testify/require"
+	"github.com/stretchr/testify/suite"
 
-	pb "hub.fastgit.org/brocaar/chirpstack-api/go/v3/as/integration"
-	"hub.fastgit.org/brocaar/chirpstack-api/go/v3/common"
-	"hub.fastgit.org/brocaar/chirpstack-application-server/internal/integration/marshaler"
-	"hub.fastgit.org/brocaar/chirpstack-application-server/internal/integration/models"
+	pb "github.com/brocaar/chirpstack-api/go/v3/as/integration"
+	"github.com/brocaar/chirpstack-api/go/v3/common"
+	"github.com/brocaar/chirpstack-application-server/internal/integration/marshaler"
+	"github.com/brocaar/chirpstack-application-server/internal/integration/models"
 )
 
 type testHTTPHandler struct {

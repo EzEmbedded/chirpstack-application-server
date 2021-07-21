@@ -1,7 +1,7 @@
 package das
 
 import (
-	"hub.fastgit.org/brocaar/chirpstack-application-server/internal/integration/loracloud/client/helpers"
+	"github.com/brocaar/chirpstack-application-server/internal/integration/loracloud/client/helpers"
 )
 
 // UplinkRequest implements the LoRa Cloud uplink/send request.

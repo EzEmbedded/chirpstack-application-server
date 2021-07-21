@@ -3,8 +3,8 @@ package storage
 import (
 	"fmt"
 
-	"hub.fastgit.org/jmoiron/sqlx"
-	"hub.fastgit.org/stretchr/testify/require"
+	"github.com/jmoiron/sqlx"
+	"github.com/stretchr/testify/require"
 )
 
 func (ts *StorageTestSuite) TestCodeMigration() {

@@ -5,16 +5,16 @@ import (
 	"strings"
 	"time"
 
-	uuid "hub.fastgit.org/gofrs/uuid"
-	"hub.fastgit.org/jmoiron/sqlx"
-	"hub.fastgit.org/pkg/errors"
-	log "hub.fastgit.org/sirupsen/logrus"
+	uuid "github.com/gofrs/uuid"
+	"github.com/jmoiron/sqlx"
+	"github.com/pkg/errors"
+	log "github.com/sirupsen/logrus"
 
-	"hub.fastgit.org/brocaar/chirpstack-api/go/v3/ns"
-	"hub.fastgit.org/brocaar/chirpstack-application-server/internal/backend/networkserver"
-	"hub.fastgit.org/brocaar/chirpstack-application-server/internal/config"
-	"hub.fastgit.org/brocaar/chirpstack-application-server/internal/logging"
-	"hub.fastgit.org/brocaar/lorawan"
+	"github.com/brocaar/chirpstack-api/go/v3/ns"
+	"github.com/brocaar/chirpstack-application-server/internal/backend/networkserver"
+	"github.com/brocaar/chirpstack-application-server/internal/config"
+	"github.com/brocaar/chirpstack-application-server/internal/logging"
+	"github.com/brocaar/lorawan"
 )
 
 // NetworkServer defines the information to connect to a network-server.

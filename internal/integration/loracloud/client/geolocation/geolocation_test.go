@@ -8,14 +8,14 @@ import (
 	"net/http/httptest"
 	"testing"
 
-	"hub.fastgit.org/golang/protobuf/ptypes/timestamp"
-	"hub.fastgit.org/stretchr/testify/require"
-	"hub.fastgit.org/stretchr/testify/suite"
+	"github.com/golang/protobuf/ptypes/timestamp"
+	"github.com/stretchr/testify/require"
+	"github.com/stretchr/testify/suite"
 
-	"hub.fastgit.org/brocaar/chirpstack-api/go/v3/common"
-	"hub.fastgit.org/brocaar/chirpstack-api/go/v3/gw"
-	"hub.fastgit.org/brocaar/chirpstack-application-server/internal/integration/loracloud/client/helpers"
-	"hub.fastgit.org/brocaar/lorawan"
+	"github.com/brocaar/chirpstack-api/go/v3/common"
+	"github.com/brocaar/chirpstack-api/go/v3/gw"
+	"github.com/brocaar/chirpstack-application-server/internal/integration/loracloud/client/helpers"
+	"github.com/brocaar/lorawan"
 )
 
 type ClientTestSuite struct {

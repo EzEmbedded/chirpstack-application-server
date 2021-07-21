@@ -1,6 +1,6 @@
 .PHONY: build clean test ui-requirements serve statics
 VERSION := $(shell git describe --always |sed -e "s/^v//")
-API_VERSION := $(shell go list -m -f '{{ .Version }}' hub.fastgit.org/brocaar/chirpstack-api/go/v3 | awk '{n=split($$0, a, "-"); print a[n]}')
+API_VERSION := $(shell go list -m -f '{{ .Version }}' github.com/brocaar/chirpstack-api/go/v3 | awk '{n=split($$0, a, "-"); print a[n]}')
 
 build: ui/build static/swagger/api.swagger.json
 	mkdir -p build
@@ -36,7 +36,7 @@ snapshot: statics
 
 proto:
 	@rm -rf /tmp/chirpstack-api
-	@git clone https://hub.fastgit.org/brocaar/chirpstack-api.git /tmp/chirpstack-api
+	@git clone https://github.com/brocaar/chirpstack-api.git /tmp/chirpstack-api
 	@git --git-dir=/tmp/chirpstack-api/.git --work-tree=/tmp/chirpstack-api checkout $(API_VERSION)
 	@go generate internal/integration/loracloud/frame_rx_info.go
 
@@ -50,7 +50,7 @@ ui/build:
 static/swagger/api.swagger.json:
 	@echo "Fetching Swagger definitions and generate combined Swagger JSON"
 	@rm -rf /tmp/chirpstack-api
-	@git clone https://hub.fastgit.org/brocaar/chirpstack-api.git /tmp/chirpstack-api
+	@git clone https://github.com/brocaar/chirpstack-api.git /tmp/chirpstack-api
 	@git --git-dir=/tmp/chirpstack-api/.git --work-tree=/tmp/chirpstack-api checkout $(API_VERSION)
 	@mkdir -p static/swagger
 	@cp /tmp/chirpstack-api/swagger/as/external/api/*.json static/swagger
@@ -62,10 +62,10 @@ dev-requirements:
 	go mod download
 	go install golang.org/x/lint/golint
 	go install golang.org/x/tools/cmd/stringer
-	go install hub.fastgit.org/goreleaser/goreleaser
-	go install hub.fastgit.org/goreleaser/nfpm
-	go install hub.fastgit.org/golang/protobuf/protoc-gen-go
-	go install hub.fastgit.org/golang-migrate/migrate/v4/cmd/migrate
+	go install github.com/goreleaser/goreleaser
+	go install github.com/goreleaser/nfpm
+	go install github.com/golang/protobuf/protoc-gen-go
+	go install github.com/golang-migrate/migrate/v4/cmd/migrate
 
 ui-requirements:
 	@echo "Installing UI requirements"

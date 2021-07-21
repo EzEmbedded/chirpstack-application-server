@@ -3,7 +3,7 @@ package cmd
 import (
 	"fmt"
 
-	"hub.fastgit.org/spf13/cobra"
+	"github.com/spf13/cobra"
 )
 
 var versionCmd = &cobra.Command{

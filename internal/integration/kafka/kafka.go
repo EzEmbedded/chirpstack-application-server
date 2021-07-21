@@ -8,20 +8,20 @@ import (
 	"text/template"
 	"time"
 
-	"hub.fastgit.org/golang/protobuf/proto"
-	"hub.fastgit.org/pkg/errors"
-	log "hub.fastgit.org/sirupsen/logrus"
+	"github.com/golang/protobuf/proto"
+	"github.com/pkg/errors"
+	log "github.com/sirupsen/logrus"
 
-	"hub.fastgit.org/segmentio/kafka-go"
-	"hub.fastgit.org/segmentio/kafka-go/sasl/plain"
-	"hub.fastgit.org/segmentio/kafka-go/sasl/scram"
+	"github.com/segmentio/kafka-go"
+	"github.com/segmentio/kafka-go/sasl/plain"
+	"github.com/segmentio/kafka-go/sasl/scram"
 
-	pb "hub.fastgit.org/brocaar/chirpstack-api/go/v3/as/integration"
-	"hub.fastgit.org/brocaar/chirpstack-application-server/internal/config"
-	"hub.fastgit.org/brocaar/chirpstack-application-server/internal/integration/marshaler"
-	"hub.fastgit.org/brocaar/chirpstack-application-server/internal/integration/models"
-	"hub.fastgit.org/brocaar/chirpstack-application-server/internal/logging"
-	"hub.fastgit.org/brocaar/lorawan"
+	pb "github.com/brocaar/chirpstack-api/go/v3/as/integration"
+	"github.com/brocaar/chirpstack-application-server/internal/config"
+	"github.com/brocaar/chirpstack-application-server/internal/integration/marshaler"
+	"github.com/brocaar/chirpstack-application-server/internal/integration/models"
+	"github.com/brocaar/chirpstack-application-server/internal/logging"
+	"github.com/brocaar/lorawan"
 )
 
 // Integration implements an Kafka integration.

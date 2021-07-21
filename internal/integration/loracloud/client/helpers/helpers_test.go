@@ -3,10 +3,10 @@ package helpers
 import (
 	"testing"
 
-	"hub.fastgit.org/golang/protobuf/ptypes"
-	"hub.fastgit.org/stretchr/testify/require"
+	"github.com/golang/protobuf/ptypes"
+	"github.com/stretchr/testify/require"
 
-	"hub.fastgit.org/brocaar/chirpstack-api/go/v3/gw"
+	"github.com/brocaar/chirpstack-api/go/v3/gw"
 )
 
 func TestHEXBytes(t *testing.T) {

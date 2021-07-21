@@ -1,9 +1,9 @@
 package external
 
 import (
-	"hub.fastgit.org/brocaar/chirpstack-application-server/internal/api/external/auth"
-	"hub.fastgit.org/brocaar/chirpstack-application-server/internal/storage"
-	"hub.fastgit.org/gofrs/uuid"
+	"github.com/brocaar/chirpstack-application-server/internal/api/external/auth"
+	"github.com/brocaar/chirpstack-application-server/internal/storage"
+	"github.com/gofrs/uuid"
 	"golang.org/x/net/context"
 )
 

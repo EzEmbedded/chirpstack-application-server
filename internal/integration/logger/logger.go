@@ -4,14 +4,14 @@ package logger
 import (
 	"context"
 
-	"hub.fastgit.org/golang/protobuf/proto"
-	log "hub.fastgit.org/sirupsen/logrus"
+	"github.com/golang/protobuf/proto"
+	log "github.com/sirupsen/logrus"
 
-	pb "hub.fastgit.org/brocaar/chirpstack-api/go/v3/as/integration"
-	"hub.fastgit.org/brocaar/chirpstack-application-server/internal/eventlog"
-	"hub.fastgit.org/brocaar/chirpstack-application-server/internal/integration/models"
-	"hub.fastgit.org/brocaar/chirpstack-application-server/internal/logging"
-	"hub.fastgit.org/brocaar/lorawan"
+	pb "github.com/brocaar/chirpstack-api/go/v3/as/integration"
+	"github.com/brocaar/chirpstack-application-server/internal/eventlog"
+	"github.com/brocaar/chirpstack-application-server/internal/integration/models"
+	"github.com/brocaar/chirpstack-application-server/internal/logging"
+	"github.com/brocaar/lorawan"
 )
 
 // Config contains the logger configuration.

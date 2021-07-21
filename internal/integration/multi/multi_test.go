@@ -8,18 +8,18 @@ import (
 	"net/http/httptest"
 	"testing"
 
-	mqtt "hub.fastgit.org/eclipse/paho.mqtt.golang"
-	"hub.fastgit.org/stretchr/testify/require"
-	"hub.fastgit.org/stretchr/testify/suite"
+	mqtt "github.com/eclipse/paho.mqtt.golang"
+	"github.com/stretchr/testify/require"
+	"github.com/stretchr/testify/suite"
 
-	pb "hub.fastgit.org/brocaar/chirpstack-api/go/v3/as/integration"
-	"hub.fastgit.org/brocaar/chirpstack-application-server/internal/config"
-	httpint "hub.fastgit.org/brocaar/chirpstack-application-server/internal/integration/http"
-	"hub.fastgit.org/brocaar/chirpstack-application-server/internal/integration/marshaler"
-	"hub.fastgit.org/brocaar/chirpstack-application-server/internal/integration/models"
-	mqttint "hub.fastgit.org/brocaar/chirpstack-application-server/internal/integration/mqtt"
-	"hub.fastgit.org/brocaar/chirpstack-application-server/internal/storage"
-	"hub.fastgit.org/brocaar/chirpstack-application-server/internal/test"
+	pb "github.com/brocaar/chirpstack-api/go/v3/as/integration"
+	"github.com/brocaar/chirpstack-application-server/internal/config"
+	httpint "github.com/brocaar/chirpstack-application-server/internal/integration/http"
+	"github.com/brocaar/chirpstack-application-server/internal/integration/marshaler"
+	"github.com/brocaar/chirpstack-application-server/internal/integration/models"
+	mqttint "github.com/brocaar/chirpstack-application-server/internal/integration/mqtt"
+	"github.com/brocaar/chirpstack-application-server/internal/storage"
+	"github.com/brocaar/chirpstack-application-server/internal/test"
 )
 
 type testHTTPHandler struct {

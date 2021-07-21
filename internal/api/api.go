@@ -1,12 +1,12 @@
 package api
 
 import (
-	"hub.fastgit.org/pkg/errors"
+	"github.com/pkg/errors"
 
-	"hub.fastgit.org/brocaar/chirpstack-application-server/internal/api/as"
-	"hub.fastgit.org/brocaar/chirpstack-application-server/internal/api/external"
-	"hub.fastgit.org/brocaar/chirpstack-application-server/internal/api/js"
-	"hub.fastgit.org/brocaar/chirpstack-application-server/internal/config"
+	"github.com/brocaar/chirpstack-application-server/internal/api/as"
+	"github.com/brocaar/chirpstack-application-server/internal/api/external"
+	"github.com/brocaar/chirpstack-application-server/internal/api/js"
+	"github.com/brocaar/chirpstack-application-server/internal/config"
 )
 
 // Setup configures the API endpoints.

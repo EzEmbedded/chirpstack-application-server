@@ -3,11 +3,11 @@ package monitoring
 import (
 	"net/http"
 
-	grpc_prometheus "hub.fastgit.org/grpc-ecosystem/go-grpc-prometheus"
-	"hub.fastgit.org/prometheus/client_golang/prometheus/promhttp"
-	log "hub.fastgit.org/sirupsen/logrus"
+	grpc_prometheus "github.com/grpc-ecosystem/go-grpc-prometheus"
+	"github.com/prometheus/client_golang/prometheus/promhttp"
+	log "github.com/sirupsen/logrus"
 
-	"hub.fastgit.org/brocaar/chirpstack-application-server/internal/config"
+	"github.com/brocaar/chirpstack-application-server/internal/config"
 )
 
 // Setup setsup the metrics server.

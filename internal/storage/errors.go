@@ -3,8 +3,8 @@ package storage
 import (
 	"database/sql"
 
-	"hub.fastgit.org/lib/pq"
-	"hub.fastgit.org/pkg/errors"
+	"github.com/lib/pq"
+	"github.com/pkg/errors"
 )
 
 // Action defines the action type.

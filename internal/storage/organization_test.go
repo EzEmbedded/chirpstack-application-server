@@ -5,12 +5,12 @@ import (
 	"testing"
 	"time"
 
-	"hub.fastgit.org/pkg/errors"
-	"hub.fastgit.org/stretchr/testify/require"
+	"github.com/pkg/errors"
+	"github.com/stretchr/testify/require"
 
-	"hub.fastgit.org/brocaar/chirpstack-application-server/internal/backend/networkserver"
-	"hub.fastgit.org/brocaar/chirpstack-application-server/internal/backend/networkserver/mock"
-	"hub.fastgit.org/brocaar/chirpstack-application-server/internal/test"
+	"github.com/brocaar/chirpstack-application-server/internal/backend/networkserver"
+	"github.com/brocaar/chirpstack-application-server/internal/backend/networkserver/mock"
+	"github.com/brocaar/chirpstack-application-server/internal/test"
 )
 
 func (ts *StorageTestSuite) TestOrganization() {

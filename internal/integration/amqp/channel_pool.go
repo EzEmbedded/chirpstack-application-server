@@ -4,9 +4,9 @@ import (
 	"sync"
 	"time"
 
-	"hub.fastgit.org/pkg/errors"
-	log "hub.fastgit.org/sirupsen/logrus"
-	"hub.fastgit.org/streadway/amqp"
+	"github.com/pkg/errors"
+	log "github.com/sirupsen/logrus"
+	"github.com/streadway/amqp"
 )
 
 var errClosed = errors.New("pool is closed")

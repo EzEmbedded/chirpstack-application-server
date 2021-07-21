@@ -1,17 +1,17 @@
 package external
 
 import (
-	"hub.fastgit.org/gofrs/uuid"
-	"hub.fastgit.org/golang/protobuf/ptypes"
+	"github.com/gofrs/uuid"
+	"github.com/golang/protobuf/ptypes"
 
-	"hub.fastgit.org/brocaar/chirpstack-api/go/v3/ns"
+	"github.com/brocaar/chirpstack-api/go/v3/ns"
 
-	pb "hub.fastgit.org/brocaar/chirpstack-api/go/v3/as/external/api"
-	"hub.fastgit.org/brocaar/chirpstack-application-server/internal/api/external/auth"
-	"hub.fastgit.org/brocaar/chirpstack-application-server/internal/api/helpers"
-	"hub.fastgit.org/brocaar/chirpstack-application-server/internal/storage"
-	"hub.fastgit.org/golang/protobuf/ptypes/empty"
-	"hub.fastgit.org/jmoiron/sqlx"
+	pb "github.com/brocaar/chirpstack-api/go/v3/as/external/api"
+	"github.com/brocaar/chirpstack-application-server/internal/api/external/auth"
+	"github.com/brocaar/chirpstack-application-server/internal/api/helpers"
+	"github.com/brocaar/chirpstack-application-server/internal/storage"
+	"github.com/golang/protobuf/ptypes/empty"
+	"github.com/jmoiron/sqlx"
 	"golang.org/x/net/context"
 	"google.golang.org/grpc"
 	"google.golang.org/grpc/codes"

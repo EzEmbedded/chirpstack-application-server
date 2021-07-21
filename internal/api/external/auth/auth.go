@@ -4,15 +4,15 @@ import (
 	"fmt"
 	"regexp"
 
-	jwt "hub.fastgit.org/dgrijalva/jwt-go"
-	"hub.fastgit.org/gofrs/uuid"
-	"hub.fastgit.org/jmoiron/sqlx"
-	"hub.fastgit.org/pkg/errors"
-	log "hub.fastgit.org/sirupsen/logrus"
+	jwt "github.com/dgrijalva/jwt-go"
+	"github.com/gofrs/uuid"
+	"github.com/jmoiron/sqlx"
+	"github.com/pkg/errors"
+	log "github.com/sirupsen/logrus"
 	"golang.org/x/net/context"
 	"google.golang.org/grpc/metadata"
 
-	"hub.fastgit.org/brocaar/chirpstack-application-server/internal/storage"
+	"github.com/brocaar/chirpstack-application-server/internal/storage"
 )
 
 var validAuthorizationRegexp = regexp.MustCompile(`(?i)^bearer (.*)$`)

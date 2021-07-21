@@ -5,12 +5,12 @@ import (
 	"testing"
 	"time"
 
-	"hub.fastgit.org/dgrijalva/jwt-go"
-	uuid "hub.fastgit.org/gofrs/uuid"
-	"hub.fastgit.org/stretchr/testify/require"
+	"github.com/dgrijalva/jwt-go"
+	uuid "github.com/gofrs/uuid"
+	"github.com/stretchr/testify/require"
 
-	"hub.fastgit.org/brocaar/chirpstack-application-server/internal/backend/networkserver"
-	"hub.fastgit.org/brocaar/chirpstack-application-server/internal/backend/networkserver/mock"
+	"github.com/brocaar/chirpstack-application-server/internal/backend/networkserver"
+	"github.com/brocaar/chirpstack-application-server/internal/backend/networkserver/mock"
 )
 
 func (ts *StorageTestSuite) TestAPIKey() {

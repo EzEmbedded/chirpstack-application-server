@@ -6,9 +6,9 @@ import (
 	"reflect"
 	"time"
 
-	"hub.fastgit.org/brocaar/chirpstack-application-server/internal/config"
-	"hub.fastgit.org/pkg/errors"
-	"hub.fastgit.org/robertkrimen/otto"
+	"github.com/brocaar/chirpstack-application-server/internal/config"
+	"github.com/pkg/errors"
+	"github.com/robertkrimen/otto"
 )
 
 var (

@@ -1,6 +1,6 @@
 # ChirpStack Application Server
 
-![Tests](https://hub.fastgit.org/brocaar/chirpstack-application-server/actions/workflows/main.yml/badge.svg?branch=master)
+![Tests](https://github.com/brocaar/chirpstack-application-server/actions/workflows/main.yml/badge.svg?branch=master)
 
 ChirpStack Application Server is an open-source LoRaWAN Application Server, part of the
 [ChirpStack](https://www.chirpstack.io/) open-source LoRaWAN Network Server stack. It is responsible
@@ -29,7 +29,7 @@ and payloads can be enqueued by using MQTT or the API.
 * [Contributing](https://www.chirpstack.io/application-server/community/contribute/)
 * Support
   * [Support forum](https://forum.chirpstack.io)
-  * [Bug or feature requests](https://hub.fastgit.org/brocaar/chirpstack-application-server/issues)
+  * [Bug or feature requests](https://github.com/brocaar/chirpstack-application-server/issues)
 
 ## Sponsors
 
@@ -40,4 +40,4 @@ and payloads can be enqueued by using MQTT or the API.
 ## License
 
 ChirpStack Application Server is distributed under the MIT license. See also
-[LICENSE](https://hub.fastgit.org/brocaar/chirpstack-application-server/blob/master/LICENSE).
+[LICENSE](https://github.com/brocaar/chirpstack-application-server/blob/master/LICENSE).

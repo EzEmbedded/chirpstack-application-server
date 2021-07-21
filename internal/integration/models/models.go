@@ -4,8 +4,8 @@ import (
 	"encoding/json"
 	"time"
 
-	"hub.fastgit.org/brocaar/lorawan"
-	"hub.fastgit.org/gofrs/uuid"
+	"github.com/brocaar/lorawan"
+	"github.com/gofrs/uuid"
 )
 
 // Location details.

@@ -4,7 +4,7 @@ import (
 	"context"
 	"testing"
 
-	"hub.fastgit.org/stretchr/testify/require"
+	"github.com/stretchr/testify/require"
 )
 
 func TestNewAuthenticator(t *testing.T) {

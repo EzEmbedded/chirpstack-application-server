@@ -3,9 +3,9 @@
 package tools
 
 import (
-	_ "hub.fastgit.org/golang/protobuf/protoc-gen-go"
-	_ "hub.fastgit.org/goreleaser/goreleaser"
-	_ "hub.fastgit.org/goreleaser/nfpm"
+	_ "github.com/golang/protobuf/protoc-gen-go"
+	_ "github.com/goreleaser/goreleaser"
+	_ "github.com/goreleaser/nfpm"
 	_ "golang.org/x/lint/golint"
 	_ "golang.org/x/tools/cmd/stringer"
 )

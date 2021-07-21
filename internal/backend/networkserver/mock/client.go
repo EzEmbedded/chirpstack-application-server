@@ -3,10 +3,10 @@ package mock
 import (
 	"context"
 
-	"hub.fastgit.org/golang/protobuf/ptypes/empty"
+	"github.com/golang/protobuf/ptypes/empty"
 	"google.golang.org/grpc"
 
-	"hub.fastgit.org/brocaar/chirpstack-api/go/v3/ns"
+	"github.com/brocaar/chirpstack-api/go/v3/ns"
 )
 
 // Client is a test network-server client.

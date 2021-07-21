@@ -5,11 +5,11 @@ package cmd
 import (
 	"log/syslog"
 
-	"hub.fastgit.org/pkg/errors"
-	log "hub.fastgit.org/sirupsen/logrus"
-	lsyslog "hub.fastgit.org/sirupsen/logrus/hooks/syslog"
+	"github.com/pkg/errors"
+	log "github.com/sirupsen/logrus"
+	lsyslog "github.com/sirupsen/logrus/hooks/syslog"
 
-	"hub.fastgit.org/brocaar/chirpstack-application-server/internal/config"
+	"github.com/brocaar/chirpstack-application-server/internal/config"
 )
 
 func setSyslog() error {
