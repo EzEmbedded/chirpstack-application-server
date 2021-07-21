@@ -7,11 +7,11 @@ import (
 	"strings"
 	"time"
 
-	"github.com.cnpmjs.org/pkg/errors"
-	log "github.com.cnpmjs.org/sirupsen/logrus"
+	"hub.fastgit.org/pkg/errors"
+	log "hub.fastgit.org/sirupsen/logrus"
 
-	"github.com.cnpmjs.org/brocaar/chirpstack-application-server/internal/config"
-	"github.com.cnpmjs.org/brocaar/chirpstack-application-server/internal/storage"
+	"hub.fastgit.org/brocaar/chirpstack-application-server/internal/config"
+	"hub.fastgit.org/brocaar/chirpstack-application-server/internal/storage"
 )
 
 // MigrateToClusterKeys migrates the keys to Redis Cluster compatible keys.

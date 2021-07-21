@@ -3,8 +3,8 @@ package js
 import (
 	"testing"
 
-	"github.com.cnpmjs.org/pkg/errors"
-	"github.com.cnpmjs.org/stretchr/testify/require"
+	"hub.fastgit.org/pkg/errors"
+	"hub.fastgit.org/stretchr/testify/require"
 )
 
 func TestJSDecode(t *testing.T) {

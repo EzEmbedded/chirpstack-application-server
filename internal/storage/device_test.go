@@ -6,15 +6,15 @@ import (
 	"testing"
 	"time"
 
-	"github.com.cnpmjs.org/gofrs/uuid"
-	"github.com.cnpmjs.org/lib/pq/hstore"
-	"github.com.cnpmjs.org/stretchr/testify/require"
+	"hub.fastgit.org/gofrs/uuid"
+	"hub.fastgit.org/lib/pq/hstore"
+	"hub.fastgit.org/stretchr/testify/require"
 
-	"github.com.cnpmjs.org/brocaar/chirpstack-api/go/v3/ns"
-	"github.com.cnpmjs.org/brocaar/chirpstack-application-server/internal/backend/networkserver"
-	"github.com.cnpmjs.org/brocaar/chirpstack-application-server/internal/backend/networkserver/mock"
-	"github.com.cnpmjs.org/brocaar/lorawan"
-	"github.com.cnpmjs.org/brocaar/lorawan/band"
+	"hub.fastgit.org/brocaar/chirpstack-api/go/v3/ns"
+	"hub.fastgit.org/brocaar/chirpstack-application-server/internal/backend/networkserver"
+	"hub.fastgit.org/brocaar/chirpstack-application-server/internal/backend/networkserver/mock"
+	"hub.fastgit.org/brocaar/lorawan"
+	"hub.fastgit.org/brocaar/lorawan/band"
 )
 
 func (ts *StorageTestSuite) TestDevice() {

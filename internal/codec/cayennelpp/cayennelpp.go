@@ -8,7 +8,7 @@ import (
 	"io"
 	"sort"
 
-	"github.com.cnpmjs.org/pkg/errors"
+	"hub.fastgit.org/pkg/errors"
 )
 
 // cayenneLPP types.

@@ -1,21 +1,21 @@
 package external
 
 import (
-	"github.com.cnpmjs.org/golang/protobuf/ptypes/empty"
-	"github.com.cnpmjs.org/jmoiron/sqlx"
-	log "github.com.cnpmjs.org/sirupsen/logrus"
+	"hub.fastgit.org/golang/protobuf/ptypes/empty"
+	"hub.fastgit.org/jmoiron/sqlx"
+	log "hub.fastgit.org/sirupsen/logrus"
 	"golang.org/x/net/context"
 	"google.golang.org/grpc"
 	"google.golang.org/grpc/codes"
 
-	pb "github.com.cnpmjs.org/brocaar/chirpstack-api/go/v3/as/external/api"
-	"github.com.cnpmjs.org/brocaar/chirpstack-api/go/v3/ns"
-	"github.com.cnpmjs.org/brocaar/chirpstack-application-server/internal/api/external/auth"
-	"github.com.cnpmjs.org/brocaar/chirpstack-application-server/internal/api/helpers"
-	"github.com.cnpmjs.org/brocaar/chirpstack-application-server/internal/backend/networkserver"
-	"github.com.cnpmjs.org/brocaar/chirpstack-application-server/internal/codec"
-	"github.com.cnpmjs.org/brocaar/chirpstack-application-server/internal/storage"
-	"github.com.cnpmjs.org/brocaar/lorawan"
+	pb "hub.fastgit.org/brocaar/chirpstack-api/go/v3/as/external/api"
+	"hub.fastgit.org/brocaar/chirpstack-api/go/v3/ns"
+	"hub.fastgit.org/brocaar/chirpstack-application-server/internal/api/external/auth"
+	"hub.fastgit.org/brocaar/chirpstack-application-server/internal/api/helpers"
+	"hub.fastgit.org/brocaar/chirpstack-application-server/internal/backend/networkserver"
+	"hub.fastgit.org/brocaar/chirpstack-application-server/internal/codec"
+	"hub.fastgit.org/brocaar/chirpstack-application-server/internal/storage"
+	"hub.fastgit.org/brocaar/lorawan"
 )
 
 // DeviceQueueAPI exposes the downlink queue methods.

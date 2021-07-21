@@ -9,7 +9,7 @@ import (
 	"net/http"
 	"time"
 
-	"github.com.cnpmjs.org/pkg/errors"
+	"hub.fastgit.org/pkg/errors"
 )
 
 const (

@@ -6,10 +6,10 @@ import (
 	"regexp"
 	"strings"
 
-	"github.com.cnpmjs.org/jmoiron/sqlx"
-	"github.com.cnpmjs.org/lib/pq/hstore"
+	"hub.fastgit.org/jmoiron/sqlx"
+	"hub.fastgit.org/lib/pq/hstore"
 
-	"github.com.cnpmjs.org/brocaar/lorawan"
+	"hub.fastgit.org/brocaar/lorawan"
 )
 
 // SearchResult defines a search result.

@@ -3,8 +3,8 @@ package storage
 import (
 	"time"
 
-	"github.com.cnpmjs.org/jmoiron/sqlx"
-	"github.com.cnpmjs.org/lib/pq"
+	"hub.fastgit.org/jmoiron/sqlx"
+	"hub.fastgit.org/lib/pq"
 )
 
 // CodeMigration checks if the given function code has been applied and if not

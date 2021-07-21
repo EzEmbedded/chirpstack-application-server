@@ -10,9 +10,9 @@ import (
 	"net/http"
 	"net/url"
 
-	"github.com.cnpmjs.org/brocaar/chirpstack-api/go/v3/as/integration"
-	"github.com.cnpmjs.org/brocaar/chirpstack-application-server/internal/integration/models"
-	"github.com.cnpmjs.org/pkg/errors"
+	"hub.fastgit.org/brocaar/chirpstack-api/go/v3/as/integration"
+	"hub.fastgit.org/brocaar/chirpstack-application-server/internal/integration/models"
+	"hub.fastgit.org/pkg/errors"
 )
 
 // Config contains the Pilot Things integration configuration.

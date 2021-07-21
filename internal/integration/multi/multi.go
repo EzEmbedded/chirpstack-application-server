@@ -5,11 +5,11 @@ import (
 	"context"
 	"fmt"
 
-	log "github.com.cnpmjs.org/sirupsen/logrus"
+	log "hub.fastgit.org/sirupsen/logrus"
 
-	pb "github.com.cnpmjs.org/brocaar/chirpstack-api/go/v3/as/integration"
-	"github.com.cnpmjs.org/brocaar/chirpstack-application-server/internal/integration/models"
-	"github.com.cnpmjs.org/brocaar/chirpstack-application-server/internal/logging"
+	pb "hub.fastgit.org/brocaar/chirpstack-api/go/v3/as/integration"
+	"hub.fastgit.org/brocaar/chirpstack-application-server/internal/integration/models"
+	"hub.fastgit.org/brocaar/chirpstack-application-server/internal/logging"
 )
 
 // Integration implements the multi integration.

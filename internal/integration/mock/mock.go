@@ -3,8 +3,8 @@ package mock
 import (
 	"context"
 
-	pb "github.com.cnpmjs.org/brocaar/chirpstack-api/go/v3/as/integration"
-	"github.com.cnpmjs.org/brocaar/chirpstack-application-server/internal/integration/models"
+	pb "hub.fastgit.org/brocaar/chirpstack-api/go/v3/as/integration"
+	"hub.fastgit.org/brocaar/chirpstack-application-server/internal/integration/models"
 )
 
 // Integration implements a mock integration.

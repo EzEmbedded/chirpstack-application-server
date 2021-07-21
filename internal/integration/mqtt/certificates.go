@@ -14,7 +14,7 @@ import (
 	"math/big"
 	"time"
 
-	"github.com.cnpmjs.org/pkg/errors"
+	"hub.fastgit.org/pkg/errors"
 )
 
 // GenerateClientCertificate returns a client-certificate for the given gateway ID.

@@ -6,20 +6,20 @@ import (
 	"fmt"
 	"testing"
 
-	"github.com.cnpmjs.org/gofrs/uuid"
-	"github.com.cnpmjs.org/lib/pq/hstore"
-	"github.com.cnpmjs.org/pkg/errors"
-	. "github.com.cnpmjs.org/smartystreets/goconvey/convey"
+	"hub.fastgit.org/gofrs/uuid"
+	"hub.fastgit.org/lib/pq/hstore"
+	"hub.fastgit.org/pkg/errors"
+	. "hub.fastgit.org/smartystreets/goconvey/convey"
 	"golang.org/x/net/context"
 
-	"github.com.cnpmjs.org/brocaar/chirpstack-api/go/v3/ns"
-	"github.com.cnpmjs.org/brocaar/chirpstack-application-server/internal/backend/networkserver"
-	"github.com.cnpmjs.org/brocaar/chirpstack-application-server/internal/backend/networkserver/mock"
-	"github.com.cnpmjs.org/brocaar/chirpstack-application-server/internal/codec"
-	"github.com.cnpmjs.org/brocaar/chirpstack-application-server/internal/integration/models"
-	"github.com.cnpmjs.org/brocaar/chirpstack-application-server/internal/storage"
-	"github.com.cnpmjs.org/brocaar/chirpstack-application-server/internal/test"
-	"github.com.cnpmjs.org/brocaar/lorawan"
+	"hub.fastgit.org/brocaar/chirpstack-api/go/v3/ns"
+	"hub.fastgit.org/brocaar/chirpstack-application-server/internal/backend/networkserver"
+	"hub.fastgit.org/brocaar/chirpstack-application-server/internal/backend/networkserver/mock"
+	"hub.fastgit.org/brocaar/chirpstack-application-server/internal/codec"
+	"hub.fastgit.org/brocaar/chirpstack-application-server/internal/integration/models"
+	"hub.fastgit.org/brocaar/chirpstack-application-server/internal/storage"
+	"hub.fastgit.org/brocaar/chirpstack-application-server/internal/test"
+	"hub.fastgit.org/brocaar/lorawan"
 )
 
 func TestHandleDownlinkQueueItem(t *testing.T) {

@@ -6,10 +6,10 @@ import (
 	"strconv"
 	"time"
 
-	"github.com.cnpmjs.org/brocaar/chirpstack-application-server/internal/logging"
-	"github.com.cnpmjs.org/go-redis/redis/v8"
-	"github.com.cnpmjs.org/pkg/errors"
-	log "github.com.cnpmjs.org/sirupsen/logrus"
+	"hub.fastgit.org/brocaar/chirpstack-application-server/internal/logging"
+	"hub.fastgit.org/go-redis/redis/v8"
+	"hub.fastgit.org/pkg/errors"
+	log "hub.fastgit.org/sirupsen/logrus"
 )
 
 // AggregationInterval defines the aggregation type.

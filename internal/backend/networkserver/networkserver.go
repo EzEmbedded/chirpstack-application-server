@@ -8,16 +8,16 @@ import (
 	"sync"
 	"time"
 
-	grpc_logrus "github.com.cnpmjs.org/grpc-ecosystem/go-grpc-middleware/logging/logrus"
-	"github.com.cnpmjs.org/pkg/errors"
-	log "github.com.cnpmjs.org/sirupsen/logrus"
+	grpc_logrus "hub.fastgit.org/grpc-ecosystem/go-grpc-middleware/logging/logrus"
+	"hub.fastgit.org/pkg/errors"
+	log "hub.fastgit.org/sirupsen/logrus"
 	"google.golang.org/grpc"
 	"google.golang.org/grpc/balancer/roundrobin"
 	"google.golang.org/grpc/credentials"
 
-	"github.com.cnpmjs.org/brocaar/chirpstack-api/go/v3/ns"
-	"github.com.cnpmjs.org/brocaar/chirpstack-application-server/internal/config"
-	"github.com.cnpmjs.org/brocaar/chirpstack-application-server/internal/logging"
+	"hub.fastgit.org/brocaar/chirpstack-api/go/v3/ns"
+	"hub.fastgit.org/brocaar/chirpstack-application-server/internal/config"
+	"hub.fastgit.org/brocaar/chirpstack-application-server/internal/logging"
 )
 
 var p Pool

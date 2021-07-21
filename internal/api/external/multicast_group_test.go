@@ -3,19 +3,19 @@ package external
 import (
 	"testing"
 
-	"github.com.cnpmjs.org/brocaar/lorawan"
+	"hub.fastgit.org/brocaar/lorawan"
 
-	uuid "github.com.cnpmjs.org/gofrs/uuid"
-	"github.com.cnpmjs.org/stretchr/testify/require"
+	uuid "hub.fastgit.org/gofrs/uuid"
+	"hub.fastgit.org/stretchr/testify/require"
 	"golang.org/x/net/context"
 	"google.golang.org/grpc"
 	"google.golang.org/grpc/codes"
 
-	pb "github.com.cnpmjs.org/brocaar/chirpstack-api/go/v3/as/external/api"
-	"github.com.cnpmjs.org/brocaar/chirpstack-api/go/v3/ns"
-	"github.com.cnpmjs.org/brocaar/chirpstack-application-server/internal/backend/networkserver"
-	"github.com.cnpmjs.org/brocaar/chirpstack-application-server/internal/backend/networkserver/mock"
-	"github.com.cnpmjs.org/brocaar/chirpstack-application-server/internal/storage"
+	pb "hub.fastgit.org/brocaar/chirpstack-api/go/v3/as/external/api"
+	"hub.fastgit.org/brocaar/chirpstack-api/go/v3/ns"
+	"hub.fastgit.org/brocaar/chirpstack-application-server/internal/backend/networkserver"
+	"hub.fastgit.org/brocaar/chirpstack-application-server/internal/backend/networkserver/mock"
+	"hub.fastgit.org/brocaar/chirpstack-application-server/internal/storage"
 )
 
 func (ts *APITestSuite) TestMulticastGroup() {

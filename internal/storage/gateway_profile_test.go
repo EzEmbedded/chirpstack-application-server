@@ -5,14 +5,14 @@ import (
 	"testing"
 	"time"
 
-	uuid "github.com.cnpmjs.org/gofrs/uuid"
-	"github.com.cnpmjs.org/golang/protobuf/ptypes"
-	"github.com.cnpmjs.org/stretchr/testify/require"
+	uuid "hub.fastgit.org/gofrs/uuid"
+	"hub.fastgit.org/golang/protobuf/ptypes"
+	"hub.fastgit.org/stretchr/testify/require"
 
-	"github.com.cnpmjs.org/brocaar/chirpstack-api/go/v3/common"
-	"github.com.cnpmjs.org/brocaar/chirpstack-api/go/v3/ns"
-	"github.com.cnpmjs.org/brocaar/chirpstack-application-server/internal/backend/networkserver"
-	"github.com.cnpmjs.org/brocaar/chirpstack-application-server/internal/backend/networkserver/mock"
+	"hub.fastgit.org/brocaar/chirpstack-api/go/v3/common"
+	"hub.fastgit.org/brocaar/chirpstack-api/go/v3/ns"
+	"hub.fastgit.org/brocaar/chirpstack-application-server/internal/backend/networkserver"
+	"hub.fastgit.org/brocaar/chirpstack-application-server/internal/backend/networkserver/mock"
 )
 
 func (ts *StorageTestSuite) TestGatewayProfile() {

@@ -8,11 +8,11 @@ import (
 	"strconv"
 	"time"
 
-	"github.com.cnpmjs.org/prometheus/client_golang/prometheus"
-	"github.com.cnpmjs.org/prometheus/client_golang/prometheus/promauto"
-	log "github.com.cnpmjs.org/sirupsen/logrus"
+	"hub.fastgit.org/prometheus/client_golang/prometheus"
+	"hub.fastgit.org/prometheus/client_golang/prometheus/promauto"
+	log "hub.fastgit.org/sirupsen/logrus"
 
-	"github.com.cnpmjs.org/brocaar/lorawan/backend"
+	"hub.fastgit.org/brocaar/lorawan/backend"
 )
 
 var (

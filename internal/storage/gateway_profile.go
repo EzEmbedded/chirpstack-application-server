@@ -4,15 +4,15 @@ import (
 	"context"
 	"time"
 
-	"github.com.cnpmjs.org/gofrs/uuid"
-	"github.com.cnpmjs.org/golang/protobuf/ptypes"
-	"github.com.cnpmjs.org/jmoiron/sqlx"
-	"github.com.cnpmjs.org/pkg/errors"
-	log "github.com.cnpmjs.org/sirupsen/logrus"
+	"hub.fastgit.org/gofrs/uuid"
+	"hub.fastgit.org/golang/protobuf/ptypes"
+	"hub.fastgit.org/jmoiron/sqlx"
+	"hub.fastgit.org/pkg/errors"
+	log "hub.fastgit.org/sirupsen/logrus"
 
-	"github.com.cnpmjs.org/brocaar/chirpstack-api/go/v3/ns"
-	"github.com.cnpmjs.org/brocaar/chirpstack-application-server/internal/backend/networkserver"
-	"github.com.cnpmjs.org/brocaar/chirpstack-application-server/internal/logging"
+	"hub.fastgit.org/brocaar/chirpstack-api/go/v3/ns"
+	"hub.fastgit.org/brocaar/chirpstack-application-server/internal/backend/networkserver"
+	"hub.fastgit.org/brocaar/chirpstack-application-server/internal/logging"
 )
 
 // Modulations

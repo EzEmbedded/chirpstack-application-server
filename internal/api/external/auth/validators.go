@@ -3,11 +3,11 @@ package auth
 import (
 	"strings"
 
-	"github.com.cnpmjs.org/gofrs/uuid"
+	"hub.fastgit.org/gofrs/uuid"
 
-	"github.com.cnpmjs.org/brocaar/lorawan"
-	"github.com.cnpmjs.org/jmoiron/sqlx"
-	"github.com.cnpmjs.org/pkg/errors"
+	"hub.fastgit.org/brocaar/lorawan"
+	"hub.fastgit.org/jmoiron/sqlx"
+	"hub.fastgit.org/pkg/errors"
 )
 
 // API key subjects.

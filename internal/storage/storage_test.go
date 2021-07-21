@@ -4,11 +4,11 @@ import (
 	"context"
 	"testing"
 
-	"github.com.cnpmjs.org/jmoiron/sqlx"
-	"github.com.cnpmjs.org/stretchr/testify/require"
-	"github.com.cnpmjs.org/stretchr/testify/suite"
+	"hub.fastgit.org/jmoiron/sqlx"
+	"hub.fastgit.org/stretchr/testify/require"
+	"hub.fastgit.org/stretchr/testify/suite"
 
-	"github.com.cnpmjs.org/brocaar/chirpstack-application-server/internal/test"
+	"hub.fastgit.org/brocaar/chirpstack-application-server/internal/test"
 )
 
 // DatabaseTestSuiteBase provides the setup and teardown of the database

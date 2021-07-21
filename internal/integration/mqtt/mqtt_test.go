@@ -6,18 +6,18 @@ import (
 	"testing"
 	"time"
 
-	paho "github.com.cnpmjs.org/eclipse/paho.mqtt.golang"
-	"github.com.cnpmjs.org/golang/protobuf/proto"
-	"github.com.cnpmjs.org/stretchr/testify/require"
-	"github.com.cnpmjs.org/stretchr/testify/suite"
+	paho "hub.fastgit.org/eclipse/paho.mqtt.golang"
+	"hub.fastgit.org/golang/protobuf/proto"
+	"hub.fastgit.org/stretchr/testify/require"
+	"hub.fastgit.org/stretchr/testify/suite"
 
-	pb "github.com.cnpmjs.org/brocaar/chirpstack-api/go/v3/as/integration"
-	"github.com.cnpmjs.org/brocaar/chirpstack-application-server/internal/config"
-	"github.com.cnpmjs.org/brocaar/chirpstack-application-server/internal/integration/marshaler"
-	"github.com.cnpmjs.org/brocaar/chirpstack-application-server/internal/integration/models"
-	"github.com.cnpmjs.org/brocaar/chirpstack-application-server/internal/storage"
-	"github.com.cnpmjs.org/brocaar/chirpstack-application-server/internal/test"
-	"github.com.cnpmjs.org/brocaar/lorawan"
+	pb "hub.fastgit.org/brocaar/chirpstack-api/go/v3/as/integration"
+	"hub.fastgit.org/brocaar/chirpstack-application-server/internal/config"
+	"hub.fastgit.org/brocaar/chirpstack-application-server/internal/integration/marshaler"
+	"hub.fastgit.org/brocaar/chirpstack-application-server/internal/integration/models"
+	"hub.fastgit.org/brocaar/chirpstack-application-server/internal/storage"
+	"hub.fastgit.org/brocaar/chirpstack-application-server/internal/test"
+	"hub.fastgit.org/brocaar/lorawan"
 )
 
 type MQTTHandlerTestSuite struct {

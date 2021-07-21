@@ -5,17 +5,17 @@ import (
 	"testing"
 	"time"
 
-	"github.com.cnpmjs.org/golang/protobuf/ptypes"
-	. "github.com.cnpmjs.org/smartystreets/goconvey/convey"
+	"hub.fastgit.org/golang/protobuf/ptypes"
+	. "hub.fastgit.org/smartystreets/goconvey/convey"
 
-	"github.com.cnpmjs.org/brocaar/chirpstack-api/go/v3/as"
-	"github.com.cnpmjs.org/brocaar/chirpstack-api/go/v3/common"
-	"github.com.cnpmjs.org/brocaar/chirpstack-api/go/v3/gw"
-	"github.com.cnpmjs.org/brocaar/chirpstack-application-server/internal/backend/networkserver"
-	"github.com.cnpmjs.org/brocaar/chirpstack-application-server/internal/backend/networkserver/mock"
-	"github.com.cnpmjs.org/brocaar/chirpstack-application-server/internal/storage"
-	"github.com.cnpmjs.org/brocaar/chirpstack-application-server/internal/test"
-	"github.com.cnpmjs.org/brocaar/lorawan"
+	"hub.fastgit.org/brocaar/chirpstack-api/go/v3/as"
+	"hub.fastgit.org/brocaar/chirpstack-api/go/v3/common"
+	"hub.fastgit.org/brocaar/chirpstack-api/go/v3/gw"
+	"hub.fastgit.org/brocaar/chirpstack-application-server/internal/backend/networkserver"
+	"hub.fastgit.org/brocaar/chirpstack-application-server/internal/backend/networkserver/mock"
+	"hub.fastgit.org/brocaar/chirpstack-application-server/internal/storage"
+	"hub.fastgit.org/brocaar/chirpstack-application-server/internal/test"
+	"hub.fastgit.org/brocaar/lorawan"
 )
 
 func TestGatewayPing(t *testing.T) {

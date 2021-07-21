@@ -15,14 +15,14 @@ import (
 	"strconv"
 	"strings"
 
-	"github.com.cnpmjs.org/mmcloughlin/geohash"
-	"github.com.cnpmjs.org/pkg/errors"
-	log "github.com.cnpmjs.org/sirupsen/logrus"
+	"hub.fastgit.org/mmcloughlin/geohash"
+	"hub.fastgit.org/pkg/errors"
+	log "hub.fastgit.org/sirupsen/logrus"
 
-	pb "github.com.cnpmjs.org/brocaar/chirpstack-api/go/v3/as/integration"
-	"github.com.cnpmjs.org/brocaar/chirpstack-application-server/internal/integration/models"
-	"github.com.cnpmjs.org/brocaar/chirpstack-application-server/internal/logging"
-	"github.com.cnpmjs.org/brocaar/lorawan"
+	pb "hub.fastgit.org/brocaar/chirpstack-api/go/v3/as/integration"
+	"hub.fastgit.org/brocaar/chirpstack-application-server/internal/integration/models"
+	"hub.fastgit.org/brocaar/chirpstack-application-server/internal/logging"
+	"hub.fastgit.org/brocaar/lorawan"
 )
 
 var precisionValidator = regexp.MustCompile(`^(ns|u|ms|s|m|h)$`)

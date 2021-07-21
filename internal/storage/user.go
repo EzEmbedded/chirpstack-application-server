@@ -12,13 +12,13 @@ import (
 	"strings"
 	"time"
 
-	jwt "github.com.cnpmjs.org/dgrijalva/jwt-go"
-	"github.com.cnpmjs.org/jmoiron/sqlx"
-	"github.com.cnpmjs.org/pkg/errors"
-	log "github.com.cnpmjs.org/sirupsen/logrus"
+	jwt "hub.fastgit.org/dgrijalva/jwt-go"
+	"hub.fastgit.org/jmoiron/sqlx"
+	"hub.fastgit.org/pkg/errors"
+	log "hub.fastgit.org/sirupsen/logrus"
 	"golang.org/x/crypto/pbkdf2"
 
-	"github.com.cnpmjs.org/brocaar/chirpstack-application-server/internal/logging"
+	"hub.fastgit.org/brocaar/chirpstack-application-server/internal/logging"
 )
 
 // saltSize defines the salt size

@@ -4,15 +4,15 @@ import (
 	"context"
 	"fmt"
 
-	"github.com.cnpmjs.org/gofrs/uuid"
-	"github.com.cnpmjs.org/jmoiron/sqlx"
-	"github.com.cnpmjs.org/pkg/errors"
+	"hub.fastgit.org/gofrs/uuid"
+	"hub.fastgit.org/jmoiron/sqlx"
+	"hub.fastgit.org/pkg/errors"
 
-	api "github.com.cnpmjs.org/brocaar/chirpstack-api/go/v3/as/external/api"
-	"github.com.cnpmjs.org/brocaar/chirpstack-api/go/v3/ns"
-	"github.com.cnpmjs.org/brocaar/chirpstack-application-server/internal/backend/networkserver"
-	"github.com.cnpmjs.org/brocaar/chirpstack-application-server/internal/storage"
-	"github.com.cnpmjs.org/brocaar/lorawan"
+	api "hub.fastgit.org/brocaar/chirpstack-api/go/v3/as/external/api"
+	"hub.fastgit.org/brocaar/chirpstack-api/go/v3/ns"
+	"hub.fastgit.org/brocaar/chirpstack-application-server/internal/backend/networkserver"
+	"hub.fastgit.org/brocaar/chirpstack-application-server/internal/storage"
+	"hub.fastgit.org/brocaar/lorawan"
 )
 
 // Enqueue adds the given payload to the multicast-group queue.

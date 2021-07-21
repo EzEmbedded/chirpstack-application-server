@@ -4,13 +4,13 @@ import (
 	"database/sql"
 	"time"
 
-	"github.com.cnpmjs.org/go-redis/redis/v8"
-	"github.com.cnpmjs.org/jmoiron/sqlx"
-	"github.com.cnpmjs.org/pkg/errors"
+	"hub.fastgit.org/go-redis/redis/v8"
+	"hub.fastgit.org/jmoiron/sqlx"
+	"hub.fastgit.org/pkg/errors"
 
 	// register postgresql driver
-	_ "github.com.cnpmjs.org/lib/pq"
-	log "github.com.cnpmjs.org/sirupsen/logrus"
+	_ "hub.fastgit.org/lib/pq"
+	log "hub.fastgit.org/sirupsen/logrus"
 )
 
 // Errors.

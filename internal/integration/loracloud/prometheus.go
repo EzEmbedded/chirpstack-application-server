@@ -1,8 +1,8 @@
 package loracloud
 
 import (
-	"github.com.cnpmjs.org/prometheus/client_golang/prometheus"
-	"github.com.cnpmjs.org/prometheus/client_golang/prometheus/promauto"
+	"hub.fastgit.org/prometheus/client_golang/prometheus"
+	"hub.fastgit.org/prometheus/client_golang/prometheus/promauto"
 )
 
 var (

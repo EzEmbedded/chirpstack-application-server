@@ -8,12 +8,12 @@ import (
 	"strings"
 	"time"
 
-	"github.com.cnpmjs.org/brocaar/chirpstack-application-server/internal/config"
-	"github.com.cnpmjs.org/go-redis/redis/v8"
-	"github.com.cnpmjs.org/spf13/viper"
+	"hub.fastgit.org/brocaar/chirpstack-application-server/internal/config"
+	"hub.fastgit.org/go-redis/redis/v8"
+	"hub.fastgit.org/spf13/viper"
 
-	log "github.com.cnpmjs.org/sirupsen/logrus"
-	"github.com.cnpmjs.org/spf13/cobra"
+	log "hub.fastgit.org/sirupsen/logrus"
+	"hub.fastgit.org/spf13/cobra"
 )
 
 var cfgFile string
@@ -24,7 +24,7 @@ var rootCmd = &cobra.Command{
 	Short: "ChirpStack Application Server",
 	Long: `ChirpStack Application Server is an open-source Application Server, part of the ChirpStack LoRaWAN Network Server stack.
 	> documentation & support: https://www.chirpstack.io/application-server
-	> source & copyright information: https://github.com.cnpmjs.org/brocaar/chirpstack-application-server`,
+	> source & copyright information: https://hub.fastgit.org/brocaar/chirpstack-application-server`,
 	RunE: run,
 }
 

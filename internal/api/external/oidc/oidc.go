@@ -8,14 +8,14 @@ import (
 	"net/http"
 	"time"
 
-	"github.com.cnpmjs.org/coreos/go-oidc"
-	"github.com.cnpmjs.org/dgrijalva/jwt-go"
-	"github.com.cnpmjs.org/gorilla/mux"
-	"github.com.cnpmjs.org/pkg/errors"
-	log "github.com.cnpmjs.org/sirupsen/logrus"
+	"hub.fastgit.org/coreos/go-oidc"
+	"hub.fastgit.org/dgrijalva/jwt-go"
+	"hub.fastgit.org/gorilla/mux"
+	"hub.fastgit.org/pkg/errors"
+	log "hub.fastgit.org/sirupsen/logrus"
 	"golang.org/x/oauth2"
 
-	"github.com.cnpmjs.org/brocaar/chirpstack-application-server/internal/config"
+	"hub.fastgit.org/brocaar/chirpstack-application-server/internal/config"
 )
 
 var (

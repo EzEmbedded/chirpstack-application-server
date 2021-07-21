@@ -4,20 +4,20 @@ import (
 	"fmt"
 	"net/http"
 
-	"github.com.cnpmjs.org/gofrs/uuid"
-	"github.com.cnpmjs.org/golang/protobuf/ptypes"
-	"github.com.cnpmjs.org/golang/protobuf/ptypes/empty"
-	"github.com.cnpmjs.org/pkg/errors"
-	log "github.com.cnpmjs.org/sirupsen/logrus"
+	"hub.fastgit.org/gofrs/uuid"
+	"hub.fastgit.org/golang/protobuf/ptypes"
+	"hub.fastgit.org/golang/protobuf/ptypes/empty"
+	"hub.fastgit.org/pkg/errors"
+	log "hub.fastgit.org/sirupsen/logrus"
 	"golang.org/x/net/context"
 	"google.golang.org/grpc"
 	"google.golang.org/grpc/codes"
 
-	pb "github.com.cnpmjs.org/brocaar/chirpstack-api/go/v3/as/external/api"
-	"github.com.cnpmjs.org/brocaar/chirpstack-application-server/internal/api/external/auth"
-	"github.com.cnpmjs.org/brocaar/chirpstack-application-server/internal/api/external/oidc"
-	"github.com.cnpmjs.org/brocaar/chirpstack-application-server/internal/api/helpers"
-	"github.com.cnpmjs.org/brocaar/chirpstack-application-server/internal/storage"
+	pb "hub.fastgit.org/brocaar/chirpstack-api/go/v3/as/external/api"
+	"hub.fastgit.org/brocaar/chirpstack-application-server/internal/api/external/auth"
+	"hub.fastgit.org/brocaar/chirpstack-application-server/internal/api/external/oidc"
+	"hub.fastgit.org/brocaar/chirpstack-application-server/internal/api/helpers"
+	"hub.fastgit.org/brocaar/chirpstack-application-server/internal/storage"
 )
 
 // InternalAPI exports the internal User related functions.

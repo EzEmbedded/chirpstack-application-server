@@ -4,9 +4,9 @@ import (
 	"os"
 	"strings"
 
-	log "github.com.cnpmjs.org/sirupsen/logrus"
+	log "hub.fastgit.org/sirupsen/logrus"
 
-	"github.com.cnpmjs.org/brocaar/chirpstack-application-server/internal/config"
+	"hub.fastgit.org/brocaar/chirpstack-application-server/internal/config"
 )
 
 func init() {

@@ -9,18 +9,18 @@ import (
 	"net/http/httptest"
 	"testing"
 
-	"github.com.cnpmjs.org/gofrs/uuid"
-	"github.com.cnpmjs.org/stretchr/testify/require"
-	"github.com.cnpmjs.org/stretchr/testify/suite"
+	"hub.fastgit.org/gofrs/uuid"
+	"hub.fastgit.org/stretchr/testify/require"
+	"hub.fastgit.org/stretchr/testify/suite"
 
-	pb "github.com.cnpmjs.org/brocaar/chirpstack-api/go/v3/as/integration"
-	"github.com.cnpmjs.org/brocaar/chirpstack-application-server/internal/backend/networkserver"
-	"github.com.cnpmjs.org/brocaar/chirpstack-application-server/internal/backend/networkserver/mock"
-	httpint "github.com.cnpmjs.org/brocaar/chirpstack-application-server/internal/integration/http"
-	"github.com.cnpmjs.org/brocaar/chirpstack-application-server/internal/integration/marshaler"
-	"github.com.cnpmjs.org/brocaar/chirpstack-application-server/internal/integration/models"
-	"github.com.cnpmjs.org/brocaar/chirpstack-application-server/internal/storage"
-	"github.com.cnpmjs.org/brocaar/chirpstack-application-server/internal/test"
+	pb "hub.fastgit.org/brocaar/chirpstack-api/go/v3/as/integration"
+	"hub.fastgit.org/brocaar/chirpstack-application-server/internal/backend/networkserver"
+	"hub.fastgit.org/brocaar/chirpstack-application-server/internal/backend/networkserver/mock"
+	httpint "hub.fastgit.org/brocaar/chirpstack-application-server/internal/integration/http"
+	"hub.fastgit.org/brocaar/chirpstack-application-server/internal/integration/marshaler"
+	"hub.fastgit.org/brocaar/chirpstack-application-server/internal/integration/models"
+	"hub.fastgit.org/brocaar/chirpstack-application-server/internal/storage"
+	"hub.fastgit.org/brocaar/chirpstack-application-server/internal/test"
 )
 
 type testHTTPHandler struct {

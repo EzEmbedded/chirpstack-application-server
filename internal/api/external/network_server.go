@@ -1,18 +1,18 @@
 package external
 
 import (
-	"github.com.cnpmjs.org/golang/protobuf/ptypes"
-	"github.com.cnpmjs.org/golang/protobuf/ptypes/empty"
-	"github.com.cnpmjs.org/jmoiron/sqlx"
+	"hub.fastgit.org/golang/protobuf/ptypes"
+	"hub.fastgit.org/golang/protobuf/ptypes/empty"
+	"hub.fastgit.org/jmoiron/sqlx"
 	"golang.org/x/net/context"
 	"google.golang.org/grpc"
 	"google.golang.org/grpc/codes"
 
-	pb "github.com.cnpmjs.org/brocaar/chirpstack-api/go/v3/as/external/api"
-	"github.com.cnpmjs.org/brocaar/chirpstack-application-server/internal/api/external/auth"
-	"github.com.cnpmjs.org/brocaar/chirpstack-application-server/internal/api/helpers"
-	"github.com.cnpmjs.org/brocaar/chirpstack-application-server/internal/backend/networkserver"
-	"github.com.cnpmjs.org/brocaar/chirpstack-application-server/internal/storage"
+	pb "hub.fastgit.org/brocaar/chirpstack-api/go/v3/as/external/api"
+	"hub.fastgit.org/brocaar/chirpstack-application-server/internal/api/external/auth"
+	"hub.fastgit.org/brocaar/chirpstack-application-server/internal/api/helpers"
+	"hub.fastgit.org/brocaar/chirpstack-application-server/internal/backend/networkserver"
+	"hub.fastgit.org/brocaar/chirpstack-application-server/internal/storage"
 )
 
 // NetworkServerAPI exports the NetworkServer related functions.

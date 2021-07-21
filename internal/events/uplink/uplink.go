@@ -7,20 +7,20 @@ import (
 	"fmt"
 	"time"
 
-	keywrap "github.com.cnpmjs.org/NickBall/go-aes-key-wrap"
-	"github.com.cnpmjs.org/golang/protobuf/ptypes"
-	"github.com.cnpmjs.org/pkg/errors"
-	log "github.com.cnpmjs.org/sirupsen/logrus"
+	keywrap "hub.fastgit.org/NickBall/go-aes-key-wrap"
+	"hub.fastgit.org/golang/protobuf/ptypes"
+	"hub.fastgit.org/pkg/errors"
+	log "hub.fastgit.org/sirupsen/logrus"
 
-	"github.com.cnpmjs.org/brocaar/chirpstack-api/go/v3/as"
-	pb "github.com.cnpmjs.org/brocaar/chirpstack-api/go/v3/as/integration"
-	"github.com.cnpmjs.org/brocaar/chirpstack-api/go/v3/common"
-	"github.com.cnpmjs.org/brocaar/chirpstack-application-server/internal/codec"
-	"github.com.cnpmjs.org/brocaar/chirpstack-application-server/internal/config"
-	"github.com.cnpmjs.org/brocaar/chirpstack-application-server/internal/integration"
-	"github.com.cnpmjs.org/brocaar/chirpstack-application-server/internal/logging"
-	"github.com.cnpmjs.org/brocaar/chirpstack-application-server/internal/storage"
-	"github.com.cnpmjs.org/brocaar/lorawan"
+	"hub.fastgit.org/brocaar/chirpstack-api/go/v3/as"
+	pb "hub.fastgit.org/brocaar/chirpstack-api/go/v3/as/integration"
+	"hub.fastgit.org/brocaar/chirpstack-api/go/v3/common"
+	"hub.fastgit.org/brocaar/chirpstack-application-server/internal/codec"
+	"hub.fastgit.org/brocaar/chirpstack-application-server/internal/config"
+	"hub.fastgit.org/brocaar/chirpstack-application-server/internal/integration"
+	"hub.fastgit.org/brocaar/chirpstack-application-server/internal/logging"
+	"hub.fastgit.org/brocaar/chirpstack-application-server/internal/storage"
+	"hub.fastgit.org/brocaar/lorawan"
 )
 
 type uplinkContext struct {

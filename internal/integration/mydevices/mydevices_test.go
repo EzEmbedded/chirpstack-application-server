@@ -9,16 +9,16 @@ import (
 	"net/http/httptest"
 	"testing"
 
-	"github.com.cnpmjs.org/gofrs/uuid"
-	"github.com.cnpmjs.org/stretchr/testify/require"
-	"github.com.cnpmjs.org/stretchr/testify/suite"
+	"hub.fastgit.org/gofrs/uuid"
+	"hub.fastgit.org/stretchr/testify/require"
+	"hub.fastgit.org/stretchr/testify/suite"
 
-	pb "github.com.cnpmjs.org/brocaar/chirpstack-api/go/v3/as/integration"
-	"github.com.cnpmjs.org/brocaar/chirpstack-api/go/v3/common"
-	"github.com.cnpmjs.org/brocaar/chirpstack-api/go/v3/gw"
-	"github.com.cnpmjs.org/brocaar/chirpstack-application-server/internal/integration/models"
-	"github.com.cnpmjs.org/brocaar/chirpstack-application-server/internal/logging"
-	"github.com.cnpmjs.org/brocaar/lorawan"
+	pb "hub.fastgit.org/brocaar/chirpstack-api/go/v3/as/integration"
+	"hub.fastgit.org/brocaar/chirpstack-api/go/v3/common"
+	"hub.fastgit.org/brocaar/chirpstack-api/go/v3/gw"
+	"hub.fastgit.org/brocaar/chirpstack-application-server/internal/integration/models"
+	"hub.fastgit.org/brocaar/chirpstack-application-server/internal/logging"
+	"hub.fastgit.org/brocaar/lorawan"
 )
 
 type testHTTPHandler struct {

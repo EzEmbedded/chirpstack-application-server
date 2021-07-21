@@ -7,15 +7,15 @@ import (
 	"testing"
 	"time"
 
-	"github.com.cnpmjs.org/golang/protobuf/jsonpb"
-	"github.com.cnpmjs.org/golang/protobuf/proto"
-	"github.com.cnpmjs.org/stretchr/testify/require"
+	"hub.fastgit.org/golang/protobuf/jsonpb"
+	"hub.fastgit.org/golang/protobuf/proto"
+	"hub.fastgit.org/stretchr/testify/require"
 
-	pb "github.com.cnpmjs.org/brocaar/chirpstack-api/go/v3/as/integration"
-	"github.com.cnpmjs.org/brocaar/chirpstack-application-server/internal/config"
-	"github.com.cnpmjs.org/brocaar/chirpstack-application-server/internal/storage"
-	"github.com.cnpmjs.org/brocaar/chirpstack-application-server/internal/test"
-	"github.com.cnpmjs.org/brocaar/lorawan"
+	pb "hub.fastgit.org/brocaar/chirpstack-api/go/v3/as/integration"
+	"hub.fastgit.org/brocaar/chirpstack-application-server/internal/config"
+	"hub.fastgit.org/brocaar/chirpstack-application-server/internal/storage"
+	"hub.fastgit.org/brocaar/chirpstack-application-server/internal/test"
+	"hub.fastgit.org/brocaar/lorawan"
 )
 
 func TestEventLog(t *testing.T) {

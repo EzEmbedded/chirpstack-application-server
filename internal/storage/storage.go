@@ -8,17 +8,17 @@ import (
 	"strings"
 	"time"
 
-	"github.com.cnpmjs.org/go-redis/redis/v8"
-	uuid "github.com.cnpmjs.org/gofrs/uuid"
-	"github.com.cnpmjs.org/golang-migrate/migrate/v4"
-	"github.com.cnpmjs.org/golang-migrate/migrate/v4/database/postgres"
-	"github.com.cnpmjs.org/golang-migrate/migrate/v4/source/httpfs"
-	"github.com.cnpmjs.org/jmoiron/sqlx"
-	"github.com.cnpmjs.org/pkg/errors"
-	log "github.com.cnpmjs.org/sirupsen/logrus"
+	"hub.fastgit.org/go-redis/redis/v8"
+	uuid "hub.fastgit.org/gofrs/uuid"
+	"hub.fastgit.org/golang-migrate/migrate/v4"
+	"hub.fastgit.org/golang-migrate/migrate/v4/database/postgres"
+	"hub.fastgit.org/golang-migrate/migrate/v4/source/httpfs"
+	"hub.fastgit.org/jmoiron/sqlx"
+	"hub.fastgit.org/pkg/errors"
+	log "hub.fastgit.org/sirupsen/logrus"
 
-	"github.com.cnpmjs.org/brocaar/chirpstack-application-server/internal/config"
-	"github.com.cnpmjs.org/brocaar/chirpstack-application-server/internal/storage/migrations/code"
+	"hub.fastgit.org/brocaar/chirpstack-application-server/internal/config"
+	"hub.fastgit.org/brocaar/chirpstack-application-server/internal/storage/migrations/code"
 )
 
 // Migrations

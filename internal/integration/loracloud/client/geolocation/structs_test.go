@@ -4,15 +4,15 @@ import (
 	"testing"
 	"time"
 
-	"github.com.cnpmjs.org/golang/protobuf/ptypes"
-	"github.com.cnpmjs.org/golang/protobuf/ptypes/timestamp"
-	"github.com.cnpmjs.org/stretchr/testify/require"
-	"github.com.cnpmjs.org/stretchr/testify/suite"
+	"hub.fastgit.org/golang/protobuf/ptypes"
+	"hub.fastgit.org/golang/protobuf/ptypes/timestamp"
+	"hub.fastgit.org/stretchr/testify/require"
+	"hub.fastgit.org/stretchr/testify/suite"
 
-	"github.com.cnpmjs.org/brocaar/chirpstack-api/go/v3/common"
-	"github.com.cnpmjs.org/brocaar/chirpstack-api/go/v3/gw"
-	"github.com.cnpmjs.org/brocaar/chirpstack-application-server/internal/integration/loracloud/client/helpers"
-	"github.com.cnpmjs.org/brocaar/lorawan"
+	"hub.fastgit.org/brocaar/chirpstack-api/go/v3/common"
+	"hub.fastgit.org/brocaar/chirpstack-api/go/v3/gw"
+	"hub.fastgit.org/brocaar/chirpstack-application-server/internal/integration/loracloud/client/helpers"
+	"hub.fastgit.org/brocaar/lorawan"
 )
 
 type StructsTestSuite struct {

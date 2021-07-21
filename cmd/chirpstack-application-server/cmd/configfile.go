@@ -4,9 +4,9 @@ import (
 	"os"
 	"text/template"
 
-	"github.com.cnpmjs.org/brocaar/chirpstack-application-server/internal/config"
-	"github.com.cnpmjs.org/pkg/errors"
-	"github.com.cnpmjs.org/spf13/cobra"
+	"hub.fastgit.org/brocaar/chirpstack-application-server/internal/config"
+	"hub.fastgit.org/pkg/errors"
+	"hub.fastgit.org/spf13/cobra"
 )
 
 // when updating this template, don't forget to update config.md!
@@ -66,7 +66,7 @@ dsn="{{ .PostgreSQL.DSN }}"
 # Automatically apply database migrations.
 #
 # It is possible to apply the database-migrations by hand
-# (see https://github.com.cnpmjs.org/brocaar/chirpstack-application-server/tree/master/internal/storage/migrations)
+# (see https://hub.fastgit.org/brocaar/chirpstack-application-server/tree/master/internal/storage/migrations)
 # or let ChirpStack Application Server migrate to the latest state automatically, by using
 # this setting. Make sure that you always make a backup when upgrading Lora
 # App Server and / or applying migrations.
@@ -615,7 +615,7 @@ timezone="{{ .Metrics.Timezone }}"
   # API timing histogram.
   #
   # By setting this to true, the API request timing histogram will be enabled.
-  # See also: https://github.com.cnpmjs.org/grpc-ecosystem/go-grpc-prometheus#histograms
+  # See also: https://hub.fastgit.org/grpc-ecosystem/go-grpc-prometheus#histograms
   api_timing_histogram={{ .Metrics.Prometheus.APITimingHistogram }}
 
 
@@ -639,7 +639,7 @@ timezone="{{ .Metrics.Timezone }}"
   # Prometheus API timing histogram.
   #
   # By setting this to true, the API request timing histogram will be enabled.
-  # See also: https://github.com.cnpmjs.org/grpc-ecosystem/go-grpc-prometheus#histograms
+  # See also: https://hub.fastgit.org/grpc-ecosystem/go-grpc-prometheus#histograms
   prometheus_api_timing_histogram={{ .Monitoring.PrometheusAPITimingHistogram }}
 
   # Health check endpoint.
