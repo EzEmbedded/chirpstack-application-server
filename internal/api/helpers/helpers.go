@@ -5,16 +5,16 @@ import (
 	"crypto/x509"
 	"io/ioutil"
 
-	grpc_middleware "github.com/grpc-ecosystem/go-grpc-middleware"
-	grpc_logrus "github.com/grpc-ecosystem/go-grpc-middleware/logging/logrus"
-	grpc_ctxtags "github.com/grpc-ecosystem/go-grpc-middleware/tags"
-	grpc_prometheus "github.com/grpc-ecosystem/go-grpc-prometheus"
-	"github.com/pkg/errors"
-	log "github.com/sirupsen/logrus"
+	grpc_middleware "github.com.cnpmjs.org/grpc-ecosystem/go-grpc-middleware"
+	grpc_logrus "github.com.cnpmjs.org/grpc-ecosystem/go-grpc-middleware/logging/logrus"
+	grpc_ctxtags "github.com.cnpmjs.org/grpc-ecosystem/go-grpc-middleware/tags"
+	grpc_prometheus "github.com.cnpmjs.org/grpc-ecosystem/go-grpc-prometheus"
+	"github.com.cnpmjs.org/pkg/errors"
+	log "github.com.cnpmjs.org/sirupsen/logrus"
 	"google.golang.org/grpc"
 	"google.golang.org/grpc/credentials"
 
-	"github.com/brocaar/chirpstack-application-server/internal/logging"
+	"github.com.cnpmjs.org/brocaar/chirpstack-application-server/internal/logging"
 )
 
 // GetgRPCServerOptions returns a []grpc.ServerOption with logging and metrics.

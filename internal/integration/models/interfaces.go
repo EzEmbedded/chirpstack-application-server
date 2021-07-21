@@ -3,7 +3,7 @@ package models
 import (
 	"context"
 
-	"github.com/brocaar/chirpstack-api/go/v3/as/integration"
+	"github.com.cnpmjs.org/brocaar/chirpstack-api/go/v3/as/integration"
 )
 
 // Integration defines the integration interface.

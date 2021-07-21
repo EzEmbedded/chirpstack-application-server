@@ -5,12 +5,12 @@ import (
 	"strings"
 	"time"
 
-	"github.com/pkg/errors"
+	"github.com.cnpmjs.org/pkg/errors"
 
-	"github.com/brocaar/chirpstack-api/go/v3/gw"
-	"github.com/brocaar/chirpstack-application-server/internal/integration/loracloud/client/helpers"
-	"github.com/brocaar/lorawan"
-	"github.com/brocaar/lorawan/gps"
+	"github.com.cnpmjs.org/brocaar/chirpstack-api/go/v3/gw"
+	"github.com.cnpmjs.org/brocaar/chirpstack-application-server/internal/integration/loracloud/client/helpers"
+	"github.com.cnpmjs.org/brocaar/lorawan"
+	"github.com.cnpmjs.org/brocaar/lorawan/gps"
 )
 
 // TDOASingleFrameRequest implements the LoRa Cloud TDOA Single-Frame request.

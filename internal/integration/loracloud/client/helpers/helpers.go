@@ -5,11 +5,11 @@ import (
 	"strings"
 	"time"
 
-	"github.com/golang/protobuf/ptypes"
-	"github.com/pkg/errors"
+	"github.com.cnpmjs.org/golang/protobuf/ptypes"
+	"github.com.cnpmjs.org/pkg/errors"
 
-	"github.com/brocaar/chirpstack-api/go/v3/common"
-	"github.com/brocaar/chirpstack-api/go/v3/gw"
+	"github.com.cnpmjs.org/brocaar/chirpstack-api/go/v3/common"
+	"github.com.cnpmjs.org/brocaar/chirpstack-api/go/v3/gw"
 )
 
 // HEXBytes defines a type which represents bytes as HEX when marshaled to

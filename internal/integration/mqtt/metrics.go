@@ -1,8 +1,8 @@
 package mqtt
 
 import (
-	"github.com/prometheus/client_golang/prometheus"
-	"github.com/prometheus/client_golang/prometheus/promauto"
+	"github.com.cnpmjs.org/prometheus/client_golang/prometheus"
+	"github.com.cnpmjs.org/prometheus/client_golang/prometheus/promauto"
 )
 
 var (

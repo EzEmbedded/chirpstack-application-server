@@ -3,12 +3,12 @@ package storage
 import (
 	"context"
 
-	"github.com/gofrs/uuid"
-	"github.com/jmoiron/sqlx"
-	"github.com/pkg/errors"
+	"github.com.cnpmjs.org/gofrs/uuid"
+	"github.com.cnpmjs.org/jmoiron/sqlx"
+	"github.com.cnpmjs.org/pkg/errors"
 
-	"github.com/brocaar/chirpstack-api/go/v3/ns"
-	"github.com/brocaar/chirpstack-application-server/internal/backend/networkserver"
+	"github.com.cnpmjs.org/brocaar/chirpstack-api/go/v3/ns"
+	"github.com.cnpmjs.org/brocaar/chirpstack-application-server/internal/backend/networkserver"
 )
 
 func getNSClientForServiceProfile(ctx context.Context, db sqlx.Queryer, id uuid.UUID) (ns.NetworkServerServiceClient, error) {

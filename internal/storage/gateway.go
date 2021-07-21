@@ -10,19 +10,19 @@ import (
 	"strings"
 	"time"
 
-	uuid "github.com/gofrs/uuid"
-	"github.com/jmoiron/sqlx"
-	"github.com/lib/pq"
-	"github.com/lib/pq/hstore"
-	"github.com/pkg/errors"
-	log "github.com/sirupsen/logrus"
+	uuid "github.com.cnpmjs.org/gofrs/uuid"
+	"github.com.cnpmjs.org/jmoiron/sqlx"
+	"github.com.cnpmjs.org/lib/pq"
+	"github.com.cnpmjs.org/lib/pq/hstore"
+	"github.com.cnpmjs.org/pkg/errors"
+	log "github.com.cnpmjs.org/sirupsen/logrus"
 	"google.golang.org/grpc"
 	"google.golang.org/grpc/codes"
 
-	"github.com/brocaar/chirpstack-api/go/v3/ns"
-	"github.com/brocaar/chirpstack-application-server/internal/backend/networkserver"
-	"github.com/brocaar/chirpstack-application-server/internal/logging"
-	"github.com/brocaar/lorawan"
+	"github.com.cnpmjs.org/brocaar/chirpstack-api/go/v3/ns"
+	"github.com.cnpmjs.org/brocaar/chirpstack-application-server/internal/backend/networkserver"
+	"github.com.cnpmjs.org/brocaar/chirpstack-application-server/internal/logging"
+	"github.com.cnpmjs.org/brocaar/lorawan"
 )
 
 var gatewayNameRegexp = regexp.MustCompile(`^[\w-]+$`)

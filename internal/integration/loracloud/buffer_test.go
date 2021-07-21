@@ -6,13 +6,13 @@ import (
 	"testing"
 	"time"
 
-	"github.com/golang/protobuf/ptypes"
-	"github.com/stretchr/testify/require"
+	"github.com.cnpmjs.org/golang/protobuf/ptypes"
+	"github.com.cnpmjs.org/stretchr/testify/require"
 
-	"github.com/brocaar/chirpstack-api/go/v3/gw"
-	"github.com/brocaar/chirpstack-application-server/internal/storage"
-	"github.com/brocaar/chirpstack-application-server/internal/test"
-	"github.com/brocaar/lorawan"
+	"github.com.cnpmjs.org/brocaar/chirpstack-api/go/v3/gw"
+	"github.com.cnpmjs.org/brocaar/chirpstack-application-server/internal/storage"
+	"github.com.cnpmjs.org/brocaar/chirpstack-application-server/internal/test"
+	"github.com.cnpmjs.org/brocaar/lorawan"
 )
 
 func TestGeolocBuffer(t *testing.T) {

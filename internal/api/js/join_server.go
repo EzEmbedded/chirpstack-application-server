@@ -8,13 +8,13 @@ import (
 	"io/ioutil"
 	"net/http"
 
-	"github.com/pkg/errors"
-	log "github.com/sirupsen/logrus"
+	"github.com.cnpmjs.org/pkg/errors"
+	log "github.com.cnpmjs.org/sirupsen/logrus"
 
-	"github.com/brocaar/chirpstack-application-server/internal/config"
-	"github.com/brocaar/chirpstack-application-server/internal/storage"
-	"github.com/brocaar/lorawan"
-	"github.com/brocaar/lorawan/backend/joinserver"
+	"github.com.cnpmjs.org/brocaar/chirpstack-application-server/internal/config"
+	"github.com.cnpmjs.org/brocaar/chirpstack-application-server/internal/storage"
+	"github.com.cnpmjs.org/brocaar/lorawan"
+	"github.com.cnpmjs.org/brocaar/lorawan/backend/joinserver"
 )
 
 var (

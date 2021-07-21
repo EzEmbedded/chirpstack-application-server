@@ -1,9 +1,9 @@
 package external
 
 import (
-	"github.com/brocaar/chirpstack-application-server/internal/api/external/auth"
-	"github.com/brocaar/chirpstack-application-server/internal/storage"
-	"github.com/gofrs/uuid"
+	"github.com.cnpmjs.org/brocaar/chirpstack-application-server/internal/api/external/auth"
+	"github.com.cnpmjs.org/brocaar/chirpstack-application-server/internal/storage"
+	"github.com.cnpmjs.org/gofrs/uuid"
 	"golang.org/x/net/context"
 )
 

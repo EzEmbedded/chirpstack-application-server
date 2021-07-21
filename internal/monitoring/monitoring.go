@@ -3,11 +3,11 @@ package monitoring
 import (
 	"net/http"
 
-	grpc_prometheus "github.com/grpc-ecosystem/go-grpc-prometheus"
-	"github.com/prometheus/client_golang/prometheus/promhttp"
-	log "github.com/sirupsen/logrus"
+	grpc_prometheus "github.com.cnpmjs.org/grpc-ecosystem/go-grpc-prometheus"
+	"github.com.cnpmjs.org/prometheus/client_golang/prometheus/promhttp"
+	log "github.com.cnpmjs.org/sirupsen/logrus"
 
-	"github.com/brocaar/chirpstack-application-server/internal/config"
+	"github.com.cnpmjs.org/brocaar/chirpstack-application-server/internal/config"
 )
 
 // Setup setsup the metrics server.

@@ -4,9 +4,9 @@ import (
 	"sync"
 	"time"
 
-	"github.com/pkg/errors"
-	log "github.com/sirupsen/logrus"
-	"github.com/streadway/amqp"
+	"github.com.cnpmjs.org/pkg/errors"
+	log "github.com.cnpmjs.org/sirupsen/logrus"
+	"github.com.cnpmjs.org/streadway/amqp"
 )
 
 var errClosed = errors.New("pool is closed")

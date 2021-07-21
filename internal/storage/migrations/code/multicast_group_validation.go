@@ -1,10 +1,10 @@
 package code
 
 import (
-	"github.com/gofrs/uuid"
-	"github.com/jmoiron/sqlx"
-	"github.com/pkg/errors"
-	log "github.com/sirupsen/logrus"
+	"github.com.cnpmjs.org/gofrs/uuid"
+	"github.com.cnpmjs.org/jmoiron/sqlx"
+	"github.com.cnpmjs.org/pkg/errors"
+	log "github.com.cnpmjs.org/sirupsen/logrus"
 )
 
 type multicastGroupCount struct {

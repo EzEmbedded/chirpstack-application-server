@@ -3,10 +3,10 @@ package amqp
 import (
 	"testing"
 
-	"github.com/stretchr/testify/require"
-	"github.com/stretchr/testify/suite"
+	"github.com.cnpmjs.org/stretchr/testify/require"
+	"github.com.cnpmjs.org/stretchr/testify/suite"
 
-	"github.com/brocaar/chirpstack-application-server/internal/test"
+	"github.com.cnpmjs.org/brocaar/chirpstack-application-server/internal/test"
 )
 
 type ChannelPoolTestSuite struct {

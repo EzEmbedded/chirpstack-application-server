@@ -7,20 +7,20 @@ import (
 	"fmt"
 	"time"
 
-	keywrap "github.com/NickBall/go-aes-key-wrap"
-	"github.com/golang/protobuf/ptypes"
-	"github.com/pkg/errors"
-	log "github.com/sirupsen/logrus"
+	keywrap "github.com.cnpmjs.org/NickBall/go-aes-key-wrap"
+	"github.com.cnpmjs.org/golang/protobuf/ptypes"
+	"github.com.cnpmjs.org/pkg/errors"
+	log "github.com.cnpmjs.org/sirupsen/logrus"
 
-	"github.com/brocaar/chirpstack-api/go/v3/as"
-	pb "github.com/brocaar/chirpstack-api/go/v3/as/integration"
-	"github.com/brocaar/chirpstack-api/go/v3/common"
-	"github.com/brocaar/chirpstack-application-server/internal/codec"
-	"github.com/brocaar/chirpstack-application-server/internal/config"
-	"github.com/brocaar/chirpstack-application-server/internal/integration"
-	"github.com/brocaar/chirpstack-application-server/internal/logging"
-	"github.com/brocaar/chirpstack-application-server/internal/storage"
-	"github.com/brocaar/lorawan"
+	"github.com.cnpmjs.org/brocaar/chirpstack-api/go/v3/as"
+	pb "github.com.cnpmjs.org/brocaar/chirpstack-api/go/v3/as/integration"
+	"github.com.cnpmjs.org/brocaar/chirpstack-api/go/v3/common"
+	"github.com.cnpmjs.org/brocaar/chirpstack-application-server/internal/codec"
+	"github.com.cnpmjs.org/brocaar/chirpstack-application-server/internal/config"
+	"github.com.cnpmjs.org/brocaar/chirpstack-application-server/internal/integration"
+	"github.com.cnpmjs.org/brocaar/chirpstack-application-server/internal/logging"
+	"github.com.cnpmjs.org/brocaar/chirpstack-application-server/internal/storage"
+	"github.com.cnpmjs.org/brocaar/lorawan"
 )
 
 type uplinkContext struct {

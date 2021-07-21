@@ -6,14 +6,14 @@ import (
 	"testing"
 	"time"
 
-	"github.com/gofrs/uuid"
-	"github.com/lib/pq/hstore"
-	"github.com/pkg/errors"
-	"github.com/stretchr/testify/require"
+	"github.com.cnpmjs.org/gofrs/uuid"
+	"github.com.cnpmjs.org/lib/pq/hstore"
+	"github.com.cnpmjs.org/pkg/errors"
+	"github.com.cnpmjs.org/stretchr/testify/require"
 
-	"github.com/brocaar/chirpstack-application-server/internal/backend/networkserver"
-	"github.com/brocaar/chirpstack-application-server/internal/backend/networkserver/mock"
-	"github.com/brocaar/lorawan"
+	"github.com.cnpmjs.org/brocaar/chirpstack-application-server/internal/backend/networkserver"
+	"github.com.cnpmjs.org/brocaar/chirpstack-application-server/internal/backend/networkserver/mock"
+	"github.com.cnpmjs.org/brocaar/lorawan"
 )
 
 func (ts *StorageTestSuite) TestGateway() {

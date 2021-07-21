@@ -6,9 +6,9 @@ import (
 	"reflect"
 	"time"
 
-	"github.com/brocaar/chirpstack-application-server/internal/config"
-	"github.com/pkg/errors"
-	"github.com/robertkrimen/otto"
+	"github.com.cnpmjs.org/brocaar/chirpstack-application-server/internal/config"
+	"github.com.cnpmjs.org/pkg/errors"
+	"github.com.cnpmjs.org/robertkrimen/otto"
 )
 
 var (

@@ -4,14 +4,14 @@ import (
 	"context"
 	"testing"
 
-	"github.com/gofrs/uuid"
-	"github.com/pkg/errors"
-	"github.com/stretchr/testify/require"
+	"github.com.cnpmjs.org/gofrs/uuid"
+	"github.com.cnpmjs.org/pkg/errors"
+	"github.com.cnpmjs.org/stretchr/testify/require"
 
-	"github.com/brocaar/chirpstack-api/go/v3/ns"
-	"github.com/brocaar/chirpstack-application-server/internal/backend/networkserver"
-	"github.com/brocaar/chirpstack-application-server/internal/backend/networkserver/mock"
-	"github.com/brocaar/chirpstack-application-server/internal/test"
+	"github.com.cnpmjs.org/brocaar/chirpstack-api/go/v3/ns"
+	"github.com.cnpmjs.org/brocaar/chirpstack-application-server/internal/backend/networkserver"
+	"github.com.cnpmjs.org/brocaar/chirpstack-application-server/internal/backend/networkserver/mock"
+	"github.com.cnpmjs.org/brocaar/chirpstack-application-server/internal/test"
 )
 
 func (ts *StorageTestSuite) TestApplication() {

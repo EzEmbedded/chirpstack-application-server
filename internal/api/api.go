@@ -1,12 +1,12 @@
 package api
 
 import (
-	"github.com/pkg/errors"
+	"github.com.cnpmjs.org/pkg/errors"
 
-	"github.com/brocaar/chirpstack-application-server/internal/api/as"
-	"github.com/brocaar/chirpstack-application-server/internal/api/external"
-	"github.com/brocaar/chirpstack-application-server/internal/api/js"
-	"github.com/brocaar/chirpstack-application-server/internal/config"
+	"github.com.cnpmjs.org/brocaar/chirpstack-application-server/internal/api/as"
+	"github.com.cnpmjs.org/brocaar/chirpstack-application-server/internal/api/external"
+	"github.com.cnpmjs.org/brocaar/chirpstack-application-server/internal/api/js"
+	"github.com.cnpmjs.org/brocaar/chirpstack-application-server/internal/config"
 )
 
 // Setup configures the API endpoints.

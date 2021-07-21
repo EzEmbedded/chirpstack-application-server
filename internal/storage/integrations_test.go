@@ -6,12 +6,12 @@ import (
 	"testing"
 	"time"
 
-	"github.com/gofrs/uuid"
-	. "github.com/smartystreets/goconvey/convey"
+	"github.com.cnpmjs.org/gofrs/uuid"
+	. "github.com.cnpmjs.org/smartystreets/goconvey/convey"
 
-	"github.com/brocaar/chirpstack-application-server/internal/backend/networkserver"
-	"github.com/brocaar/chirpstack-application-server/internal/backend/networkserver/mock"
-	"github.com/brocaar/chirpstack-application-server/internal/test"
+	"github.com.cnpmjs.org/brocaar/chirpstack-application-server/internal/backend/networkserver"
+	"github.com.cnpmjs.org/brocaar/chirpstack-application-server/internal/backend/networkserver/mock"
+	"github.com.cnpmjs.org/brocaar/chirpstack-application-server/internal/test"
 )
 
 type testIntegrationSettings struct {

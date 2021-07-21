@@ -3,13 +3,13 @@ package external
 import (
 	"testing"
 
-	"github.com/stretchr/testify/require"
+	"github.com.cnpmjs.org/stretchr/testify/require"
 	"golang.org/x/net/context"
 	"google.golang.org/grpc"
 	"google.golang.org/grpc/codes"
 
-	pb "github.com/brocaar/chirpstack-api/go/v3/as/external/api"
-	"github.com/brocaar/chirpstack-application-server/internal/storage"
+	pb "github.com.cnpmjs.org/brocaar/chirpstack-api/go/v3/as/external/api"
+	"github.com.cnpmjs.org/brocaar/chirpstack-application-server/internal/storage"
 )
 
 func (ts *APITestSuite) TestOrganization() {

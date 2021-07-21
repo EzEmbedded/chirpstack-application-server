@@ -5,13 +5,13 @@ import (
 	"testing"
 	"time"
 
-	"github.com/gofrs/uuid"
-	"github.com/golang/protobuf/proto"
-	"github.com/stretchr/testify/require"
+	"github.com.cnpmjs.org/gofrs/uuid"
+	"github.com.cnpmjs.org/golang/protobuf/proto"
+	"github.com.cnpmjs.org/stretchr/testify/require"
 
-	"github.com/brocaar/chirpstack-api/go/v3/ns"
-	"github.com/brocaar/chirpstack-application-server/internal/backend/networkserver"
-	"github.com/brocaar/chirpstack-application-server/internal/backend/networkserver/mock"
+	"github.com.cnpmjs.org/brocaar/chirpstack-api/go/v3/ns"
+	"github.com.cnpmjs.org/brocaar/chirpstack-application-server/internal/backend/networkserver"
+	"github.com.cnpmjs.org/brocaar/chirpstack-application-server/internal/backend/networkserver/mock"
 )
 
 func TestServiceProfileValidate(t *testing.T) {

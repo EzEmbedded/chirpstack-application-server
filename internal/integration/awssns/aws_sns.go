@@ -6,20 +6,20 @@ import (
 	"encoding/base64"
 	"strconv"
 
-	"github.com/aws/aws-sdk-go/aws"
-	"github.com/aws/aws-sdk-go/aws/credentials"
-	"github.com/aws/aws-sdk-go/aws/session"
-	"github.com/aws/aws-sdk-go/service/sns"
-	"github.com/golang/protobuf/proto"
-	"github.com/pkg/errors"
-	log "github.com/sirupsen/logrus"
+	"github.com.cnpmjs.org/aws/aws-sdk-go/aws"
+	"github.com.cnpmjs.org/aws/aws-sdk-go/aws/credentials"
+	"github.com.cnpmjs.org/aws/aws-sdk-go/aws/session"
+	"github.com.cnpmjs.org/aws/aws-sdk-go/service/sns"
+	"github.com.cnpmjs.org/golang/protobuf/proto"
+	"github.com.cnpmjs.org/pkg/errors"
+	log "github.com.cnpmjs.org/sirupsen/logrus"
 
-	pb "github.com/brocaar/chirpstack-api/go/v3/as/integration"
-	"github.com/brocaar/chirpstack-application-server/internal/config"
-	"github.com/brocaar/chirpstack-application-server/internal/integration/marshaler"
-	"github.com/brocaar/chirpstack-application-server/internal/integration/models"
-	"github.com/brocaar/chirpstack-application-server/internal/logging"
-	"github.com/brocaar/lorawan"
+	pb "github.com.cnpmjs.org/brocaar/chirpstack-api/go/v3/as/integration"
+	"github.com.cnpmjs.org/brocaar/chirpstack-application-server/internal/config"
+	"github.com.cnpmjs.org/brocaar/chirpstack-application-server/internal/integration/marshaler"
+	"github.com.cnpmjs.org/brocaar/chirpstack-application-server/internal/integration/models"
+	"github.com.cnpmjs.org/brocaar/chirpstack-application-server/internal/logging"
+	"github.com.cnpmjs.org/brocaar/lorawan"
 )
 
 // Integration implements the AWS SNS integration.

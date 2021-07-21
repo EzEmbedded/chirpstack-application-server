@@ -9,13 +9,13 @@ import (
 	"net/url"
 	"testing"
 
-	log "github.com/sirupsen/logrus"
-	"github.com/stretchr/testify/require"
-	"github.com/stretchr/testify/suite"
+	log "github.com.cnpmjs.org/sirupsen/logrus"
+	"github.com.cnpmjs.org/stretchr/testify/require"
+	"github.com.cnpmjs.org/stretchr/testify/suite"
 
-	pb "github.com/brocaar/chirpstack-api/go/v3/as/integration"
-	"github.com/brocaar/chirpstack-api/go/v3/gw"
-	"github.com/brocaar/chirpstack-application-server/internal/integration/models"
+	pb "github.com.cnpmjs.org/brocaar/chirpstack-api/go/v3/as/integration"
+	"github.com.cnpmjs.org/brocaar/chirpstack-api/go/v3/gw"
+	"github.com.cnpmjs.org/brocaar/chirpstack-application-server/internal/integration/models"
 )
 
 func init() {

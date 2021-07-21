@@ -8,18 +8,18 @@ import (
 	"net/http/httptest"
 	"testing"
 
-	mqtt "github.com/eclipse/paho.mqtt.golang"
-	"github.com/stretchr/testify/require"
-	"github.com/stretchr/testify/suite"
+	mqtt "github.com.cnpmjs.org/eclipse/paho.mqtt.golang"
+	"github.com.cnpmjs.org/stretchr/testify/require"
+	"github.com.cnpmjs.org/stretchr/testify/suite"
 
-	pb "github.com/brocaar/chirpstack-api/go/v3/as/integration"
-	"github.com/brocaar/chirpstack-application-server/internal/config"
-	httpint "github.com/brocaar/chirpstack-application-server/internal/integration/http"
-	"github.com/brocaar/chirpstack-application-server/internal/integration/marshaler"
-	"github.com/brocaar/chirpstack-application-server/internal/integration/models"
-	mqttint "github.com/brocaar/chirpstack-application-server/internal/integration/mqtt"
-	"github.com/brocaar/chirpstack-application-server/internal/storage"
-	"github.com/brocaar/chirpstack-application-server/internal/test"
+	pb "github.com.cnpmjs.org/brocaar/chirpstack-api/go/v3/as/integration"
+	"github.com.cnpmjs.org/brocaar/chirpstack-application-server/internal/config"
+	httpint "github.com.cnpmjs.org/brocaar/chirpstack-application-server/internal/integration/http"
+	"github.com.cnpmjs.org/brocaar/chirpstack-application-server/internal/integration/marshaler"
+	"github.com.cnpmjs.org/brocaar/chirpstack-application-server/internal/integration/models"
+	mqttint "github.com.cnpmjs.org/brocaar/chirpstack-application-server/internal/integration/mqtt"
+	"github.com.cnpmjs.org/brocaar/chirpstack-application-server/internal/storage"
+	"github.com.cnpmjs.org/brocaar/chirpstack-application-server/internal/test"
 )
 
 type testHTTPHandler struct {

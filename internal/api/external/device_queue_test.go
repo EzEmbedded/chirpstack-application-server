@@ -4,16 +4,16 @@ import (
 	"context"
 	"testing"
 
-	"github.com/gofrs/uuid"
-	"github.com/stretchr/testify/require"
+	"github.com.cnpmjs.org/gofrs/uuid"
+	"github.com.cnpmjs.org/stretchr/testify/require"
 
-	pb "github.com/brocaar/chirpstack-api/go/v3/as/external/api"
-	"github.com/brocaar/chirpstack-api/go/v3/ns"
-	"github.com/brocaar/chirpstack-application-server/internal/backend/networkserver"
-	"github.com/brocaar/chirpstack-application-server/internal/backend/networkserver/mock"
-	"github.com/brocaar/chirpstack-application-server/internal/codec"
-	"github.com/brocaar/chirpstack-application-server/internal/storage"
-	"github.com/brocaar/lorawan"
+	pb "github.com.cnpmjs.org/brocaar/chirpstack-api/go/v3/as/external/api"
+	"github.com.cnpmjs.org/brocaar/chirpstack-api/go/v3/ns"
+	"github.com.cnpmjs.org/brocaar/chirpstack-application-server/internal/backend/networkserver"
+	"github.com.cnpmjs.org/brocaar/chirpstack-application-server/internal/backend/networkserver/mock"
+	"github.com.cnpmjs.org/brocaar/chirpstack-application-server/internal/codec"
+	"github.com.cnpmjs.org/brocaar/chirpstack-application-server/internal/storage"
+	"github.com.cnpmjs.org/brocaar/lorawan"
 )
 
 func (ts *APITestSuite) TestDownlinkQueue() {

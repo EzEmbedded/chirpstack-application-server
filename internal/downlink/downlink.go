@@ -3,19 +3,19 @@ package downlink
 import (
 	"fmt"
 
-	"github.com/gofrs/uuid"
-	"github.com/golang/protobuf/ptypes"
-	"github.com/jmoiron/sqlx"
-	"github.com/pkg/errors"
-	log "github.com/sirupsen/logrus"
+	"github.com.cnpmjs.org/gofrs/uuid"
+	"github.com.cnpmjs.org/golang/protobuf/ptypes"
+	"github.com.cnpmjs.org/jmoiron/sqlx"
+	"github.com.cnpmjs.org/pkg/errors"
+	log "github.com.cnpmjs.org/sirupsen/logrus"
 	"golang.org/x/net/context"
 
-	pb "github.com/brocaar/chirpstack-api/go/v3/as/integration"
-	"github.com/brocaar/chirpstack-application-server/internal/codec"
-	"github.com/brocaar/chirpstack-application-server/internal/integration"
-	"github.com/brocaar/chirpstack-application-server/internal/integration/models"
-	"github.com/brocaar/chirpstack-application-server/internal/logging"
-	"github.com/brocaar/chirpstack-application-server/internal/storage"
+	pb "github.com.cnpmjs.org/brocaar/chirpstack-api/go/v3/as/integration"
+	"github.com.cnpmjs.org/brocaar/chirpstack-application-server/internal/codec"
+	"github.com.cnpmjs.org/brocaar/chirpstack-application-server/internal/integration"
+	"github.com.cnpmjs.org/brocaar/chirpstack-application-server/internal/integration/models"
+	"github.com.cnpmjs.org/brocaar/chirpstack-application-server/internal/logging"
+	"github.com.cnpmjs.org/brocaar/chirpstack-application-server/internal/storage"
 )
 
 // HandleDataDownPayloads handles received downlink payloads to be emitted to the

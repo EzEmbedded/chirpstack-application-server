@@ -4,8 +4,8 @@ import (
 	"encoding/json"
 	"time"
 
-	"github.com/brocaar/lorawan"
-	"github.com/gofrs/uuid"
+	"github.com.cnpmjs.org/brocaar/lorawan"
+	"github.com.cnpmjs.org/gofrs/uuid"
 )
 
 // Location details.

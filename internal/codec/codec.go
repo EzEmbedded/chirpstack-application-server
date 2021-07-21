@@ -3,9 +3,9 @@ package codec
 import (
 	"fmt"
 
-	"github.com/brocaar/chirpstack-application-server/internal/codec/cayennelpp"
-	"github.com/brocaar/chirpstack-application-server/internal/codec/js"
-	"github.com/lib/pq/hstore"
+	"github.com.cnpmjs.org/brocaar/chirpstack-application-server/internal/codec/cayennelpp"
+	"github.com.cnpmjs.org/brocaar/chirpstack-application-server/internal/codec/js"
+	"github.com.cnpmjs.org/lib/pq/hstore"
 )
 
 // Type defines the codec type.

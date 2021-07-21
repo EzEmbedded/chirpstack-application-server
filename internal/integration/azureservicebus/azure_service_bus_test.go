@@ -9,12 +9,12 @@ import (
 	"testing"
 	"time"
 
-	pb "github.com/brocaar/chirpstack-api/go/v3/as/integration"
-	"github.com/brocaar/chirpstack-application-server/internal/integration/marshaler"
-	"github.com/brocaar/chirpstack-application-server/internal/integration/models"
-	"github.com/golang/protobuf/proto"
-	"github.com/stretchr/testify/require"
-	"github.com/stretchr/testify/suite"
+	pb "github.com.cnpmjs.org/brocaar/chirpstack-api/go/v3/as/integration"
+	"github.com.cnpmjs.org/brocaar/chirpstack-application-server/internal/integration/marshaler"
+	"github.com.cnpmjs.org/brocaar/chirpstack-application-server/internal/integration/models"
+	"github.com.cnpmjs.org/golang/protobuf/proto"
+	"github.com.cnpmjs.org/stretchr/testify/require"
+	"github.com.cnpmjs.org/stretchr/testify/suite"
 )
 
 func TestParseConnectionString(t *testing.T) {

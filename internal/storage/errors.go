@@ -3,8 +3,8 @@ package storage
 import (
 	"database/sql"
 
-	"github.com/lib/pq"
-	"github.com/pkg/errors"
+	"github.com.cnpmjs.org/lib/pq"
+	"github.com.cnpmjs.org/pkg/errors"
 )
 
 // Action defines the action type.

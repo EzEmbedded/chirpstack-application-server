@@ -1,8 +1,8 @@
 package mock
 
 import (
-	"github.com/brocaar/chirpstack-application-server/internal/backend/networkserver"
-	"github.com/brocaar/chirpstack-api/go/v3/ns"
+	"github.com.cnpmjs.org/brocaar/chirpstack-application-server/internal/backend/networkserver"
+	"github.com.cnpmjs.org/brocaar/chirpstack-api/go/v3/ns"
 )
 
 // Pool is a network-server pool for testing.

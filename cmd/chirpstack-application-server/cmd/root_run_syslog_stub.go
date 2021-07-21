@@ -3,9 +3,9 @@
 package cmd
 
 import (
-	log "github.com/sirupsen/logrus"
+	log "github.com.cnpmjs.org/sirupsen/logrus"
 
-	"github.com/brocaar/chirpstack-application-server/internal/config"
+	"github.com.cnpmjs.org/brocaar/chirpstack-application-server/internal/config"
 )
 
 func setSyslog() error {

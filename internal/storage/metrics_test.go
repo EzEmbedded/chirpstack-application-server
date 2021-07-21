@@ -5,7 +5,7 @@ import (
 	"testing"
 	"time"
 
-	"github.com/stretchr/testify/require"
+	"github.com.cnpmjs.org/stretchr/testify/require"
 )
 
 func (ts *StorageTestSuite) TestMetrics() {

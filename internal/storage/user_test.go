@@ -4,8 +4,8 @@ import (
 	"context"
 	"testing"
 
-	"github.com/pkg/errors"
-	"github.com/stretchr/testify/require"
+	"github.com.cnpmjs.org/pkg/errors"
+	"github.com.cnpmjs.org/stretchr/testify/require"
 )
 
 func TestUser(t *testing.T) {
