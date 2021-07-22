@@ -23,7 +23,7 @@ jobs:
         run: docker-compose run --rm chirpstack-application-server make test
 
   dist:
-    needs: test
+    needs: test.result == 'success'
     runs-on: ubuntu-latest
     if: startsWith(github.ref, 'refs/tags/v')
     steps:
@@ -53,7 +53,7 @@ jobs:
           aws s3 sync dist/upload s3://builds.loraserver.io/chirpstack-application-server
 
   docker:
-    needs: test
+    needs: test.result == 'success'
     runs-on: ubuntu-latest
     if: startsWith(github.ref, 'refs/tags/v')
     steps:
