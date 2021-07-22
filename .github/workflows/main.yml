@@ -46,6 +46,14 @@ jobs:
       -
         name: Build distributable binaries
         run: docker-compose run --rm chirpstack-application-server make snapshot
+      
+      - name: Archive lora-app-server results
+        uses: actions/upload-artifact@v2
+        with:
+          name: lora-app-server
+          path: dist     
+      
+      
       # - 
       #   uses: actions/upload-artifact@v2 
       #   with:
