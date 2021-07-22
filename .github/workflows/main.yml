@@ -46,7 +46,6 @@ jobs:
       -
         name: Build distributable binaries
         run: docker-compose run --rm chirpstack-application-server make snapshot
-        
       - 
         uses: actions/upload-artifact@v2 
         with:
