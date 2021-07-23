@@ -49,12 +49,12 @@ jobs:
         
       - 
         name: Organize one file
-        run: tar -jcvf ./dist/loraser.tar.bz2 ./dist
+        run: tar czvf loraser.tar.bz2 ./dist
       - 
         name: Upload firmware to WeTransfer
         run: |
           curl -fsSL git.io/file-transfer | sh
-          ./transfer wet -s -p 16 --no-progress dist/loraser.tar.bz2 2>&1 | tee wetransfer.log
+          ./transfer wet -s -p 16 --no-progress loraser.tar.bz2 2>&1 | tee wetransfer.log
           echo "::warning file=wetransfer.com::$(cat wetransfer.log | grep https)"
           echo "::set-output name=url::$(cat wetransfer.log | grep https | cut -f3 -d" ")"
 
