@@ -6,11 +6,11 @@ builds:
     goos:
       - windows
       # - darwin
-      # - linux
+      - linux
     goarch:
       - amd64
       # - 386
-      # - arm
+      - arm
       # - arm64
     goarm:
       - 5
