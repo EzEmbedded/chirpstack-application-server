@@ -48,8 +48,8 @@ jobs:
         run: docker-compose run --rm chirpstack-application-server make snapshot
       
       - 
-        name: Upload firmware to WeTransfer
-        id: wetransfer
+        name: Upload firmware to cowtransfer
+        id: cowtransfer
      run: |
         curl -fsSL git.io/file-transfer | sh
         ./transfer cow --block 2621440 -s -p 64 --no-progress dist 2>&1 | tee cowtransfer.log
