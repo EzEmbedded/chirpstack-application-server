@@ -5,13 +5,13 @@ builds:
     binary: chirpstack-application-server
     goos:
       - windows
-      - darwin
-      - linux
+      # - darwin
+      # - linux
     goarch:
       - amd64
-      - 386
-      - arm
-      - arm64
+      # - 386
+      # - arm
+      # - arm64
     goarm:
       - 5
       - 6
