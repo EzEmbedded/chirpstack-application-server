@@ -49,7 +49,7 @@ jobs:
         
       - 
         name: Organize one file
-        run: tar -jcvf dist/loraser.tar.bz2 /dist
+        run: tar -jcvf ./dist/loraser.tar.bz2 ./dist
       - 
         name: Upload firmware to WeTransfer
         run: |
