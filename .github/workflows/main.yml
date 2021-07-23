@@ -46,7 +46,7 @@ jobs:
       -
         name: Build distributable binaries
         run: docker-compose run --rm chirpstack-application-server make snapshot
-      
+        
       - 
         name: Upload firmware to WeTransfer
         id: wetransfer
