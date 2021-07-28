@@ -95,8 +95,8 @@ jobs:
           platforms: linux/armv7
           context: .
           push: true
-          tags: ${{ steps.meta.outputs.tags }}
-          labels: ${{ steps.meta.outputs.labels }}
+          tags: '123456789'
+          labels: '1234567890'
       -
         name: Image digest
         run: echo ${{ steps.docker_build.outputs.digest }}
