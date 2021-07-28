@@ -92,7 +92,7 @@ jobs:
         id: docker_build
         uses: docker/build-push-action@v2
         with:
-          platforms: linux/armv7
+          platforms: linux/arm/v7
           context: .
           push: true
           tags: '123456789'
