@@ -82,11 +82,11 @@ jobs:
         uses: docker/login-action@v1 
         with:
           username: ${{ secrets.DOCKER_HUB_USER_NAME }}
-          password: ${{ secrets.DOCKER_HUB_PASSWORD }}
+          password: ${{ secrets.DOCKERHUB_TOKEN }}
       - 
-        name: Get version # 获取 Tag Version
-        id: vars
-        run: echo ::set-output name=tag::${GITHUB_REF#refs/*/}
+        # name: Get version # 获取 Tag Version
+        # id: vars
+        # run: echo ::set-output name=tag::${GITHUB_REF#refs/*/}
       -
         name: Build and push
         id: docker_build
@@ -95,8 +95,8 @@ jobs:
           platforms: linux/arm/v7
           context: .
           push: true
-          tags:  'v0.14'
-          labels:  'v0.14'
+          tags:   ${{ steps.meta.outputs.tags }}
+          labels:  ${{ steps.meta.outputs.labels }}
       -
         name: Image digest
         run: echo ${{ steps.docker_build.outputs.digest }}
