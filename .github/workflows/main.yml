@@ -95,7 +95,7 @@ jobs:
           platforms: linux/arm/v7
           context: .
           push: true
-          tags: ${{ steps.meta.outputs.tags }}:latest
+          tags: loraserver-app
           labels: ${{ steps.meta.outputs.labels }}
       -
         name: Image digest
