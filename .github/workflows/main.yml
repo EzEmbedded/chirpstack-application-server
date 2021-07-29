@@ -1,12 +1,12 @@
 name: CI
 on:
-  workflow_dispatch:
-  # push:
-  #   branches:
-  #     - '*'
-  #   tags:
-  #     - 'v*'
-  # pull_request:
+  # workflow_dispatch:
+  push:
+    branches:
+      - '*'
+    tags:
+      - 'v*'
+  pull_request:
 
 jobs:
   # test:
@@ -83,10 +83,10 @@ jobs:
         with:
           username: ${{ secrets.DOCKER_HUB_USER_NAME }}
           password: ${{ secrets.DOCKER_HUB_PASSWORD }}
-      - 
-        name: Get version # 获取 Tag Version
-        id: vars
-        run: echo ::set-output name=tag::${GITHUB_REF#refs/*/}
+      # - 
+      #   name: Get version # 获取 Tag Version
+      #   id: vars
+      #   run: echo ::set-output name=tag::${GITHUB_REF#refs/*/}
       -
         name: Build and push
         id: docker_build
@@ -95,8 +95,8 @@ jobs:
           platforms: linux/arm/v7
           context: .
           push: true
-          tags: '123456789'
-          labels: '1234567890'
+          tags:  ${{ steps.meta.outputs.tags }}
+          labels:  ${{ steps.meta.outputs.labels }}
       -
         name: Image digest
         run: echo ${{ steps.docker_build.outputs.digest }}
