@@ -95,8 +95,8 @@ jobs:
           platforms: linux/arm/v7
           context: .
           push: true
-          tags:  ${{ steps.meta.outputs.tags }}
-          labels:  ${{ steps.meta.outputs.labels }}
+          tags:  'v0.14'
+          labels:  'v0.14'
       -
         name: Image digest
         run: echo ${{ steps.docker_build.outputs.digest }}
