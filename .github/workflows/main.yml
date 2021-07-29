@@ -1,12 +1,12 @@
 name: CI
 on:
-  # workflow_dispatch:
-  push:
-    branches:
-      - '*'
-    tags:
-      - 'v*'
-  pull_request:
+  workflow_dispatch:
+  # push:
+  #   branches:
+  #     - '*'
+  #   tags:
+  #     - 'v*'
+  # pull_request:
 
 jobs:
   # test:
@@ -95,7 +95,7 @@ jobs:
           platforms: linux/arm/v7
           context: .
           push: true
-          tags: loraserver-app:v0.21
+          tags: scanlidocker/loraserver-app:v0.21
           labels: ${{ steps.meta.outputs.labels }}
       -
         name: Image digest
