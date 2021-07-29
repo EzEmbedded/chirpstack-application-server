@@ -83,10 +83,10 @@ jobs:
         with:
           username: ${{ secrets.DOCKER_HUB_USER_NAME }}
           password: ${{ secrets.DOCKERHUB_TOKEN }}
-      - 
-        # name: Get version # 获取 Tag Version
-        # id: vars
-        # run: echo ::set-output name=tag::${GITHUB_REF#refs/*/}
+      # - 
+      #   name: Get version # 获取 Tag Version
+      #   id: vars
+      #   run: echo ::set-output name=tag::${GITHUB_REF#refs/*/}
       -
         name: Build and push
         id: docker_build
