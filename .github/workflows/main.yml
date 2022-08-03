@@ -92,7 +92,7 @@ jobs:
         id: docker_build
         uses: docker/build-push-action@v2
         with:
-          platforms: linux/arm/v7
+          platforms: linux/amd64,linux/arm/v7
           context: .
           push: true
           tags: scanlidocker/chirpstack-application-server:v0.21
